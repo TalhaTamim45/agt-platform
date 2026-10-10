@@ -22,7 +22,8 @@ dist/
 .env.production.local
 
 # Private Server Data & Logs
-data/
+/data/
+!/public/data/
 .tmp/
 
 # Large 3D / Binary Cache

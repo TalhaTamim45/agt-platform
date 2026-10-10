@@ -1,0 +1,1452 @@
+[
+  {
+    "id": "stainless-bottle-300ml",
+    "name": "Stainless Bottle 300ml",
+    "category": "Drinkware",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/stainless-bottle-300ml.webp",
+      "width": 369,
+      "height": 786,
+      "aspectRatio": 0.469,
+      "sizeKb": "24.0 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T16:36:05.941Z"
+    }
+  },
+  {
+    "id": "smiley-night-light",
+    "name": "Smiley Night Light",
+    "category": "Lighting",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/smiley-night-light.webp",
+      "width": 817,
+      "height": 1052,
+      "aspectRatio": 0.777,
+      "sizeKb": "44.9 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 24,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 4,
+        "rotationDriftX": 5
+      },
+      "shadow": {
+        "baseBlur": 32,
+        "spread": -6,
+        "minOpacity": 0.15,
+        "maxOpacity": 0.38,
+        "scaleRange": [
+          0.75,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -28,
+        "scale": 1.08,
+        "tiltSensitivity": 18,
+        "duration": 0.5,
+        "ease": "elastic.out(1, 0.75)"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T16:43:32.186Z"
+    }
+  },
+  {
+    "id": "niyama-electric-kettle",
+    "name": "Niyama Electric Kettle",
+    "category": "Appliances",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/niyama-electric-kettle.webp",
+      "width": 1160,
+      "height": 868,
+      "aspectRatio": 1.336,
+      "sizeKb": "151.4 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T16:44:05.849Z"
+    }
+  },
+  {
+    "id": "prestige-vacuum-flask",
+    "name": "Prestige Vacuum Flask",
+    "category": "Drinkware",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/prestige-vacuum-flask.webp",
+      "width": 522,
+      "height": 808,
+      "aspectRatio": 0.646,
+      "sizeKb": "65.1 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T16:44:44.306Z"
+    }
+  },
+  {
+    "id": "ruilang-flashlight-orange",
+    "name": "Ruilang LED Flashlight (Orange)",
+    "category": "Tools & Lighting",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/ruilang-flashlight-orange.webp",
+      "width": 423,
+      "height": 944,
+      "aspectRatio": 0.448,
+      "sizeKb": "51.5 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 24,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 4,
+        "rotationDriftX": 5
+      },
+      "shadow": {
+        "baseBlur": 32,
+        "spread": -6,
+        "minOpacity": 0.15,
+        "maxOpacity": 0.38,
+        "scaleRange": [
+          0.75,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -28,
+        "scale": 1.08,
+        "tiltSensitivity": 18,
+        "duration": 0.5,
+        "ease": "elastic.out(1, 0.75)"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T16:53:37.756Z"
+    }
+  },
+  {
+    "id": "lsaga-doorbell-white",
+    "name": "Lsaga Smart Wireless Doorbell",
+    "category": "Electronics",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/lsaga-doorbell-white.webp",
+      "width": 917,
+      "height": 813,
+      "aspectRatio": 1.128,
+      "sizeKb": "174.7 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T16:53:56.222Z"
+    }
+  },
+  {
+    "id": "bulb-humidifier",
+    "name": "Glass Bulb Ultrasonic Humidifier",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/bulb-humidifier.webp?v=2",
+      "width": 522,
+      "height": 840,
+      "aspectRatio": 0.621,
+      "sizeKb": "68.7 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T16:54:10.790Z"
+    }
+  },
+  {
+    "id": "multifunctional-cleaning-brush",
+    "name": "Multifunctional Cleaning Brush",
+    "category": "Home & Tools",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/multifunctional-cleaning-brush.webp",
+      "width": 292,
+      "height": 827,
+      "aspectRatio": 0.353,
+      "sizeKb": "23.9 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T16:54:22.895Z"
+    }
+  },
+  {
+    "id": "toktalk-dragon-fruit-jam",
+    "name": "Toktalk Dragon Fruit Jam",
+    "category": "Food & Pantry",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/toktalk-dragon-fruit-jam.webp",
+      "width": 410,
+      "height": 828,
+      "aspectRatio": 0.495,
+      "sizeKb": "51.6 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "pantry-goods",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 1.8,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.5,
+        "scaleRange": [
+          0.84,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 13,
+        "duration": 0.42,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:07:50.491Z"
+    }
+  },
+  {
+    "id": "khas-dawat-meat-masala",
+    "name": "Khas Dawat Meat Masala",
+    "category": "Food & Spices",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/khas-dawat-meat-masala.webp",
+      "width": 499,
+      "height": 687,
+      "aspectRatio": 0.726,
+      "sizeKb": "53.6 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "pantry-goods",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 1.8,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.5,
+        "scaleRange": [
+          0.84,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 13,
+        "duration": 0.42,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:08:07.580Z"
+    }
+  },
+  {
+    "id": "khas-dawat-chicken-masala",
+    "name": "Khas Dawat Chicken Masala",
+    "category": "Food & Spices",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/khas-dawat-chicken-masala.webp",
+      "width": 472,
+      "height": 696,
+      "aspectRatio": 0.678,
+      "sizeKb": "53.6 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "pantry-goods",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 1.8,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.5,
+        "scaleRange": [
+          0.84,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 13,
+        "duration": 0.42,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:08:19.468Z"
+    }
+  },
+  {
+    "id": "fresh-green-tea",
+    "name": "Fresh Premium Green Tea",
+    "category": "Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/fresh-green-tea.webp",
+      "width": 1352,
+      "height": 900,
+      "aspectRatio": 1.502,
+      "sizeKb": "101.2 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "pantry-goods",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 1.8,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.5,
+        "scaleRange": [
+          0.84,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 13,
+        "duration": 0.42,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:08:34.285Z"
+    }
+  },
+  {
+    "id": "travel-portable-stand",
+    "name": "Travel Portable Stand",
+    "category": "Tech Accessories",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/travel-portable-stand.webp",
+      "width": 511,
+      "height": 1072,
+      "aspectRatio": 0.477,
+      "sizeKb": "29.9 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:19:15.375Z"
+    }
+  },
+  {
+    "id": "rechargeable-zoom-flashlight-blue",
+    "name": "Rechargeable Zoom LED Flashlight (Blue)",
+    "category": "Tools & Lighting",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/rechargeable-zoom-flashlight-blue.webp",
+      "width": 584,
+      "height": 1104,
+      "aspectRatio": 0.529,
+      "sizeKb": "50.4 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 24,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 4,
+        "rotationDriftX": 5
+      },
+      "shadow": {
+        "baseBlur": 32,
+        "spread": -6,
+        "minOpacity": 0.15,
+        "maxOpacity": 0.38,
+        "scaleRange": [
+          0.75,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -28,
+        "scale": 1.08,
+        "tiltSensitivity": 18,
+        "duration": 0.5,
+        "ease": "elastic.out(1, 0.75)"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:19:46.871Z"
+    }
+  },
+  {
+    "id": "solar-wall-lamp",
+    "name": "Solar Interaction Wall Lamp",
+    "category": "Lighting",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/solar-wall-lamp.webp",
+      "width": 1449,
+      "height": 1215,
+      "aspectRatio": 1.193,
+      "sizeKb": "107.5 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 24,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 4,
+        "rotationDriftX": 5
+      },
+      "shadow": {
+        "baseBlur": 32,
+        "spread": -6,
+        "minOpacity": 0.15,
+        "maxOpacity": 0.38,
+        "scaleRange": [
+          0.75,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -28,
+        "scale": 1.08,
+        "tiltSensitivity": 18,
+        "duration": 0.5,
+        "ease": "elastic.out(1, 0.75)"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:20:33.188Z"
+    }
+  },
+  {
+    "id": "seed-paper-calendar",
+    "name": "Grow Green 2027 Seed Paper Calendar",
+    "category": "Stationery & Gifts",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/seed-paper-calendar.webp",
+      "width": 731,
+      "height": 560,
+      "aspectRatio": 1.305,
+      "sizeKb": "74.5 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:21:09.820Z"
+    }
+  },
+  {
+    "id": "prestige-electric-kettle-1l",
+    "name": "Prestige Electric Kettle 1.0L (White)",
+    "category": "Appliances",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/prestige-electric-kettle-1l.webp",
+      "width": 1505,
+      "height": 1021,
+      "aspectRatio": 1.474,
+      "sizeKb": "125.0 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:22:18.212Z"
+    }
+  },
+  {
+    "id": "high-power-flashlight-pink",
+    "name": "High Power Flashlight (Pink)",
+    "category": "Tools & Lighting",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/high-power-flashlight-pink.webp",
+      "width": 380,
+      "height": 854,
+      "aspectRatio": 0.445,
+      "sizeKb": "39.3 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 24,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 4,
+        "rotationDriftX": 5
+      },
+      "shadow": {
+        "baseBlur": 32,
+        "spread": -6,
+        "minOpacity": 0.15,
+        "maxOpacity": 0.38,
+        "scaleRange": [
+          0.75,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -28,
+        "scale": 1.08,
+        "tiltSensitivity": 18,
+        "duration": 0.5,
+        "ease": "elastic.out(1, 0.75)"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:22:50.298Z"
+    }
+  },
+  {
+    "id": "ruilang-flashlight-pink",
+    "name": "Ruilang LED Flashlight (Pink)",
+    "category": "Tools & Lighting",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/ruilang-flashlight-pink.webp",
+      "width": 382,
+      "height": 947,
+      "aspectRatio": 0.403,
+      "sizeKb": "48.8 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 24,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 4,
+        "rotationDriftX": 5
+      },
+      "shadow": {
+        "baseBlur": 32,
+        "spread": -6,
+        "minOpacity": 0.15,
+        "maxOpacity": 0.38,
+        "scaleRange": [
+          0.75,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -28,
+        "scale": 1.08,
+        "tiltSensitivity": 18,
+        "duration": 0.5,
+        "ease": "elastic.out(1, 0.75)"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:23:08.424Z"
+    }
+  },
+  {
+    "id": "3in1-vacuum-cleaner",
+    "name": "3-in-1 Mini Vacuum Cleaner",
+    "category": "Appliances",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/3in1-vacuum-cleaner.webp",
+      "width": 684,
+      "height": 525,
+      "aspectRatio": 1.303,
+      "sizeKb": "63.3 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:23:36.299Z"
+    }
+  },
+  {
+    "id": "lsaga-doorbell-black",
+    "name": "LSAGA Wireless Doorbell (Black)",
+    "category": "Electronics",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/lsaga-doorbell-black.webp",
+      "width": 593,
+      "height": 768,
+      "aspectRatio": 0.772,
+      "sizeKb": "45.6 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:24:33.599Z"
+    }
+  },
+  {
+    "id": "uteki-toothbrush-cup",
+    "name": "UTEKI Simple Toothbrush Cup Holder",
+    "category": "Home & Living",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/uteki-toothbrush-cup.webp",
+      "width": 665,
+      "height": 868,
+      "aspectRatio": 0.766,
+      "sizeKb": "86.6 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:24:47.878Z"
+    }
+  },
+  {
+    "id": "warm-handbag",
+    "name": "AGT Warm Handbag (Graphene Heated)",
+    "category": "Lifestyle & Wellness",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/warm-handbag.webp",
+      "width": 642,
+      "height": 683,
+      "aspectRatio": 0.94,
+      "sizeKb": "53.8 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:24:58.941Z"
+    }
+  },
+  {
+    "id": "silver-crest-food-grinder",
+    "name": "Silver Crest Electric Food Grinder",
+    "category": "Appliances",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/silver-crest-food-grinder.webp",
+      "width": 898,
+      "height": 1215,
+      "aspectRatio": 0.739,
+      "sizeKb": "171.8 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:25:22.979Z"
+    }
+  },
+  {
+    "id": "prestige-electric-kettle-2l",
+    "name": "Prestige Electric Kettle 2.0L",
+    "category": "Appliances",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/prestige-electric-kettle-2l.webp",
+      "width": 1098,
+      "height": 1265,
+      "aspectRatio": 0.868,
+      "sizeKb": "135.5 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:25:55.602Z"
+    }
+  },
+  {
+    "id": "toktalk-pickles-combo",
+    "name": "Toktalk Gourmet Pickles Combo",
+    "category": "Food & Pantry",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/toktalk-pickles-combo.webp",
+      "width": 1083,
+      "height": 1049,
+      "aspectRatio": 1.032,
+      "sizeKb": "128.6 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "pantry-goods",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 1.8,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.5,
+        "scaleRange": [
+          0.84,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 13,
+        "duration": 0.42,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:26:11.774Z"
+    }
+  },
+  {
+    "id": "fresh-refined-sugar",
+    "name": "Fresh Refined Sugar 1kg",
+    "category": "Food & Pantry",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/fresh-refined-sugar.webp",
+      "width": 982,
+      "height": 1168,
+      "aspectRatio": 0.841,
+      "sizeKb": "152.6 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "pantry-goods",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 1.8,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.5,
+        "scaleRange": [
+          0.84,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 13,
+        "duration": 0.42,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:27:22.943Z"
+    }
+  },
+  {
+    "id": "smart-bag-sealer",
+    "name": "Smart Bag Sealer",
+    "category": "Kitchen Gadgets",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/smart-bag-sealer.webp",
+      "width": 1141,
+      "height": 941,
+      "aspectRatio": 1.213,
+      "sizeKb": "98.0 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:28:06.019Z"
+    }
+  },
+  {
+    "id": "khas-dawat-biryani-masala",
+    "name": "Khas Dawat Biryani Masala",
+    "category": "Food & Spices",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/khas-dawat-biryani-masala.webp",
+      "width": 631,
+      "height": 801,
+      "aspectRatio": 0.788,
+      "sizeKb": "83.9 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "pantry-goods",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 1.8,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.5,
+        "scaleRange": [
+          0.84,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 13,
+        "duration": 0.42,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-09T17:28:54.726Z"
+    }
+  }
+]
