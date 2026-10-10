@@ -1,0 +1,50 @@
+{
+  "id": "bulb-humidifier",
+  "name": "Glass Bulb Ultrasonic Humidifier",
+  "category": "Home & Lifestyle",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/bulb-humidifier.webp?v=2",
+    "width": 522,
+    "height": 840,
+    "aspectRatio": 0.621,
+    "sizeKb": "68.7 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "balanced",
+    "floating": {
+      "amplitudeY": 16,
+      "duration": 3.5,
+      "ease": "sine.inOut",
+      "rotationDriftZ": 2.5,
+      "rotationDriftX": 3
+    },
+    "shadow": {
+      "baseBlur": 20,
+      "spread": -3,
+      "minOpacity": 0.25,
+      "maxOpacity": 0.48,
+      "scaleRange": [
+        0.85,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -18,
+      "scale": 1.05,
+      "tiltSensitivity": 12,
+      "duration": 0.4,
+      "ease": "power2.out"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-09T16:54:10.790Z"
+  }
+}

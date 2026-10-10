@@ -1,0 +1,50 @@
+{
+  "id": "stainless-bottle-300ml",
+  "name": "Stainless Bottle 300ml",
+  "category": "Drinkware",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/stainless-bottle-300ml.webp",
+    "width": 369,
+    "height": 786,
+    "aspectRatio": 0.469,
+    "sizeKb": "24.0 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "medium-dense",
+    "floating": {
+      "amplitudeY": 18,
+      "duration": 3.8,
+      "ease": "sine.inOut",
+      "rotationDriftZ": 2.2,
+      "rotationDriftX": 3.5
+    },
+    "shadow": {
+      "baseBlur": 24,
+      "spread": -4,
+      "minOpacity": 0.22,
+      "maxOpacity": 0.52,
+      "scaleRange": [
+        0.82,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -22,
+      "scale": 1.06,
+      "tiltSensitivity": 14,
+      "duration": 0.45,
+      "ease": "power2.out"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-09T16:36:05.941Z"
+  }
+}

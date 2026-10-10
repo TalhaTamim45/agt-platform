@@ -1,0 +1,23 @@
+{
+  "name": "agt-platform",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@gradio/client": "^2.7.1",
+    "autoprefixer": "^10.6.1",
+    "gsap": "^3.15.0",
+    "lucide-react": "^1.54.0",
+    "next": "^16.4.0",
+    "postcss": "^8.5.29",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.19"
+  }
+}

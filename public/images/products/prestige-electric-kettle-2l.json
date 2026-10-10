@@ -1,0 +1,50 @@
+{
+  "id": "prestige-electric-kettle-2l",
+  "name": "Prestige Electric Kettle 2.0L",
+  "category": "Appliances",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/prestige-electric-kettle-2l.webp",
+    "width": 1098,
+    "height": 1265,
+    "aspectRatio": 0.868,
+    "sizeKb": "135.5 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "medium-dense",
+    "floating": {
+      "amplitudeY": 18,
+      "duration": 3.8,
+      "ease": "sine.inOut",
+      "rotationDriftZ": 2.2,
+      "rotationDriftX": 3.5
+    },
+    "shadow": {
+      "baseBlur": 24,
+      "spread": -4,
+      "minOpacity": 0.22,
+      "maxOpacity": 0.52,
+      "scaleRange": [
+        0.82,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -22,
+      "scale": 1.06,
+      "tiltSensitivity": 14,
+      "duration": 0.45,
+      "ease": "power2.out"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-09T17:25:55.602Z"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "khas-dawat-biryani-masala",
+  "name": "Khas Dawat Biryani Masala",
+  "category": "Food & Spices",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/khas-dawat-biryani-masala.webp",
+    "width": 631,
+    "height": 801,
+    "aspectRatio": 0.788,
+    "sizeKb": "83.9 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "pantry-goods",
+    "floating": {
+      "amplitudeY": 15,
+      "duration": 3.6,
+      "ease": "sine.inOut",
+      "rotationDriftZ": 1.8,
+      "rotationDriftX": 2.8
+    },
+    "shadow": {
+      "baseBlur": 22,
+      "spread": -4,
+      "minOpacity": 0.22,
+      "maxOpacity": 0.5,
+      "scaleRange": [
+        0.84,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -18,
+      "scale": 1.05,
+      "tiltSensitivity": 13,
+      "duration": 0.42,
+      "ease": "power2.out"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-09T17:28:54.726Z"
+  }
+}

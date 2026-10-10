@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-outfit: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #faf7f0;
+  color: #0c1f3b;
+  overflow-x: hidden;
+  selection-background-color: #c59b4c;
+  selection-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit);
+}
+
+/* Cream Luxury Glassmorphism & Elevation */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(197, 155, 76, 0.22);
+  box-shadow: 0 10px 30px -8px rgba(12, 31, 59, 0.06), 0 2px 6px rgba(197, 155, 76, 0.05);
+}
+
+.glass-panel-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: #ffffff;
+  border-color: rgba(197, 155, 76, 0.55);
+  box-shadow: 0 22px 45px -12px rgba(197, 155, 76, 0.22), 0 8px 20px -4px rgba(12, 31, 59, 0.08);
+  transform: translateY(-4px);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #a37525 0%, #c59b4c 45%, #7a5515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navy-gradient-text {
+  background: linear-gradient(135deg, #071224 0%, #0c1f3b 55%, #173663 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-btn {
+  background: linear-gradient(135deg, #c59b4c 0%, #aa8135 100%);
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px -4px rgba(197, 155, 76, 0.35);
+}
+
+.gold-btn:hover {
+  background: linear-gradient(135deg, #d3ab5a 0%, #b88d3e 100%);
+  box-shadow: 0 12px 28px -6px rgba(197, 155, 76, 0.45);
+  transform: translateY(-2px);
+}
+
+.navy-btn {
+  background: linear-gradient(135deg, #0c1f3b 0%, #173663 100%);
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px -4px rgba(12, 31, 59, 0.25);
+}
+
+.navy-btn:hover {
+  background: linear-gradient(135deg, #122c54 0%, #1d4378 100%);
+  box-shadow: 0 12px 28px -6px rgba(12, 31, 59, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Zero Gravity Floating Physics helpers */
+.perspective-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.product-image-wrap {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Custom Scrollbar for Cream Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4ede1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cca982;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aa8135;
+}
