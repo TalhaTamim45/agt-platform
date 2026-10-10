@@ -5,12 +5,14 @@ import Image from 'next/image';
 import { QRCodeSVG } from 'qrcode.react';
 import { Download, Share2, Phone, Mail, MapPin, Globe, MessageSquare } from 'lucide-react';
 
-const SITE_URL = 'https://agtbd.com';
-const QR_URL = `${SITE_URL}/api/track-scan?ref=qr`;
+const DEFAULT_SITE_URL = 'https://abdullahglobaltrade.vercel.app';
 
 export default function VisitingCard({ isOpen, onClose }) {
   const cardRef = useRef(null);
   const [flipped, setFlipped] = useState(false);
+
+  const siteUrl = typeof window !== 'undefined' && window.location.origin ? window.location.origin : DEFAULT_SITE_URL;
+  const qrUrl = `${siteUrl}/api/track-scan?ref=qr`;
 
   if (!isOpen) return null;
 
@@ -20,14 +22,14 @@ export default function VisitingCard({ isOpen, onClose }) {
         await navigator.share({
           title: 'Abdullah Global Trade (AGT)',
           text: 'Corporate Merchandise & Promotional Product Sourcing — From Vision to Value',
-          url: SITE_URL,
+          url: siteUrl,
         });
       } catch {
         // User cancelled share
       }
     } else {
       // Fallback: copy to clipboard
-      await navigator.clipboard.writeText(SITE_URL);
+      await navigator.clipboard.writeText(siteUrl);
       alert('Website link copied to clipboard!');
     }
   };
@@ -40,7 +42,7 @@ ORG:Abdullah Global Trade (AGT)
 TEL;TYPE=WORK,VOICE:+8801787239863
 EMAIL;TYPE=WORK:agtbd763@gmail.com
 ADR;TYPE=WORK:;;G-85, Gulshan-Badda Link Road, Badda;Dhaka;;1212;Bangladesh
-URL:${SITE_URL}
+URL:${siteUrl}
 NOTE:Connecting Business | Building Partnerships | Delivering Growth
 END:VCARD`;
 
@@ -153,7 +155,7 @@ END:VCARD`;
                 <div className="text-center space-y-3">
                   <div className="bg-white rounded-xl p-3 inline-block shadow-lg">
                     <QRCodeSVG
-                      value={QR_URL}
+                      value={qrUrl}
                       size={120}
                       level="H"
                       fgColor="#0c1f3b"
@@ -170,7 +172,7 @@ END:VCARD`;
                     Scan to View Catalog
                   </p>
                   <p className="text-cream-300/60 text-[8px] font-medium">
-                    agtbd.com
+                    abdullahglobaltrade.vercel.app
                   </p>
                 </div>
               </div>
