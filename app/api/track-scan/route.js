@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
 
-// Private server-side storage location (NOT accessible publicly via HTTP)
-const DATA_DIR = path.join(process.cwd(), 'data');
+// Private server-side storage location (/tmp is the only writable directory on Vercel Serverless)
+const DATA_DIR = process.env.VERCEL ? '/tmp' : path.join(process.cwd(), 'data');
 const LOG_FILE = path.join(DATA_DIR, 'qr-scans.json');
 const MAX_LOG_ENTRIES = 2000; // Cap log to prevent disk exhaustion attacks
 
@@ -11,7 +11,7 @@ async function ensureDataDir() {
   try {
     await fs.mkdir(DATA_DIR, { recursive: true });
   } catch {
-    // Directory already exists
+    // Directory already exists or read-only
   }
 }
 
@@ -68,7 +68,7 @@ export async function GET(request) {
   }
 
   // Safe redirect using origin URL to prevent open redirect vulnerabilities
-  return NextResponse.redirect(new URL('/#catalog', request.url));
+  return NextResponse.redirect(new URL('/#catalog?scanned=1', request.url));
 }
 
 /**
