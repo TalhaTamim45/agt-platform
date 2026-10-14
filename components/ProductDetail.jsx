@@ -48,7 +48,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
   if (!isOpen || !product) return null;
 
   const waInquiryUrl = `https://wa.me/8801787239863?text=${encodeURIComponent(
-    `Hello Abdullah Global Trade, I'm interested in bulk ordering: ${product.name} (ID: ${product.id}). Please share pricing and MOQ details.`
+    `Hello Abdullah Global Trade, I'm interested in bulk ordering: ${product.name} (ID: ${product.id}, Base: ৳${product.price}). Please share discounted pricing for higher quantities.`
   )}`;
 
   // Generate professional features based on category
@@ -138,6 +138,29 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
             <p className="text-xs text-navy-600/60 font-medium mt-1 uppercase tracking-wider">
               SKU: {product.id}
             </p>
+          </div>
+
+          {/* Indicative Base Price & Bulk Discount Box */}
+          <div className="my-3.5 p-3.5 rounded-xl bg-cream-50/90 border border-gold-500/20 flex items-center justify-between gap-3 shadow-xs">
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-wider text-navy-600/70">
+                Indicative Wholesale Price
+              </p>
+              <div className="flex items-baseline gap-1 mt-0.5">
+                <span className="text-xl sm:text-2xl font-extrabold text-navy-950">
+                  ৳{product.price?.toLocaleString()}
+                </span>
+                <span className="text-xs text-navy-600/80 font-medium">/ unit</span>
+              </div>
+            </div>
+            <div className="text-right">
+              <span className="inline-block text-[11px] font-bold text-emerald-800 bg-emerald-100/80 px-2.5 py-1 rounded-full border border-emerald-600/30">
+                3–4% Discount on Bulk
+              </span>
+              <p className="text-[10px] text-navy-600/70 font-medium mt-1">
+                For higher quantity corporate orders
+              </p>
+            </div>
           </div>
 
           {/* Features List */}

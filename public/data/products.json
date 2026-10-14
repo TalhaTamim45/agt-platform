@@ -47,7 +47,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T16:36:05.941Z"
-    }
+    },
+    "price": 380,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "smiley-night-light",
@@ -97,7 +99,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T16:43:32.186Z"
-    }
+    },
+    "price": 290,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "niyama-electric-kettle",
@@ -147,7 +151,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T16:44:05.849Z"
-    }
+    },
+    "price": 1250,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "prestige-vacuum-flask",
@@ -197,7 +203,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T16:44:44.306Z"
-    }
+    },
+    "price": 650,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "ruilang-flashlight-orange",
@@ -247,7 +255,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T16:53:37.756Z"
-    }
+    },
+    "price": 320,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "lsaga-doorbell-white",
@@ -297,7 +307,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T16:53:56.222Z"
-    }
+    },
+    "price": 850,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "bulb-humidifier",
@@ -347,7 +359,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T16:54:10.790Z"
-    }
+    },
+    "price": 450,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "multifunctional-cleaning-brush",
@@ -397,7 +411,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T16:54:22.895Z"
-    }
+    },
+    "price": 180,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "toktalk-dragon-fruit-jam",
@@ -447,7 +463,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:07:50.491Z"
-    }
+    },
+    "price": 320,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "khas-dawat-meat-masala",
@@ -497,7 +515,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:08:07.580Z"
-    }
+    },
+    "price": 110,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "khas-dawat-chicken-masala",
@@ -547,7 +567,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:08:19.468Z"
-    }
+    },
+    "price": 110,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "fresh-green-tea",
@@ -597,7 +619,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:08:34.285Z"
-    }
+    },
+    "price": 190,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "travel-portable-stand",
@@ -647,7 +671,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:19:15.375Z"
-    }
+    },
+    "price": 240,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "rechargeable-zoom-flashlight-blue",
@@ -697,7 +723,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:19:46.871Z"
-    }
+    },
+    "price": 380,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "solar-wall-lamp",
@@ -747,7 +775,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:20:33.188Z"
-    }
+    },
+    "price": 480,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "seed-paper-calendar",
@@ -797,7 +827,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:21:09.820Z"
-    }
+    },
+    "price": 260,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "prestige-electric-kettle-1l",
@@ -847,7 +879,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:22:18.212Z"
-    }
+    },
+    "price": 1150,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "high-power-flashlight-pink",
@@ -897,7 +931,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:22:50.298Z"
-    }
+    },
+    "price": 350,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "ruilang-flashlight-pink",
@@ -947,7 +983,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:23:08.424Z"
-    }
+    },
+    "price": 320,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "3in1-vacuum-cleaner",
@@ -997,7 +1035,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:23:36.299Z"
-    }
+    },
+    "price": 950,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "lsaga-doorbell-black",
@@ -1047,7 +1087,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:24:33.599Z"
-    }
+    },
+    "price": 850,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "uteki-toothbrush-cup",
@@ -1097,7 +1139,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:24:47.878Z"
-    }
+    },
+    "price": 220,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "warm-handbag",
@@ -1147,7 +1191,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:24:58.941Z"
-    }
+    },
+    "price": 1450,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "silver-crest-food-grinder",
@@ -1197,7 +1243,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:25:22.979Z"
-    }
+    },
+    "price": 1650,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "prestige-electric-kettle-2l",
@@ -1247,7 +1295,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:25:55.602Z"
-    }
+    },
+    "price": 1380,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "toktalk-pickles-combo",
@@ -1297,7 +1347,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:26:11.774Z"
-    }
+    },
+    "price": 420,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "fresh-refined-sugar",
@@ -1347,7 +1399,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:27:22.943Z"
-    }
+    },
+    "price": 145,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "smart-bag-sealer",
@@ -1397,7 +1451,9 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:28:06.019Z"
-    }
+    },
+    "price": 260,
+    "bulkDiscount": "3-4% discount on higher quantity"
   },
   {
     "id": "khas-dawat-biryani-masala",
@@ -1447,6 +1503,8 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-09T17:28:54.726Z"
-    }
+    },
+    "price": 115,
+    "bulkDiscount": "3-4% discount on higher quantity"
   }
 ]

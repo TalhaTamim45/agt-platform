@@ -37,14 +37,15 @@ export default function QuoteModal({ isOpen, onClose, product, allProducts }) {
 ----------------------------------------
 *Product:* ${currentProduct?.name || 'General Inquiry'} (ID: ${currentProduct?.id || 'N/A'})
 *Category:* ${currentProduct?.category || 'General'}
-*Quantity:* ${quantity} units
+*Indicative Base Price:* ৳${currentProduct?.price || 'N/A'} / unit (3–4% discount applicable on higher quantities)
+*Target Quantity:* ${quantity} units
 *Custom Branding/Logo:* ${customBranding ? 'Yes (Required)' : 'No (Blank stock)'}
 ----------------------------------------
 *Company:* ${companyName || 'Not specified'}
 *Contact Person:* ${contactName || 'Not specified'}
 *Phone/Contact:* ${contactPhone || 'Not specified'}
 ----------------------------------------
-Please provide official pricing and delivery lead time.`;
+Please provide official discounted bulk pricing and delivery lead time.`;
 
     const encoded = encodeURIComponent(text);
     window.open(`https://wa.me/8801787239863?text=${encoded}`, '_blank');
@@ -103,8 +104,14 @@ Please provide official pricing and delivery lead time.`;
               <h4 className="text-sm font-bold text-navy-950 truncate">
                 {currentProduct.name}
               </h4>
-              <p className="text-xs text-gold-700 font-semibold">{currentProduct.category}</p>
-              <p className="text-[11px] text-navy-600">Factory Direct • Custom Branding Ready</p>
+              <div className="flex items-center gap-2 mt-0.5">
+                <span className="text-xs text-gold-700 font-semibold">{currentProduct.category}</span>
+                <span className="text-navy-300">•</span>
+                <span className="text-xs font-extrabold text-navy-950">৳{currentProduct.price?.toLocaleString()} / unit</span>
+              </div>
+              <p className="text-[11px] font-medium text-emerald-700 mt-0.5">
+                3–4% discount applied on higher volume orders
+              </p>
             </div>
           </div>
         )}

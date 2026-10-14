@@ -92,7 +92,7 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
   };
 
   const waInquiryUrl = `https://wa.me/8801787239863?text=${encodeURIComponent(
-    `Hello Abdullah Global Trade, I would like to request a bulk corporate quotation for: ${product.name} (ID: ${product.id}).`
+    `Hello Abdullah Global Trade, I would like to request a bulk corporate quotation for: ${product.name} (ID: ${product.id}, Base Price: ৳${product.price}). Please provide discounted pricing for higher quantities.`
   )}`;
 
   return (
@@ -156,6 +156,19 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
           <h3 className="text-xs sm:text-base font-bold text-navy-950 group-hover:text-gold-700 transition-colors line-clamp-2 min-h-[2rem] sm:min-h-0 leading-snug">
             {product.name}
           </h3>
+
+          {/* Price & Bulk Discount Badge */}
+          <div className="mt-2.5 flex items-baseline justify-between gap-1.5 flex-wrap">
+            <div className="flex items-baseline gap-1">
+              <span className="text-sm sm:text-lg font-extrabold text-navy-950">
+                ৳{product.price?.toLocaleString()}
+              </span>
+              <span className="text-[10px] sm:text-xs text-navy-600/70 font-medium">/ unit</span>
+            </div>
+            <span className="text-[9px] sm:text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-600/25 whitespace-nowrap">
+              3–4% off on bulk
+            </span>
+          </div>
         </div>
       </div>
 
