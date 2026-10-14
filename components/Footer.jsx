@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { MapPin, Phone, Mail, MessageSquare, ArrowUpRight, CreditCard, BarChart3 } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageSquare, ArrowUpRight, CreditCard } from 'lucide-react';
 
-export default function Footer({ onOpenCard, onOpenAnalytics }) {
+export default function Footer({ onOpenCard }) {
   return (
     <footer id="contact" className="relative bg-white border-t border-gold-500/25 pt-16 pb-12 overflow-hidden">
       {/* Ambient background champagne glow */}
@@ -60,17 +60,6 @@ export default function Footer({ onOpenCard, onOpenAnalytics }) {
                   >
                     <CreditCard className="w-3.5 h-3.5" />
                     Digital Business Card
-                  </button>
-                </li>
-              )}
-              {onOpenAnalytics && (
-                <li>
-                  <button
-                    onClick={onOpenAnalytics}
-                    className="hover:text-gold-700 transition-colors flex items-center gap-1.5"
-                  >
-                    <BarChart3 className="w-3.5 h-3.5" />
-                    QR Scan Analytics
                   </button>
                 </li>
               )}

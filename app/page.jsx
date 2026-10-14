@@ -1,13 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import CatalogGrid from '../components/CatalogGrid';
 import Footer from '../components/Footer';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
 import QuoteModal from '../components/QuoteModal';
 import VisitingCard from '../components/VisitingCard';
-import QRAnalytics from '../components/QRAnalytics';
 import ProductDetail from '../components/ProductDetail';
 import { Sparkles } from 'lucide-react';
 
@@ -18,9 +17,24 @@ export default function Home() {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isCardOpen, setIsCardOpen] = useState(false);
-  const [isAnalyticsOpen, setIsAnalyticsOpen] = useState(false);
   const [selectedDetailProduct, setSelectedDetailProduct] = useState(null);
   const [isDetailOpen, setIsDetailOpen] = useState(false);
+
+  // Track Real-World QR Code Scans in Google Analytics 4
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('ref') === 'qr' || urlParams.get('scanned') === '1') {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'qr_scan', {
+            event_category: 'engagement',
+            event_label: 'Physical QR Badge / Standee',
+            value: 1,
+          });
+        }
+      }
+    }
+  }, []);
 
   const handleOpenQuote = (product = null) => {
     setSelectedProduct(product || productsData[0]);
@@ -75,7 +89,6 @@ export default function Home() {
       {/* Footer & Contact */}
       <Footer
         onOpenCard={() => setIsCardOpen(true)}
-        onOpenAnalytics={() => setIsAnalyticsOpen(true)}
       />
 
       {/* Persistent Floating WhatsApp B2B CTA */}
@@ -101,12 +114,6 @@ export default function Home() {
       <VisitingCard
         isOpen={isCardOpen}
         onClose={() => setIsCardOpen(false)}
-      />
-
-      {/* QR Scan Analytics Dashboard */}
-      <QRAnalytics
-        isOpen={isAnalyticsOpen}
-        onClose={() => setIsAnalyticsOpen(false)}
       />
 
     </div>

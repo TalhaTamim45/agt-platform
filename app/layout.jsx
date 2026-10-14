@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import './globals.css';
 
 export const metadata = {
@@ -7,7 +8,7 @@ export const metadata = {
   openGraph: {
     title: 'Abdullah Global Trade (AGT) | Corporate Sourcing & Merchandise',
     description: 'Connecting Business | Building Partnerships | Delivering Growth',
-    url: 'https://agtbd.com',
+    url: 'https://abdullahglobaltrade.netlify.app',
     siteName: 'Abdullah Global Trade',
     locale: 'en_US',
     type: 'website',
@@ -24,6 +25,21 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        {/* Google Analytics 4 (GA4) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-F96XY586KK"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-F96XY586KK', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
       </head>
       <body className="min-h-screen bg-cream-100 text-navy-950 antialiased selection:bg-gold-500 selection:text-white">
         {/* Subtle Warm Luxury Ambient Light */}
