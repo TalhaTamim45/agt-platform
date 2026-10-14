@@ -1,9 +1,12 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
+import os from 'os';
 
-// Private server-side storage location (/tmp is the only writable directory on Vercel Serverless)
-const DATA_DIR = process.env.VERCEL ? '/tmp' : path.join(process.cwd(), 'data');
+// Private server-side storage location (uses writable temp directory in production serverless)
+const DATA_DIR = process.env.NODE_ENV === 'production'
+  ? path.join(os.tmpdir(), 'agt-data')
+  : path.join(process.cwd(), 'data');
 const LOG_FILE = path.join(DATA_DIR, 'qr-scans.json');
 const MAX_LOG_ENTRIES = 2000; // Cap log to prevent disk exhaustion attacks
 
@@ -67,8 +70,8 @@ export async function GET(request) {
     }
   }
 
-  // Safe redirect using origin URL to prevent open redirect vulnerabilities
-  return NextResponse.redirect(new URL('/#catalog?scanned=1', request.url));
+  // Safe redirect with clean query parameters for client-side GA4 recognition
+  return NextResponse.redirect(new URL('/?scanned=1&ref=qr#catalog', request.url));
 }
 
 /**

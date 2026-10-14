@@ -8,6 +8,7 @@ import FloatingWhatsApp from '../components/FloatingWhatsApp';
 import QuoteModal from '../components/QuoteModal';
 import VisitingCard from '../components/VisitingCard';
 import ProductDetail from '../components/ProductDetail';
+import QRAnalytics from '../components/QRAnalytics';
 import { Sparkles } from 'lucide-react';
 
 // Load the 29-product master catalog
@@ -17,14 +18,30 @@ export default function Home() {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isCardOpen, setIsCardOpen] = useState(false);
+  const [isAnalyticsOpen, setIsAnalyticsOpen] = useState(false);
   const [selectedDetailProduct, setSelectedDetailProduct] = useState(null);
   const [isDetailOpen, setIsDetailOpen] = useState(false);
 
-  // Track Real-World QR Code Scans in Google Analytics 4
+  // Track Real-World QR Code Scans in Google Analytics 4 & handle direct links
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.get('ref') === 'qr' || urlParams.get('scanned') === '1') {
+    if (typeof window === 'undefined') return;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const hash = window.location.hash || '';
+
+    // Auto-open analytics if #analytics or ?analytics=1 is present
+    if (urlParams.get('analytics') === '1' || hash === '#analytics') {
+      setIsAnalyticsOpen(true);
+    }
+
+    const isQrScan =
+      urlParams.get('ref') === 'qr' ||
+      urlParams.get('scanned') === '1' ||
+      hash.includes('scanned=1') ||
+      hash.includes('ref=qr');
+
+    if (isQrScan) {
+      const triggerAnalytics = () => {
         if (typeof window.gtag === 'function') {
           window.gtag('event', 'qr_scan', {
             event_category: 'engagement',
@@ -32,7 +49,16 @@ export default function Home() {
             value: 1,
           });
         }
-      }
+      };
+
+      triggerAnalytics();
+      const t1 = setTimeout(triggerAnalytics, 1000);
+      const t2 = setTimeout(triggerAnalytics, 2500);
+
+      return () => {
+        clearTimeout(t1);
+        clearTimeout(t2);
+      };
     }
   }, []);
 
@@ -89,6 +115,7 @@ export default function Home() {
       {/* Footer & Contact */}
       <Footer
         onOpenCard={() => setIsCardOpen(true)}
+        onOpenAnalytics={() => setIsAnalyticsOpen(true)}
       />
 
       {/* Persistent Floating WhatsApp B2B CTA */}
@@ -114,6 +141,12 @@ export default function Home() {
       <VisitingCard
         isOpen={isCardOpen}
         onClose={() => setIsCardOpen(false)}
+      />
+
+      {/* Live QR Analytics Dashboard Modal */}
+      <QRAnalytics
+        isOpen={isAnalyticsOpen}
+        onClose={() => setIsAnalyticsOpen(false)}
       />
 
     </div>

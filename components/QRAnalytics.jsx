@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { BarChart3, Users, Smartphone, TrendingUp, Activity, Clock } from 'lucide-react';
+import { BarChart3, Users, Smartphone, TrendingUp, Activity, Clock, ArrowUpRight } from 'lucide-react';
 
 export default function QRAnalytics({ isOpen, onClose }) {
   const [analytics, setAnalytics] = useState(null);
@@ -151,13 +151,25 @@ export default function QRAnalytics({ isOpen, onClose }) {
           </>
         )}
 
-        {/* Close */}
-        <button
-          onClick={onClose}
-          className="w-full mt-5 py-2.5 rounded-xl border border-cream-300 text-sm font-bold text-navy-800 hover:bg-cream-150 transition-colors"
-        >
-          Close Dashboard
-        </button>
+        {/* Action Buttons */}
+        <div className="mt-6 space-y-2.5">
+          <a
+            href="https://analytics.google.com/analytics/web/#/a412019984p558977649/realtime/overview"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-navy-950 text-white text-xs font-bold hover:bg-navy-900 transition-colors shadow-md"
+          >
+            <span>Open Google Analytics (Live Realtime)</span>
+            <ArrowUpRight className="w-4 h-4 text-gold-400" />
+          </a>
+
+          <button
+            onClick={onClose}
+            className="w-full py-2.5 rounded-xl border border-cream-300 text-xs font-bold text-navy-800 hover:bg-cream-150 transition-colors"
+          >
+            Close Dashboard
+          </button>
+        </div>
       </div>
     </div>
   );
