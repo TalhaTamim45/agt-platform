@@ -5,8 +5,8 @@ import sharp from 'sharp';
 import fs from 'fs/promises';
 import path from 'path';
 
-const TARGET_URL = 'https://abdullahglobaltrade.vercel.app/api/track-scan?ref=qr';
-const DISPLAY_URL = 'abdullahglobaltrade.vercel.app';
+const TARGET_URL = 'https://abdullahglobaltrade.netlify.app/api/track-scan?ref=qr';
+const DISPLAY_URL = 'abdullahglobaltrade.netlify.app';
 
 async function generateQRCodes() {
   console.log('Generating luxury QR Code assets for:', TARGET_URL);
