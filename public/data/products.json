@@ -2,7 +2,7 @@
   {
     "id": "stainless-bottle-300ml",
     "name": "Stainless Bottle 300ml",
-    "category": "Drinkware",
+    "category": "Drinkware & Flasks",
     "format": "webp",
     "image": {
       "url": "/images/products/stainless-bottle-300ml.webp",
@@ -52,7 +52,7 @@
   {
     "id": "smiley-night-light",
     "name": "Smiley Night Light",
-    "category": "Lighting",
+    "category": "Lighting & Torches",
     "format": "webp",
     "image": {
       "url": "/images/products/smiley-night-light.webp",
@@ -102,7 +102,7 @@
   {
     "id": "niyama-electric-kettle",
     "name": "Niyama Electric Kettle",
-    "category": "Appliances",
+    "category": "Electric Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/niyama-electric-kettle.webp",
@@ -152,7 +152,7 @@
   {
     "id": "prestige-vacuum-flask",
     "name": "Prestige Vacuum Flask",
-    "category": "Drinkware",
+    "category": "Drinkware & Flasks",
     "format": "webp",
     "image": {
       "url": "/images/products/prestige-vacuum-flask.webp",
@@ -202,7 +202,7 @@
   {
     "id": "ruilang-flashlight-orange",
     "name": "Ruilang LED Flashlight (Orange)",
-    "category": "Tools & Lighting",
+    "category": "Lighting & Torches",
     "format": "webp",
     "image": {
       "url": "/images/products/ruilang-flashlight-orange.webp",
@@ -252,7 +252,7 @@
   {
     "id": "lsaga-doorbell-white",
     "name": "Lsaga Smart Wireless Doorbell",
-    "category": "Electronics",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/lsaga-doorbell-white.webp",
@@ -352,7 +352,7 @@
   {
     "id": "multifunctional-cleaning-brush",
     "name": "Multifunctional Cleaning Brush",
-    "category": "Home & Tools",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/multifunctional-cleaning-brush.webp",
@@ -402,7 +402,7 @@
   {
     "id": "toktalk-dragon-fruit-jam",
     "name": "Toktalk Dragon Fruit Jam",
-    "category": "Food & Pantry",
+    "category": "Gourmet Food & Pantry",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-dragon-fruit-jam.webp",
@@ -452,7 +452,7 @@
   {
     "id": "khas-dawat-meat-masala",
     "name": "Khas Dawat Meat Masala",
-    "category": "Food & Spices",
+    "category": "Gourmet Food & Pantry",
     "format": "webp",
     "image": {
       "url": "/images/products/khas-dawat-meat-masala.webp",
@@ -502,7 +502,7 @@
   {
     "id": "khas-dawat-chicken-masala",
     "name": "Khas Dawat Chicken Masala",
-    "category": "Food & Spices",
+    "category": "Gourmet Food & Pantry",
     "format": "webp",
     "image": {
       "url": "/images/products/khas-dawat-chicken-masala.webp",
@@ -552,7 +552,7 @@
   {
     "id": "fresh-green-tea",
     "name": "Fresh Premium Green Tea",
-    "category": "Beverages",
+    "category": "Gourmet Food & Pantry",
     "format": "webp",
     "image": {
       "url": "/images/products/fresh-green-tea.webp",
@@ -602,7 +602,7 @@
   {
     "id": "travel-portable-stand",
     "name": "Travel Portable Stand",
-    "category": "Tech Accessories",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/travel-portable-stand.webp",
@@ -652,7 +652,7 @@
   {
     "id": "rechargeable-zoom-flashlight-blue",
     "name": "Rechargeable Zoom LED Flashlight (Blue)",
-    "category": "Tools & Lighting",
+    "category": "Lighting & Torches",
     "format": "webp",
     "image": {
       "url": "/images/products/rechargeable-zoom-flashlight-blue.webp",
@@ -702,7 +702,7 @@
   {
     "id": "solar-wall-lamp",
     "name": "Solar Interaction Wall Lamp",
-    "category": "Lighting",
+    "category": "Lighting & Torches",
     "format": "webp",
     "image": {
       "url": "/images/products/solar-wall-lamp.webp",
@@ -752,7 +752,7 @@
   {
     "id": "seed-paper-calendar",
     "name": "Grow Green 2027 Seed Paper Calendar",
-    "category": "Stationery & Gifts",
+    "category": "Corporate Stationery",
     "format": "webp",
     "image": {
       "url": "/images/products/seed-paper-calendar.webp",
@@ -802,7 +802,7 @@
   {
     "id": "prestige-electric-kettle-1l",
     "name": "Prestige Electric Kettle 1.0L (White)",
-    "category": "Appliances",
+    "category": "Electric Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/prestige-electric-kettle-1l.webp",
@@ -852,7 +852,7 @@
   {
     "id": "high-power-flashlight-pink",
     "name": "High Power Flashlight (Pink)",
-    "category": "Tools & Lighting",
+    "category": "Lighting & Torches",
     "format": "webp",
     "image": {
       "url": "/images/products/high-power-flashlight-pink.webp",
@@ -902,7 +902,7 @@
   {
     "id": "ruilang-flashlight-pink",
     "name": "Ruilang LED Flashlight (Pink)",
-    "category": "Tools & Lighting",
+    "category": "Lighting & Torches",
     "format": "webp",
     "image": {
       "url": "/images/products/ruilang-flashlight-pink.webp",
@@ -952,7 +952,7 @@
   {
     "id": "3in1-vacuum-cleaner",
     "name": "3-in-1 Mini Vacuum Cleaner",
-    "category": "Appliances",
+    "category": "Electric Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/3in1-vacuum-cleaner.webp",
@@ -1002,7 +1002,7 @@
   {
     "id": "lsaga-doorbell-black",
     "name": "LSAGA Wireless Doorbell (Black)",
-    "category": "Electronics",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/lsaga-doorbell-black.webp",
@@ -1052,7 +1052,7 @@
   {
     "id": "uteki-toothbrush-cup",
     "name": "UTEKI Simple Toothbrush Cup Holder",
-    "category": "Home & Living",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/uteki-toothbrush-cup.webp",
@@ -1102,7 +1102,7 @@
   {
     "id": "warm-handbag",
     "name": "AGT Warm Handbag (Graphene Heated)",
-    "category": "Lifestyle & Wellness",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/warm-handbag.webp",
@@ -1152,7 +1152,7 @@
   {
     "id": "silver-crest-food-grinder",
     "name": "Silver Crest Electric Food Grinder",
-    "category": "Appliances",
+    "category": "Electric Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/silver-crest-food-grinder.webp",
@@ -1202,7 +1202,7 @@
   {
     "id": "prestige-electric-kettle-2l",
     "name": "Prestige Electric Kettle 2.0L",
-    "category": "Appliances",
+    "category": "Electric Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/prestige-electric-kettle-2l.webp",
@@ -1252,7 +1252,7 @@
   {
     "id": "toktalk-pickles-combo",
     "name": "Toktalk Gourmet Pickles Combo",
-    "category": "Food & Pantry",
+    "category": "Gourmet Food & Pantry",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-pickles-combo.webp",
@@ -1302,7 +1302,7 @@
   {
     "id": "fresh-refined-sugar",
     "name": "Fresh Refined Sugar 1kg",
-    "category": "Food & Pantry",
+    "category": "Gourmet Food & Pantry",
     "format": "webp",
     "image": {
       "url": "/images/products/fresh-refined-sugar.webp",
@@ -1352,7 +1352,7 @@
   {
     "id": "smart-bag-sealer",
     "name": "Smart Bag Sealer",
-    "category": "Kitchen Gadgets",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/smart-bag-sealer.webp",
@@ -1402,7 +1402,7 @@
   {
     "id": "khas-dawat-biryani-masala",
     "name": "Khas Dawat Biryani Masala",
-    "category": "Food & Spices",
+    "category": "Gourmet Food & Pantry",
     "format": "webp",
     "image": {
       "url": "/images/products/khas-dawat-biryani-masala.webp",

@@ -107,7 +107,7 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
     >
       {/* Top Header: Category & Commercial Tag */}
       <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-2 sm:mb-3">
-        <span className="text-[9px] sm:text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-cream-100 border border-gold-500/30 text-gold-800 truncate max-w-[85px] sm:max-w-none">
+        <span className="text-[9px] sm:text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-cream-100 border border-gold-500/30 text-gold-800 truncate max-w-[135px] sm:max-w-none">
           {product.category}
         </span>
         <span className="text-[9px] sm:text-[10px] text-gold-700 bg-gold-50 px-2 py-0.5 rounded-md border border-gold-500/25 font-bold uppercase tracking-wider shrink-0">
