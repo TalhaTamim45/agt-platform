@@ -106,8 +106,8 @@ export default function CatalogGrid({ products, onSelectQuote, onSelectDetail })
           {/* Subtle Champagne Gold Divider */}
           <div className="h-px bg-gradient-to-r from-transparent via-gold-500/20 to-transparent"></div>
 
-          {/* Row 2: Full-Width Clean Category Filter Rail */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none text-xs scroll-smooth">
+          {/* Row 2: Full-Width Clean Category Filter Rail (No scrollbars, clean wrap on desktop) */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-0.5 no-scrollbar text-xs scroll-smooth md:flex-wrap">
             {categories.map((cat) => {
               const isActive = selectedCategory === cat;
               const count = cat === 'All'
