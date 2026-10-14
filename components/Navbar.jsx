@@ -30,12 +30,6 @@ export default function Navbar({ onOpenQuote }) {
           <a href="#catalog" className="hover:text-gold-600 transition-colors">
             Product Catalog
           </a>
-          <a href="#features" className="hover:text-gold-600 transition-colors">
-            Capabilities
-          </a>
-          <a href="#about" className="hover:text-gold-600 transition-colors">
-            About AGT
-          </a>
           <a href="#contact" className="hover:text-gold-600 transition-colors">
             Contact
           </a>
@@ -84,25 +78,11 @@ export default function Navbar({ onOpenQuote }) {
               Product Catalog
             </a>
             <a
-              href="#features"
-              onClick={() => setMobileMenuOpen(false)}
-              className="hover:text-gold-600 transition-colors"
-            >
-              Capabilities
-            </a>
-            <a
-              href="#about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="hover:text-gold-600 transition-colors"
-            >
-              About AGT
-            </a>
-            <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-gold-600 transition-colors"
             >
-              Contact & Location
+              Contact &amp; Location
             </a>
           </nav>
           <div className="pt-4 border-t border-cream-300 flex flex-col gap-3">

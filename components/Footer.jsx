@@ -29,10 +29,6 @@ export default function Footer({ onOpenCard, onOpenAnalytics }) {
               FROM VISION TO VALUE
             </p>
 
-            <p className="text-navy-700/80 text-xs sm:text-sm leading-relaxed max-w-sm">
-              Empowering corporate gifting, doctor promotional tools, and brand merchandise across Bangladesh with factory-direct sourcing.
-            </p>
-
             <div className="pt-2">
               <p className="text-xs font-bold text-navy-900 italic">
                 &ldquo;Connecting Business | Building Partnerships | Delivering Growth&rdquo;
@@ -49,16 +45,6 @@ export default function Footer({ onOpenCard, onOpenAnalytics }) {
               <li>
                 <a href="#catalog" className="hover:text-gold-700 transition-colors">
                   Product Catalog
-                </a>
-              </li>
-              <li>
-                <a href="#features" className="hover:text-gold-700 transition-colors">
-                  Sourcing & Branding Capabilities
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="hover:text-gold-700 transition-colors">
-                  About Abdullah Global Trade
                 </a>
               </li>
               <li>

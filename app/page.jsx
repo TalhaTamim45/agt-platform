@@ -2,15 +2,14 @@
 
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
 import CatalogGrid from '../components/CatalogGrid';
-import AboutSection from '../components/AboutSection';
 import Footer from '../components/Footer';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
 import QuoteModal from '../components/QuoteModal';
 import VisitingCard from '../components/VisitingCard';
 import QRAnalytics from '../components/QRAnalytics';
 import ProductDetail from '../components/ProductDetail';
+import { Sparkles } from 'lucide-react';
 
 // Load the 29-product master catalog
 import productsData from '../public/data/products.json';
@@ -51,34 +50,18 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-1">
-        {/* Hero Section */}
-        <Hero onOpenQuote={() => handleOpenQuote()} />
-
-        {/* Corporate Sourcing Capabilities Strip */}
-        <section id="features" className="py-8 sm:py-10 border-y border-gold-500/20 bg-white/70 shadow-cream-sm">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div className="space-y-1">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-extrabold gold-gradient-text">Factory Direct</div>
-                <div className="text-xs text-navy-700/80 font-bold">International Sourcing & Wholesale Pricing</div>
-              </div>
-
-              <div className="space-y-1">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-extrabold gold-gradient-text">PMD Tailored</div>
-                <div className="text-xs text-navy-700/80 font-bold">Doctor Gifts & Conference Merchandise</div>
-              </div>
-
-              <div className="space-y-1">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-extrabold gold-gradient-text">Custom Branding</div>
-                <div className="text-xs text-navy-700/80 font-bold">Laser Engraving, UV Print & Packaging</div>
-              </div>
-
-              <div className="space-y-1">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-extrabold gold-gradient-text">Strict Quality QA</div>
-                <div className="text-xs text-navy-700/80 font-bold">Sample Testing & Doorstep Delivery</div>
-              </div>
-            </div>
+        {/* Main Brand Headline */}
+        <section className="pt-10 pb-4 sm:pt-16 sm:pb-6 text-center px-4 max-w-5xl mx-auto">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cream-50 border border-gold-500/35 text-gold-700 text-xs font-bold uppercase tracking-widest shadow-cream-sm mb-4">
+            <Sparkles className="w-3.5 h-3.5 text-gold-600" />
+            <span>FROM VISION TO VALUE</span>
           </div>
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-navy-950 leading-tight">
+            Premium Corporate Sourcing &amp;{' '}
+            <span className="gold-gradient-text block mt-1">
+              Merchandise Catalog
+            </span>
+          </h1>
         </section>
 
         {/* Floating Catalog Showcase Grid */}
@@ -87,9 +70,6 @@ export default function Home() {
           onSelectQuote={(product) => handleOpenQuote(product)}
           onSelectDetail={(product) => handleOpenDetail(product)}
         />
-
-        {/* About & Corporate Mission Section */}
-        <AboutSection />
       </main>
 
       {/* Footer & Contact */}

@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
-import { MessageSquare, ArrowUpRight, CheckCircle2, Eye } from 'lucide-react';
+import { MessageSquare, ArrowUpRight, Eye } from 'lucide-react';
 
 export default function ProductCard({ product, onSelectQuote, onSelectDetail, compact = false }) {
   const cardRef = useRef(null);
@@ -156,11 +156,6 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
           <h3 className="text-xs sm:text-base font-bold text-navy-950 group-hover:text-gold-700 transition-colors line-clamp-2 min-h-[2rem] sm:min-h-0 leading-snug">
             {product.name}
           </h3>
-          <p className="text-[10px] sm:text-xs text-navy-700/80 mt-1 flex items-center gap-1 font-medium">
-            <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-emerald-600 shrink-0" />
-            <span className="truncate">Factory Direct</span>
-            <span className="hidden sm:inline">• Custom Logo Ready</span>
-          </p>
         </div>
       </div>
 

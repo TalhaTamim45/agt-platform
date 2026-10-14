@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import ProductCard from './ProductCard';
-import { Search, Layers, Grid2X2, Rows2 } from 'lucide-react';
+import { Search, Grid2X2, Rows2 } from 'lucide-react';
 
 export default function CatalogGrid({ products, onSelectQuote, onSelectDetail }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -34,22 +34,8 @@ export default function CatalogGrid({ products, onSelectQuote, onSelectDetail })
   }, [products, selectedCategory, searchQuery]);
 
   return (
-    <section id="catalog" className="py-12 sm:py-20 relative">
+    <section id="catalog" className="pb-16 sm:pb-24 pt-2 relative">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-        
-        {/* Section Title */}
-        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-cream-50 border border-gold-500/30 text-gold-800 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2.5 sm:mb-3 shadow-cream-sm">
-            <Layers className="w-3.5 h-3.5 text-gold-600" />
-            <span>Corporate Sourcing Catalog</span>
-          </div>
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-navy-950 tracking-tight">
-            Curated Corporate <span className="gold-gradient-text">Product Showcase</span>
-          </h2>
-          <p className="mt-2.5 sm:mt-3 text-navy-800/80 text-xs sm:text-base font-normal max-w-2xl mx-auto">
-            Browse our ready-to-order selection of corporate gifts, promotional hardware, and medical conference merchandise available for bulk supply with customized branding.
-          </p>
-        </div>
 
         {/* Filter & Search Bar */}
         <div className="bg-white/95 p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-gold-500/25 shadow-cream-md mb-6 sm:mb-10 flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4">
@@ -102,9 +88,6 @@ export default function CatalogGrid({ products, onSelectQuote, onSelectDetail })
             {products.length} Products
           </span>
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="hidden md:inline">
-              Bulk Wholesale Sourcing • Custom Logo Printing Available
-            </span>
             {/* Mobile View Toggle: 2-Column Grid vs 1-Column Single */}
             <div className="sm:hidden flex items-center bg-cream-200/80 p-0.5 rounded-lg border border-cream-300">
               <button
