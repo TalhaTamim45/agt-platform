@@ -1,0 +1,57 @@
+{
+  "id": "stainless-napkin-holder",
+  "name": "Stainless Steel Spoon & Fork Napkin Holder",
+  "category": "Kitchen & Dining",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/stainless-napkin-holder.webp",
+    "width": 791,
+    "height": 622,
+    "aspectRatio": 1.272,
+    "sizeKb": "62.2 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "medium-dense",
+    "floating": {
+      "amplitudeY": 16,
+      "duration": 3.8,
+      "ease": "sine.inOut",
+      "rotationDriftZ": 2,
+      "rotationDriftX": 3
+    },
+    "shadow": {
+      "baseBlur": 24,
+      "spread": -4,
+      "minOpacity": 0.22,
+      "maxOpacity": 0.52,
+      "scaleRange": [
+        0.82,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -20,
+      "scale": 1.06,
+      "tiltSensitivity": 14,
+      "duration": 0.45,
+      "ease": "power2.out"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-18T05:16:29.474Z"
+  },
+  "price": 210,
+  "bulkDiscount": "3-5% discount on higher quantity",
+  "material": "Stainless Steel / Food-grade Plastic",
+  "warranty": "6 months quality guarantee",
+  "origin": "Imported",
+  "availability": "In Stock",
+  "moq": "20 pcs"
+}

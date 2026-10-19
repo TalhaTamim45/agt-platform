@@ -25,6 +25,7 @@ dist/
 /data/
 !/public/data/
 .tmp/
+public/WhatsApp*/
 
 # Large 3D / Binary Cache
 *.glb

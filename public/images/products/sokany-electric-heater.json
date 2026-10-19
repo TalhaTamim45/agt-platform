@@ -1,0 +1,57 @@
+{
+  "id": "sokany-electric-heater",
+  "name": "Sokany Electric Room Heater SK-1655 2000W",
+  "category": "Appliances",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/sokany-electric-heater.webp",
+    "width": 1099,
+    "height": 953,
+    "aspectRatio": 1.153,
+    "sizeKb": "171.2 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "heavy-appliance",
+    "floating": {
+      "amplitudeY": 10,
+      "duration": 4.5,
+      "ease": "sine.inOut",
+      "rotationDriftZ": 1,
+      "rotationDriftX": 1.5
+    },
+    "shadow": {
+      "baseBlur": 26,
+      "spread": -5,
+      "minOpacity": 0.3,
+      "maxOpacity": 0.58,
+      "scaleRange": [
+        0.9,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -14,
+      "scale": 1.03,
+      "tiltSensitivity": 8,
+      "duration": 0.45,
+      "ease": "power3.out"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-18T05:17:13.696Z"
+  },
+  "price": null,
+  "bulkDiscount": "Contact for bulk pricing",
+  "warranty": "1 year manufacturer warranty",
+  "powerSource": "Electric (220V-240V)",
+  "origin": "Imported",
+  "availability": "In Stock",
+  "moq": "20 pcs"
+}

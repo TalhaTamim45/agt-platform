@@ -1,0 +1,57 @@
+{
+  "id": "veggie-slicer-16pcs",
+  "name": "16-in-1 Veggie Slicer / Dicer Set",
+  "category": "Kitchen Gadgets",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/veggie-slicer-16pcs.webp",
+    "width": 421,
+    "height": 1213,
+    "aspectRatio": 0.347,
+    "sizeKb": "101.2 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "medium-dense",
+    "floating": {
+      "amplitudeY": 16,
+      "duration": 3.8,
+      "ease": "sine.inOut",
+      "rotationDriftZ": 2,
+      "rotationDriftX": 3
+    },
+    "shadow": {
+      "baseBlur": 24,
+      "spread": -4,
+      "minOpacity": 0.22,
+      "maxOpacity": 0.52,
+      "scaleRange": [
+        0.82,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -20,
+      "scale": 1.06,
+      "tiltSensitivity": 14,
+      "duration": 0.45,
+      "ease": "power2.out"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-18T05:22:37.749Z"
+  },
+  "price": null,
+  "bulkDiscount": "Contact for bulk pricing",
+  "material": "Stainless Steel / Food-grade Plastic",
+  "warranty": "6 months quality guarantee",
+  "origin": "Imported",
+  "availability": "In Stock",
+  "moq": "20 pcs"
+}

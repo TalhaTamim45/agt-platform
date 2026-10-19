@@ -1,0 +1,56 @@
+{
+  "id": "baby-nail-trimmer",
+  "name": "Baby Electric Nail Trimmer (6 Heads, LED)",
+  "category": "Baby & Kids",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/baby-nail-trimmer.webp",
+    "width": 601,
+    "height": 1019,
+    "aspectRatio": 0.59,
+    "sizeKb": "55.7 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "light-buoyant",
+    "floating": {
+      "amplitudeY": 22,
+      "duration": 4.2,
+      "ease": "power1.inOut",
+      "rotationDriftZ": 3.5,
+      "rotationDriftX": 4.5
+    },
+    "shadow": {
+      "baseBlur": 30,
+      "spread": -5,
+      "minOpacity": 0.16,
+      "maxOpacity": 0.4,
+      "scaleRange": [
+        0.76,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -26,
+      "scale": 1.07,
+      "tiltSensitivity": 16,
+      "duration": 0.48,
+      "ease": "elastic.out(1, 0.75)"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-18T05:20:37.270Z"
+  },
+  "price": null,
+  "bulkDiscount": "Contact for bulk pricing",
+  "warranty": "3-6 months quality guarantee",
+  "origin": "Imported",
+  "availability": "In Stock",
+  "moq": "20 pcs"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "gacotouch-apricot-scrub",
+  "name": "Gacotouch Apricot Facial Scrub 200g",
+  "category": "Personal Care",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/gacotouch-apricot-scrub.webp",
+    "width": 442,
+    "height": 1111,
+    "aspectRatio": 0.398,
+    "sizeKb": "63.0 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "light-buoyant",
+    "floating": {
+      "amplitudeY": 22,
+      "duration": 4.2,
+      "ease": "power1.inOut",
+      "rotationDriftZ": 3.5,
+      "rotationDriftX": 4.5
+    },
+    "shadow": {
+      "baseBlur": 30,
+      "spread": -5,
+      "minOpacity": 0.16,
+      "maxOpacity": 0.4,
+      "scaleRange": [
+        0.76,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -26,
+      "scale": 1.07,
+      "tiltSensitivity": 16,
+      "duration": 0.48,
+      "ease": "elastic.out(1, 0.75)"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-18T05:10:48.851Z"
+  },
+  "price": null,
+  "bulkDiscount": "Contact for bulk pricing",
+  "skinType": "All skin types",
+  "certification": "Dermatologically tested",
+  "origin": "Imported",
+  "availability": "In Stock",
+  "moq": "20 pcs"
+}

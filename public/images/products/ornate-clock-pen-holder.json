@@ -1,0 +1,56 @@
+{
+  "id": "ornate-clock-pen-holder",
+  "name": "Ornate Black & Gold Clock with Pen Holder",
+  "category": "Corporate Gifts",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/ornate-clock-pen-holder.webp",
+    "width": 1025,
+    "height": 681,
+    "aspectRatio": 1.505,
+    "sizeKb": "102.9 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "decorative-elegant",
+    "floating": {
+      "amplitudeY": 14,
+      "duration": 4,
+      "ease": "sine.inOut",
+      "rotationDriftZ": 2,
+      "rotationDriftX": 2.5
+    },
+    "shadow": {
+      "baseBlur": 22,
+      "spread": -4,
+      "minOpacity": 0.24,
+      "maxOpacity": 0.5,
+      "scaleRange": [
+        0.85,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -18,
+      "scale": 1.05,
+      "tiltSensitivity": 12,
+      "duration": 0.44,
+      "ease": "power2.out"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-18T05:19:44.013Z"
+  },
+  "price": null,
+  "bulkDiscount": "Contact for bulk pricing",
+  "warranty": "3-6 months quality guarantee",
+  "origin": "Imported",
+  "availability": "In Stock",
+  "moq": "20 pcs"
+}

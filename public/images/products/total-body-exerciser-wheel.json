@@ -1,0 +1,57 @@
+{
+  "id": "total-body-exerciser-wheel",
+  "name": "Total Body Exerciser AB Wheel",
+  "category": "Fitness & Sports",
+  "format": "webp",
+  "image": {
+    "url": "/images/products/total-body-exerciser-wheel.webp",
+    "width": 738,
+    "height": 913,
+    "aspectRatio": 0.808,
+    "sizeKb": "111.7 KB",
+    "hasAlpha": true
+  },
+  "animation": {
+    "engine": "GSAP",
+    "zeroGravity": true,
+    "profile": "sports-bouncy",
+    "floating": {
+      "amplitudeY": 20,
+      "duration": 3.4,
+      "ease": "sine.inOut",
+      "rotationDriftZ": 3,
+      "rotationDriftX": 4
+    },
+    "shadow": {
+      "baseBlur": 28,
+      "spread": -5,
+      "minOpacity": 0.18,
+      "maxOpacity": 0.45,
+      "scaleRange": [
+        0.78,
+        1
+      ]
+    },
+    "interaction": {
+      "liftY": -24,
+      "scale": 1.08,
+      "tiltSensitivity": 16,
+      "duration": 0.4,
+      "ease": "back.out(1.5)"
+    },
+    "cssPerspective": "1000px",
+    "transformOrigin": "center center"
+  },
+  "meta": {
+    "strippedWith": "BRIA AI RMBG-1.4",
+    "optimizedWith": "sharp libvips",
+    "createdAt": "2026-10-18T05:09:44.979Z"
+  },
+  "price": 950,
+  "bulkDiscount": "3-5% discount on higher quantity",
+  "material": "Premium quality materials",
+  "warranty": "3 months quality guarantee",
+  "origin": "Imported",
+  "availability": "In Stock",
+  "moq": "20 pcs"
+}
