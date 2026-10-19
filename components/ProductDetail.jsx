@@ -51,7 +51,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
   if (!isOpen || !product) return null;
 
   const waInquiryUrl = `https://wa.me/8801787239863?text=${encodeURIComponent(
-    `Hello Abdullah Global Trade, I'm interested in bulk ordering: ${product.name} (ID: ${product.id}, Base: ৳${product.price}). Please share discounted pricing for higher quantities.`
+    `Hello Abdullah Global Trade, I'm interested in bulk ordering: [${product.serial || product.id}] ${product.name} (Base: ৳${product.price}). Please share discounted pricing for higher quantities.`
   )}`;
 
   // Generate professional features based on category
@@ -135,12 +135,19 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
         <div className="px-5 sm:px-6 pb-6">
           {/* Name & ID */}
           <div className="pt-4 pb-3 border-b border-cream-200">
+            <div className="flex items-center gap-2 mb-1.5 flex-wrap">
+              {product.serial && (
+                <span className="text-[11px] font-mono font-bold px-2.5 py-0.5 rounded-md bg-navy-950 text-gold-400 border border-gold-500/30 tracking-wider shadow-2xs">
+                  {product.serial}
+                </span>
+              )}
+              <p className="text-xs text-navy-600/60 font-medium uppercase tracking-wider">
+                SKU: {product.id}
+              </p>
+            </div>
             <h2 className="text-xl sm:text-2xl font-extrabold text-navy-950 leading-tight">
               {product.name}
             </h2>
-            <p className="text-xs text-navy-600/60 font-medium mt-1 uppercase tracking-wider">
-              SKU: {product.id}
-            </p>
           </div>
 
           {/* Indicative Base Price & Bulk Discount Box */}

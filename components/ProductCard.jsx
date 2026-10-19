@@ -98,7 +98,7 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
   };
 
   const waInquiryUrl = `https://wa.me/8801787239863?text=${encodeURIComponent(
-    `Hello Abdullah Global Trade, I would like to request a bulk corporate quotation for: ${product.name} (ID: ${product.id}, Base Price: ৳${product.price}). Please provide discounted pricing for higher quantities.`
+    `Hello Abdullah Global Trade, I would like to request a bulk corporate quotation for: [${product.serial || product.id}] ${product.name} (Base Price: ৳${product.price}). Please provide discounted pricing for higher quantities.`
   )}`;
 
   return (
@@ -111,11 +111,18 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
         compact ? 'p-3 sm:p-5' : 'p-3.5 sm:p-5'
       } border border-gold-500/25 shadow-cream-sm hover:shadow-cream-xl hover:border-gold-500/60 transition-all duration-300 cursor-pointer`}
     >
-      {/* Top Header: Category & Commercial Tag */}
+      {/* Top Header: Serial, Category & Commercial Tag */}
       <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-2 sm:mb-3">
-        <span className="text-[9px] sm:text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-cream-100 border border-gold-500/30 text-gold-800 truncate max-w-[135px] sm:max-w-none">
-          {product.category}
-        </span>
+        <div className="flex items-center gap-1.5 min-w-0">
+          {product.serial && (
+            <span className="text-[9px] sm:text-[11px] font-mono font-bold px-2 py-0.5 rounded bg-navy-950 text-gold-400 border border-gold-500/30 tracking-wider shrink-0 shadow-2xs">
+              {product.serial}
+            </span>
+          )}
+          <span className="text-[9px] sm:text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-cream-100 border border-gold-500/30 text-gold-800 truncate max-w-[105px] sm:max-w-none">
+            {product.category}
+          </span>
+        </div>
         <span className="text-[9px] sm:text-[10px] text-gold-700 bg-gold-50 px-2 py-0.5 rounded-md border border-gold-500/25 font-bold uppercase tracking-wider shrink-0">
           Bulk Ready
         </span>

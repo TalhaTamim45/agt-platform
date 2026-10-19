@@ -35,7 +35,7 @@ export default function QuoteModal({ isOpen, onClose, product, allProducts }) {
     e.preventDefault();
     const text = `*B2B Corporate Quotation Request - AGT*
 ----------------------------------------
-*Product:* ${currentProduct?.name || 'General Inquiry'} (ID: ${currentProduct?.id || 'N/A'})
+*Product:* [${currentProduct?.serial || currentProduct?.id || 'N/A'}] ${currentProduct?.name || 'General Inquiry'}
 *Category:* ${currentProduct?.category || 'General'}
 *Indicative Base Price:* ৳${currentProduct?.price || 'N/A'} / unit (3–4% discount applicable on higher quantities)
 *Target Quantity:* ${quantity} units
@@ -52,8 +52,8 @@ Please provide official discounted bulk pricing and delivery lead time.`;
   };
 
   const handleEmailSubmit = () => {
-    const subject = encodeURIComponent(`Quotation Request: ${currentProduct?.name || 'Bulk Inquiry'} - ${companyName}`);
-    const body = encodeURIComponent(`Hello Abdullah Global Trade Procurement Team,\n\nWe would like to request an official corporate price quotation for the following:\n\nProduct: ${currentProduct?.name}\nEstimated Quantity: ${quantity} units\nCustom Branding: ${customBranding ? 'Yes' : 'No'}\nCompany: ${companyName}\nContact Person: ${contactName}\nPhone: ${contactPhone}\n\nPlease share availability and wholesale quotation.\n\nThank you.`);
+    const subject = encodeURIComponent(`Quotation Request: [${currentProduct?.serial || currentProduct?.id}] ${currentProduct?.name || 'Bulk Inquiry'} - ${companyName}`);
+    const body = encodeURIComponent(`Hello Abdullah Global Trade Procurement Team,\n\nWe would like to request an official corporate price quotation for the following:\n\nProduct: [${currentProduct?.serial || currentProduct?.id}] ${currentProduct?.name}\nEstimated Quantity: ${quantity} units\nCustom Branding: ${customBranding ? 'Yes' : 'No'}\nCompany: ${companyName}\nContact Person: ${contactName}\nPhone: ${contactPhone}\n\nPlease share availability and wholesale quotation.\n\nThank you.`);
     window.location.href = `mailto:agtbd763@gmail.com?subject=${subject}&body=${body}`;
   };
 

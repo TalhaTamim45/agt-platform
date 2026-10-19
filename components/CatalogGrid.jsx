@@ -27,7 +27,8 @@ export default function CatalogGrid({ products, onSelectQuote, onSelectDetail })
         !q ||
         p.name.toLowerCase().includes(q) ||
         p.category.toLowerCase().includes(q) ||
-        p.id.toLowerCase().includes(q);
+        p.id.toLowerCase().includes(q) ||
+        (p.serial && p.serial.toLowerCase().includes(q));
 
       return matchCat && matchSearch;
     });
@@ -48,7 +49,7 @@ export default function CatalogGrid({ products, onSelectQuote, onSelectDetail })
               <Search className="w-4 h-4 text-gold-600 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" />
               <input
                 type="text"
-                placeholder="Search products by name, category, or specifications..."
+                placeholder="Search products by code (e.g. AGT-01), name, or category..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full bg-cream-50/70 border border-gold-500/20 rounded-xl pl-11 pr-10 py-2.5 sm:py-3 text-xs sm:text-sm text-navy-950 placeholder:text-navy-400 focus:outline-none focus:ring-2 focus:ring-gold-500/20 focus:border-gold-500 focus:bg-white transition-all"

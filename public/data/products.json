@@ -49,7 +49,8 @@
       "createdAt": "2026-10-09T16:36:05.941Z"
     },
     "price": 380,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-01"
   },
   {
     "id": "smiley-night-light",
@@ -101,7 +102,8 @@
       "createdAt": "2026-10-09T16:43:32.186Z"
     },
     "price": 290,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-02"
   },
   {
     "id": "niyama-electric-kettle",
@@ -153,7 +155,8 @@
       "createdAt": "2026-10-09T16:44:05.849Z"
     },
     "price": 1250,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-03"
   },
   {
     "id": "prestige-vacuum-flask",
@@ -205,7 +208,8 @@
       "createdAt": "2026-10-09T16:44:44.306Z"
     },
     "price": 650,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-04"
   },
   {
     "id": "ruilang-flashlight-orange",
@@ -257,7 +261,8 @@
       "createdAt": "2026-10-09T16:53:37.756Z"
     },
     "price": 320,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-05"
   },
   {
     "id": "lsaga-doorbell-white",
@@ -309,7 +314,8 @@
       "createdAt": "2026-10-09T16:53:56.222Z"
     },
     "price": 850,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-06"
   },
   {
     "id": "bulb-humidifier",
@@ -361,7 +367,8 @@
       "createdAt": "2026-10-09T16:54:10.790Z"
     },
     "price": 450,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-07"
   },
   {
     "id": "multifunctional-cleaning-brush",
@@ -413,7 +420,8 @@
       "createdAt": "2026-10-09T16:54:22.895Z"
     },
     "price": 180,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-08"
   },
   {
     "id": "toktalk-dragon-fruit-jam",
@@ -465,7 +473,8 @@
       "createdAt": "2026-10-09T17:07:50.491Z"
     },
     "price": 320,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-09"
   },
   {
     "id": "khas-dawat-meat-masala",
@@ -517,7 +526,8 @@
       "createdAt": "2026-10-09T17:08:07.580Z"
     },
     "price": 110,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-10"
   },
   {
     "id": "khas-dawat-chicken-masala",
@@ -569,7 +579,8 @@
       "createdAt": "2026-10-09T17:08:19.468Z"
     },
     "price": 110,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-11"
   },
   {
     "id": "fresh-green-tea",
@@ -621,7 +632,8 @@
       "createdAt": "2026-10-09T17:08:34.285Z"
     },
     "price": 190,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-12"
   },
   {
     "id": "travel-portable-stand",
@@ -673,7 +685,8 @@
       "createdAt": "2026-10-09T17:19:15.375Z"
     },
     "price": 240,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-13"
   },
   {
     "id": "rechargeable-zoom-flashlight-blue",
@@ -725,7 +738,8 @@
       "createdAt": "2026-10-09T17:19:46.871Z"
     },
     "price": 380,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-14"
   },
   {
     "id": "solar-wall-lamp",
@@ -777,7 +791,8 @@
       "createdAt": "2026-10-09T17:20:33.188Z"
     },
     "price": 480,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-15"
   },
   {
     "id": "seed-paper-calendar",
@@ -829,7 +844,8 @@
       "createdAt": "2026-10-09T17:21:09.820Z"
     },
     "price": 260,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-16"
   },
   {
     "id": "prestige-electric-kettle-1l",
@@ -881,7 +897,8 @@
       "createdAt": "2026-10-09T17:22:18.212Z"
     },
     "price": 1150,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-17"
   },
   {
     "id": "high-power-flashlight-pink",
@@ -933,7 +950,8 @@
       "createdAt": "2026-10-09T17:22:50.298Z"
     },
     "price": 350,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-18"
   },
   {
     "id": "ruilang-flashlight-pink",
@@ -985,7 +1003,8 @@
       "createdAt": "2026-10-09T17:23:08.424Z"
     },
     "price": 320,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-19"
   },
   {
     "id": "3in1-vacuum-cleaner",
@@ -1037,7 +1056,8 @@
       "createdAt": "2026-10-09T17:23:36.299Z"
     },
     "price": 950,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-20"
   },
   {
     "id": "lsaga-doorbell-black",
@@ -1089,7 +1109,8 @@
       "createdAt": "2026-10-09T17:24:33.599Z"
     },
     "price": 850,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-21"
   },
   {
     "id": "uteki-toothbrush-cup",
@@ -1141,7 +1162,8 @@
       "createdAt": "2026-10-09T17:24:47.878Z"
     },
     "price": 220,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-22"
   },
   {
     "id": "warm-handbag",
@@ -1193,7 +1215,8 @@
       "createdAt": "2026-10-09T17:24:58.941Z"
     },
     "price": 1450,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-23"
   },
   {
     "id": "silver-crest-food-grinder",
@@ -1245,7 +1268,8 @@
       "createdAt": "2026-10-09T17:25:22.979Z"
     },
     "price": 1650,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-24"
   },
   {
     "id": "prestige-electric-kettle-2l",
@@ -1297,7 +1321,8 @@
       "createdAt": "2026-10-09T17:25:55.602Z"
     },
     "price": 1380,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-25"
   },
   {
     "id": "toktalk-pickles-combo",
@@ -1349,7 +1374,8 @@
       "createdAt": "2026-10-09T17:26:11.774Z"
     },
     "price": 420,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-26"
   },
   {
     "id": "fresh-refined-sugar",
@@ -1401,7 +1427,8 @@
       "createdAt": "2026-10-09T17:27:22.943Z"
     },
     "price": 145,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-27"
   },
   {
     "id": "smart-bag-sealer",
@@ -1453,7 +1480,8 @@
       "createdAt": "2026-10-09T17:28:06.019Z"
     },
     "price": 260,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-28"
   },
   {
     "id": "khas-dawat-biryani-masala",
@@ -1505,7 +1533,8 @@
       "createdAt": "2026-10-09T17:28:54.726Z"
     },
     "price": 115,
-    "bulkDiscount": "3-4% discount on higher quantity"
+    "bulkDiscount": "3-4% discount on higher quantity",
+    "serial": "AGT-29"
   },
   {
     "id": "total-body-exerciser-wheel",
@@ -1562,7 +1591,8 @@
     "warranty": "3 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-30"
   },
   {
     "id": "laliga-air-freshener-lemon",
@@ -1618,7 +1648,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-31"
   },
   {
     "id": "gacotouch-neem-soap",
@@ -1675,7 +1706,8 @@
     "certification": "Dermatologically tested",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-32"
   },
   {
     "id": "gacotouch-flower-soap",
@@ -1732,7 +1764,8 @@
     "certification": "Dermatologically tested",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-33"
   },
   {
     "id": "yonex-court-fita",
@@ -1790,7 +1823,8 @@
     "origin": "Imported",
     "availability": "In Stock",
     "moq": "20 pcs",
-    "zoom": 1.22
+    "zoom": 1.22,
+    "serial": "AGT-34"
   },
   {
     "id": "gacotouch-apricot-scrub",
@@ -1848,7 +1882,8 @@
     "origin": "Imported",
     "availability": "In Stock",
     "moq": "20 pcs",
-    "zoom": 1.28
+    "zoom": 1.28,
+    "serial": "AGT-35"
   },
   {
     "id": "banglaixing-led-night-light",
@@ -1905,7 +1940,8 @@
     "origin": "Imported",
     "availability": "In Stock",
     "moq": "20 pcs",
-    "zoom": 1.25
+    "zoom": 1.25,
+    "serial": "AGT-36"
   },
   {
     "id": "seylon-green-tea",
@@ -1963,7 +1999,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-37"
   },
   {
     "id": "sti-sphygmomanometer",
@@ -2021,7 +2058,8 @@
     "material": "Medical-grade materials",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-38"
   },
   {
     "id": "doctor-care-glucose-meter",
@@ -2079,7 +2117,8 @@
     "material": "Medical-grade materials",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-39"
   },
   {
     "id": "marble-serving-tray-gold",
@@ -2136,7 +2175,8 @@
     "origin": "Imported",
     "availability": "In Stock",
     "moq": "20 pcs",
-    "zoom": 1.22
+    "zoom": 1.22,
+    "serial": "AGT-40"
   },
   {
     "id": "finale-tulsi-tea",
@@ -2194,7 +2234,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-41"
   },
   {
     "id": "honeygo-honey-sticks",
@@ -2252,7 +2293,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "serial": "AGT-42"
   },
   {
     "id": "honeygo-mustard-honey",
@@ -2310,7 +2352,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "serial": "AGT-43"
   },
   {
     "id": "akhlaq-tamarind-sauce",
@@ -2369,7 +2412,8 @@
     "origin": "Imported",
     "availability": "In Stock",
     "moq": "50 pcs",
-    "zoom": 1.35
+    "zoom": 1.35,
+    "serial": "AGT-44"
   },
   {
     "id": "toktalk-beef-pickle",
@@ -2427,7 +2471,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "serial": "AGT-45"
   },
   {
     "id": "toktalk-amra-pickle",
@@ -2485,7 +2530,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "serial": "AGT-46"
   },
   {
     "id": "toktalk-garlic-pickle",
@@ -2543,7 +2589,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "serial": "AGT-47"
   },
   {
     "id": "toktalk-naga-mayo",
@@ -2601,7 +2648,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "serial": "AGT-48"
   },
   {
     "id": "toktalk-tamarind-pickle",
@@ -2659,7 +2707,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "serial": "AGT-49"
   },
   {
     "id": "toktalk-garlic-mayo",
@@ -2717,7 +2766,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "serial": "AGT-50"
   },
   {
     "id": "wooden-tissue-box",
@@ -2773,7 +2823,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-51"
   },
   {
     "id": "toktalk-tamarind-pickle-100g",
@@ -2831,7 +2882,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "serial": "AGT-52"
   },
   {
     "id": "dental-clock-pen-holder",
@@ -2887,7 +2939,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-53"
   },
   {
     "id": "stainless-napkin-holder",
@@ -2944,7 +2997,8 @@
     "warranty": "6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-54"
   },
   {
     "id": "mini-damaru-drum",
@@ -3000,7 +3054,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-55"
   },
   {
     "id": "sokany-electric-heater",
@@ -3057,7 +3112,8 @@
     "powerSource": "Electric (220V-240V)",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-56"
   },
   {
     "id": "samurai-mosquito-swatter",
@@ -3114,7 +3170,8 @@
     "origin": "Imported",
     "availability": "In Stock",
     "moq": "20 pcs",
-    "zoom": 1.28
+    "zoom": 1.28,
+    "serial": "AGT-57"
   },
   {
     "id": "procare-hot-cold-pack",
@@ -3172,7 +3229,8 @@
     "material": "Medical-grade materials",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-58"
   },
   {
     "id": "clock-shape-mobile-holder",
@@ -3229,7 +3287,8 @@
     "origin": "Imported",
     "availability": "In Stock",
     "moq": "20 pcs",
-    "zoom": 1.2
+    "zoom": 1.2,
+    "serial": "AGT-59"
   },
   {
     "id": "smart-warm-palace-belt",
@@ -3286,7 +3345,8 @@
     "origin": "Imported",
     "availability": "In Stock",
     "moq": "20 pcs",
-    "zoom": 1.22
+    "zoom": 1.22,
+    "serial": "AGT-60"
   },
   {
     "id": "sensa-light-hair-remover",
@@ -3343,7 +3403,8 @@
     "certification": "Dermatologically tested",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-61"
   },
   {
     "id": "mesh-nebulizer",
@@ -3401,7 +3462,8 @@
     "material": "Medical-grade materials",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-62"
   },
   {
     "id": "doctor-care-bp-kit",
@@ -3459,7 +3521,8 @@
     "material": "Medical-grade materials",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-63"
   },
   {
     "id": "ornate-clock-pen-holder",
@@ -3515,7 +3578,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-64"
   },
   {
     "id": "sti-oxygen-flow-meter",
@@ -3573,7 +3637,8 @@
     "material": "Medical-grade materials",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-65"
   },
   {
     "id": "aswei-ice-cube-maker",
@@ -3630,7 +3695,8 @@
     "warranty": "6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-66"
   },
   {
     "id": "baby-nail-trimmer",
@@ -3686,7 +3752,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-67"
   },
   {
     "id": "dried-lemon-slices",
@@ -3744,7 +3811,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "serial": "AGT-68"
   },
   {
     "id": "decoupage-donut-vase",
@@ -3800,7 +3868,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-69"
   },
   {
     "id": "3-stage-knife-sharpener",
@@ -3857,7 +3926,8 @@
     "warranty": "6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-70"
   },
   {
     "id": "yonex-shuttlecock-m10p",
@@ -3914,7 +3984,8 @@
     "warranty": "3 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-71"
   },
   {
     "id": "potato-chipper",
@@ -3971,7 +4042,8 @@
     "warranty": "6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-72"
   },
   {
     "id": "protect-fresh-box-5pcs",
@@ -4028,7 +4100,8 @@
     "warranty": "6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-73"
   },
   {
     "id": "veggie-slicer-16pcs",
@@ -4085,7 +4158,8 @@
     "warranty": "6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-74"
   },
   {
     "id": "arctic-air-ultra-cooler",
@@ -4142,7 +4216,8 @@
     "powerSource": "Electric (220V-240V)",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-75"
   },
   {
     "id": "zepter-knife-set-6pcs",
@@ -4199,7 +4274,8 @@
     "warranty": "6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-76"
   },
   {
     "id": "stainless-steel-lunch-box",
@@ -4256,7 +4332,8 @@
     "warranty": "6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-77"
   },
   {
     "id": "electric-panci-cooker",
@@ -4313,6 +4390,7 @@
     "powerSource": "Electric (220V-240V)",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "serial": "AGT-78"
   }
 ]
