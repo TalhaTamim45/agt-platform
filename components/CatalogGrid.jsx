@@ -149,10 +149,11 @@ export default function CatalogGrid({ products, onSelectQuote, onSelectDetail })
               mobileCols === 1 ? 'grid-cols-1 gap-4' : 'grid-cols-2 gap-3'
             } sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-6`}
           >
-            {filteredProducts.map((product) => (
+            {filteredProducts.map((product, idx) => (
               <ProductCard
                 key={product.id}
                 product={product}
+                priority={idx < 4}
                 onSelectQuote={onSelectQuote}
                 onSelectDetail={onSelectDetail}
                 compact={mobileCols === 2}

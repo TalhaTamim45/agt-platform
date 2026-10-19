@@ -5,7 +5,7 @@ import Image from 'next/image';
 import gsap from 'gsap';
 import { MessageSquare, ArrowUpRight, Eye } from 'lucide-react';
 
-export default function ProductCard({ product, onSelectQuote, onSelectDetail, compact = false }) {
+export default function ProductCard({ product, onSelectQuote, onSelectDetail, compact = false, priority = false }) {
   const cardRef = useRef(null);
   const imageRef = useRef(null);
   const shadowRef = useRef(null);
@@ -152,7 +152,8 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
             width={product.image.width}
             height={product.image.height}
             className="max-h-full max-w-full object-contain filter drop-shadow-[0_8px_16px_rgba(12,31,59,0.25)] sm:drop-shadow-[0_10px_20px_rgba(12,31,59,0.3)] select-none"
-            loading="lazy"
+            priority={priority}
+            loading={priority ? undefined : 'lazy'}
           />
         </div>
 

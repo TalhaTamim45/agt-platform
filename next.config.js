@@ -2,11 +2,21 @@
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false, // Disables X-Powered-By header to prevent technology disclosure
+  compress: true, // Enable gzip & brotli compression for faster page delivery
   images: {
     unoptimized: true,
   },
   async headers() {
     return [
+      {
+        source: '/images/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
       {
         source: '/:path*',
         headers: [
