@@ -1741,10 +1741,10 @@
     "format": "webp",
     "image": {
       "url": "/images/products/yonex-court-fita.webp",
-      "width": 937,
-      "height": 1136,
-      "aspectRatio": 0.825,
-      "sizeKb": "98.2 KB",
+      "width": 800,
+      "height": 1035,
+      "aspectRatio": 0.773,
+      "sizeKb": "142.2 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -1789,7 +1789,8 @@
     "warranty": "3 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "zoom": 1.22
   },
   {
     "id": "gacotouch-apricot-scrub",
@@ -1801,7 +1802,7 @@
       "width": 442,
       "height": 1111,
       "aspectRatio": 0.398,
-      "sizeKb": "63.0 KB",
+      "sizeKb": "82.8 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -1846,7 +1847,8 @@
     "certification": "Dermatologically tested",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "zoom": 1.28
   },
   {
     "id": "banglaixing-led-night-light",
@@ -1858,7 +1860,7 @@
       "width": 437,
       "height": 1092,
       "aspectRatio": 0.4,
-      "sizeKb": "77.9 KB",
+      "sizeKb": "104.1 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -1902,7 +1904,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "zoom": 1.25
   },
   {
     "id": "seylon-green-tea",
@@ -2088,7 +2091,7 @@
       "width": 657,
       "height": 1097,
       "aspectRatio": 0.599,
-      "sizeKb": "127.6 KB",
+      "sizeKb": "175.4 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -2132,7 +2135,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "zoom": 1.22
   },
   {
     "id": "finale-tulsi-tea",
@@ -2318,7 +2322,7 @@
       "width": 326,
       "height": 1246,
       "aspectRatio": 0.262,
-      "sizeKb": "56.4 KB",
+      "sizeKb": "77.4 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -2364,7 +2368,8 @@
     "certification": "BSTI Approved",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "50 pcs"
+    "moq": "50 pcs",
+    "zoom": 1.35
   },
   {
     "id": "toktalk-beef-pickle",
@@ -3064,7 +3069,7 @@
       "width": 459,
       "height": 1118,
       "aspectRatio": 0.411,
-      "sizeKb": "85.6 KB",
+      "sizeKb": "112.4 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -3108,7 +3113,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "zoom": 1.28
   },
   {
     "id": "procare-hot-cold-pack",
@@ -3175,10 +3181,10 @@
     "format": "webp",
     "image": {
       "url": "/images/products/clock-shape-mobile-holder.webp",
-      "width": 885,
-      "height": 856,
-      "aspectRatio": 1.034,
-      "sizeKb": "109.1 KB",
+      "width": 729,
+      "height": 686,
+      "aspectRatio": 1.063,
+      "sizeKb": "152.2 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -3222,7 +3228,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "zoom": 1.2
   },
   {
     "id": "smart-warm-palace-belt",
@@ -3234,7 +3241,7 @@
       "width": 764,
       "height": 1054,
       "aspectRatio": 0.725,
-      "sizeKb": "110.9 KB",
+      "sizeKb": "158.8 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -3278,7 +3285,8 @@
     "warranty": "3-6 months quality guarantee",
     "origin": "Imported",
     "availability": "In Stock",
-    "moq": "20 pcs"
+    "moq": "20 pcs",
+    "zoom": 1.22
   },
   {
     "id": "sensa-light-hair-remover",

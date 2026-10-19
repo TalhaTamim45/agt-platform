@@ -31,6 +31,10 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
     // Stagger phase slightly based on product ID character code
     const charSum = product.id.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
     const delay = (charSum % 10) * 0.15;
+    const baseScale = product.zoom || 1.0;
+
+    // Set initial base scale
+    gsap.set(imageRef.current, { scale: baseScale });
 
     // Continuous Zero-Gravity Floating Loop
     const floatTween = gsap.to(imageRef.current, {
@@ -46,7 +50,7 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
 
     // Dynamic Synchronized Ground Shadow Loop (diffuse warm navy/charcoal)
     const shadowTween = gsap.to(shadowRef.current, {
-      scale: shadow.scaleRange[0],
+      scale: shadow.scaleRange[0] * (product.zoom ? Math.min(product.zoom, 1.15) : 1.0),
       opacity: shadow.minOpacity + 0.1,
       filter: `blur(${shadow.baseBlur * 1.2}px)`,
       duration: floating.duration,
@@ -70,11 +74,12 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
     const y = e.clientY - rect.top - rect.height / 2;
 
     const sensitivity = product?.animation?.interaction?.tiltSensitivity || 14;
+    const baseScale = product.zoom || 1.0;
 
     gsap.to(imageRef.current, {
       rotationY: (x / rect.width) * sensitivity,
       rotationX: (-y / rect.height) * sensitivity,
-      scale: 1.05,
+      scale: baseScale * 1.06,
       duration: 0.3,
       ease: 'power2.out',
     });
@@ -82,10 +87,11 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
 
   const handleMouseLeave = () => {
     if (!imageRef.current) return;
+    const baseScale = product.zoom || 1.0;
     gsap.to(imageRef.current, {
       rotationY: 0,
       rotationX: 0,
-      scale: 1.0,
+      scale: baseScale,
       duration: 0.5,
       ease: 'power2.out',
     });

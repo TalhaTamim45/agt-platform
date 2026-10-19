@@ -32,6 +32,9 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
       rotationDriftZ: 2.0, rotationDriftX: 3.0,
     };
 
+    const baseScale = product.zoom || 1.0;
+    gsap.set(imageRef.current, { scale: baseScale });
+
     const tween = gsap.to(imageRef.current, {
       y: -floating.amplitudeY * 1.2,
       rotationZ: floating.rotationDriftZ,
