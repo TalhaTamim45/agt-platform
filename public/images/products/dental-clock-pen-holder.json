@@ -5,10 +5,10 @@
   "format": "webp",
   "image": {
     "url": "/images/products/dental-clock-pen-holder.webp",
-    "width": 1011,
-    "height": 601,
-    "aspectRatio": 1.682,
-    "sizeKb": "53.1 KB",
+    "width": 826,
+    "height": 603,
+    "aspectRatio": 1.37,
+    "sizeKb": "42.4 KB",
     "hasAlpha": true
   },
   "animation": {
@@ -47,8 +47,8 @@
     "optimizedWith": "sharp libvips",
     "createdAt": "2026-10-18T05:16:10.496Z"
   },
-  "price": null,
-  "bulkDiscount": "Contact for bulk pricing",
+  "price": 240,
+  "bulkDiscount": "3-4% discount on higher quantity",
   "warranty": "3-6 months quality guarantee",
   "origin": "Imported",
   "availability": "In Stock",

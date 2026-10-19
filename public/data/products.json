@@ -2835,10 +2835,10 @@
     "format": "webp",
     "image": {
       "url": "/images/products/dental-clock-pen-holder.webp",
-      "width": 1011,
-      "height": 601,
-      "aspectRatio": 1.682,
-      "sizeKb": "53.1 KB",
+      "width": 826,
+      "height": 603,
+      "aspectRatio": 1.37,
+      "sizeKb": "42.4 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -2948,10 +2948,10 @@
     "format": "webp",
     "image": {
       "url": "/images/products/mini-damaru-drum.webp",
-      "width": 1207,
-      "height": 753,
-      "aspectRatio": 1.603,
-      "sizeKb": "111.2 KB",
+      "width": 629,
+      "height": 623,
+      "aspectRatio": 1.01,
+      "sizeKb": "40.0 KB",
       "hasAlpha": true
     },
     "animation": {

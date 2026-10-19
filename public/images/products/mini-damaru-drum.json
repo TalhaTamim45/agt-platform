@@ -5,10 +5,10 @@
   "format": "webp",
   "image": {
     "url": "/images/products/mini-damaru-drum.webp",
-    "width": 1207,
-    "height": 753,
-    "aspectRatio": 1.603,
-    "sizeKb": "111.2 KB",
+    "width": 629,
+    "height": 623,
+    "aspectRatio": 1.01,
+    "sizeKb": "40.0 KB",
     "hasAlpha": true
   },
   "animation": {
@@ -47,8 +47,8 @@
     "optimizedWith": "sharp libvips",
     "createdAt": "2026-10-18T05:16:53.403Z"
   },
-  "price": null,
-  "bulkDiscount": "Contact for bulk pricing",
+  "price": 140,
+  "bulkDiscount": "3-4% discount on higher quantity",
   "warranty": "3-6 months quality guarantee",
   "origin": "Imported",
   "availability": "In Stock",
