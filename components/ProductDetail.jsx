@@ -64,12 +64,12 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
     ];
 
     const categorySpecific = {
-      'Drinkware': 'Food-grade stainless steel / BPA-free materials',
-      'Gadgets': 'CE/FCC certified electronics with warranty',
-      'Bags': 'Durable fabric with reinforced stitching',
-      'Lifestyle': 'Premium finish, retail-grade packaging',
-      'Accessories': 'Lightweight, compact, travel-friendly design',
-      'Stationery': 'Professional grade with custom packaging options',
+      'Food & Beverages': 'Pure ingredients, certified hygiene & sealed packaging',
+      'Kitchen & Appliances': 'Food-grade stainless steel & durable high-grade components',
+      'Electronics & Gadgets': 'CE/FCC certified electronics with energy-efficient design',
+      'Health & Personal Care': 'Clinically tested, hygienic & medical-grade certified standards',
+      'Home & Lifestyle': 'Premium finish, retail-grade packaging & corporate gifting ready',
+      'Sports & Fitness': 'Heavy-duty tournament quality, durable and long-lasting build',
     };
 
     const extra = categorySpecific[product.category];

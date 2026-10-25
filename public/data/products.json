@@ -2,7 +2,7 @@
   {
     "id": "stainless-bottle-300ml",
     "name": "Stainless Bottle 300ml",
-    "category": "Drinkware & Flasks",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/stainless-bottle-300ml.webp",
@@ -54,7 +54,7 @@
   {
     "id": "smiley-night-light",
     "name": "Smiley Night Light",
-    "category": "Lighting & Torches",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/smiley-night-light.webp",
@@ -106,7 +106,7 @@
   {
     "id": "niyama-electric-kettle",
     "name": "Niyama Electric Kettle",
-    "category": "Electric Appliances",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/niyama-electric-kettle.webp",
@@ -158,7 +158,7 @@
   {
     "id": "prestige-vacuum-flask",
     "name": "Prestige Vacuum Flask",
-    "category": "Drinkware & Flasks",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/prestige-vacuum-flask.webp",
@@ -210,7 +210,7 @@
   {
     "id": "ruilang-flashlight-orange",
     "name": "Ruilang LED Flashlight (Orange)",
-    "category": "Lighting & Torches",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/ruilang-flashlight-orange.webp",
@@ -418,7 +418,7 @@
   {
     "id": "toktalk-dragon-fruit-jam",
     "name": "Toktalk Dragon Fruit Jam",
-    "category": "Gourmet Food & Pantry",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-dragon-fruit-jam.webp",
@@ -470,7 +470,7 @@
   {
     "id": "khas-dawat-meat-masala",
     "name": "Khas Dawat Meat Masala",
-    "category": "Gourmet Food & Pantry",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/khas-dawat-meat-masala.webp",
@@ -522,7 +522,7 @@
   {
     "id": "khas-dawat-chicken-masala",
     "name": "Khas Dawat Chicken Masala",
-    "category": "Gourmet Food & Pantry",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/khas-dawat-chicken-masala.webp",
@@ -574,7 +574,7 @@
   {
     "id": "fresh-green-tea",
     "name": "Fresh Premium Green Tea",
-    "category": "Gourmet Food & Pantry",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/fresh-green-tea.webp",
@@ -678,7 +678,7 @@
   {
     "id": "rechargeable-zoom-flashlight-blue",
     "name": "Rechargeable Zoom LED Flashlight (Blue)",
-    "category": "Lighting & Torches",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/rechargeable-zoom-flashlight-blue.webp",
@@ -730,7 +730,7 @@
   {
     "id": "solar-wall-lamp",
     "name": "Solar Interaction Wall Lamp",
-    "category": "Lighting & Torches",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/solar-wall-lamp.webp",
@@ -782,7 +782,7 @@
   {
     "id": "seed-paper-calendar",
     "name": "Grow Green 2027 Seed Paper Calendar",
-    "category": "Corporate Stationery",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/seed-paper-calendar.webp",
@@ -834,7 +834,7 @@
   {
     "id": "prestige-electric-kettle-1l",
     "name": "Prestige Electric Kettle 1.0L (White)",
-    "category": "Electric Appliances",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/prestige-electric-kettle-1l.webp",
@@ -886,7 +886,7 @@
   {
     "id": "high-power-flashlight-pink",
     "name": "High Power Flashlight (Pink)",
-    "category": "Lighting & Torches",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/high-power-flashlight-pink.webp",
@@ -938,7 +938,7 @@
   {
     "id": "ruilang-flashlight-pink",
     "name": "Ruilang LED Flashlight (Pink)",
-    "category": "Lighting & Torches",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/ruilang-flashlight-pink.webp",
@@ -990,7 +990,7 @@
   {
     "id": "3in1-vacuum-cleaner",
     "name": "3-in-1 Mini Vacuum Cleaner",
-    "category": "Electric Appliances",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/3in1-vacuum-cleaner.webp",
@@ -1198,7 +1198,7 @@
   {
     "id": "silver-crest-food-grinder",
     "name": "Silver Crest Electric Food Grinder",
-    "category": "Electric Appliances",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/silver-crest-food-grinder.webp",
@@ -1250,7 +1250,7 @@
   {
     "id": "prestige-electric-kettle-2l",
     "name": "Prestige Electric Kettle 2.0L",
-    "category": "Electric Appliances",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/prestige-electric-kettle-2l.webp",
@@ -1302,7 +1302,7 @@
   {
     "id": "toktalk-pickles-combo",
     "name": "Toktalk Gourmet Pickles Combo",
-    "category": "Gourmet Food & Pantry",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-pickles-combo.webp",
@@ -1354,7 +1354,7 @@
   {
     "id": "fresh-refined-sugar",
     "name": "Fresh Refined Sugar 1kg",
-    "category": "Gourmet Food & Pantry",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/fresh-refined-sugar.webp",
@@ -1406,7 +1406,7 @@
   {
     "id": "smart-bag-sealer",
     "name": "Smart Bag Sealer",
-    "category": "Home & Lifestyle",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/smart-bag-sealer.webp",
@@ -1458,7 +1458,7 @@
   {
     "id": "khas-dawat-biryani-masala",
     "name": "Khas Dawat Biryani Masala",
-    "category": "Gourmet Food & Pantry",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/khas-dawat-biryani-masala.webp",
@@ -1510,7 +1510,7 @@
   {
     "id": "total-body-exerciser-wheel",
     "name": "Total Body Exerciser AB Wheel",
-    "category": "Fitness & Sports",
+    "category": "Sports & Fitness",
     "format": "webp",
     "image": {
       "url": "/images/products/total-body-exerciser-wheel.webp",
@@ -1567,7 +1567,7 @@
   {
     "id": "laliga-air-freshener-lemon",
     "name": "LaLiga 3-in-1 Air Freshener (Lemon)",
-    "category": "Home & Fragrance",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/laliga-air-freshener-lemon.webp",
@@ -1623,7 +1623,7 @@
   {
     "id": "gacotouch-neem-soap",
     "name": "Gacotouch Triple Action Neem Soap 100g",
-    "category": "Personal Care",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/gacotouch-neem-soap.webp",
@@ -1680,7 +1680,7 @@
   {
     "id": "gacotouch-flower-soap",
     "name": "Gacotouch Triple Action Toilet Soap (Flower) 100g",
-    "category": "Personal Care",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/gacotouch-flower-soap.webp",
@@ -1737,7 +1737,7 @@
   {
     "id": "yonex-court-fita",
     "name": "Yonex Court Fita Badminton Shoes",
-    "category": "Sports & Footwear",
+    "category": "Sports & Fitness",
     "format": "webp",
     "image": {
       "url": "/images/products/yonex-court-fita.webp",
@@ -1795,7 +1795,7 @@
   {
     "id": "gacotouch-apricot-scrub",
     "name": "Gacotouch Apricot Facial Scrub 200g",
-    "category": "Personal Care",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/gacotouch-apricot-scrub.webp",
@@ -1853,7 +1853,7 @@
   {
     "id": "banglaixing-led-night-light",
     "name": "Banglaixing LED Mushroom Night Light 0.2W",
-    "category": "Lighting & Torches",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/banglaixing-led-night-light.webp",
@@ -1910,7 +1910,7 @@
   {
     "id": "seylon-green-tea",
     "name": "Seylon Naturally Smooth Green Tea (25 bags)",
-    "category": "Beverages",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/seylon-green-tea.webp",
@@ -1968,7 +1968,7 @@
   {
     "id": "sti-sphygmomanometer",
     "name": "STI Aneroid Sphygmomanometer (BP Machine)",
-    "category": "Medical & Health",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/sti-sphygmomanometer.webp",
@@ -2026,7 +2026,7 @@
   {
     "id": "doctor-care-glucose-meter",
     "name": "Doctor Care Blood Glucose Meter",
-    "category": "Medical & Health",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/doctor-care-glucose-meter.webp",
@@ -2084,7 +2084,7 @@
   {
     "id": "marble-serving-tray-gold",
     "name": "Premium Marble Glass Serving Tray (Gold Trim)",
-    "category": "Home & Décor",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/marble-serving-tray-gold.webp",
@@ -2141,7 +2141,7 @@
   {
     "id": "finale-tulsi-tea",
     "name": "Finale Tulsi Tea (তুলসী টি) 50g, 25 bags",
-    "category": "Beverages",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/finale-tulsi-tea.webp",
@@ -2199,7 +2199,7 @@
   {
     "id": "honeygo-honey-sticks",
     "name": "Honey Go মধু Sticks (280g, 40 pcs)",
-    "category": "Food & Pantry",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/honeygo-honey-sticks.webp",
@@ -2257,7 +2257,7 @@
   {
     "id": "honeygo-mustard-honey",
     "name": "Honey Go Mustard Flower Honey 200g (Family Pack)",
-    "category": "Food & Pantry",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/honeygo-mustard-honey.webp",
@@ -2315,7 +2315,7 @@
   {
     "id": "akhlaq-tamarind-sauce",
     "name": "Akhlaq Tamarind Sauce (তেঁতুলের সস) 350g",
-    "category": "Food & Condiments",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/akhlaq-tamarind-sauce.webp",
@@ -2374,7 +2374,7 @@
   {
     "id": "toktalk-beef-pickle",
     "name": "Toktalk Beef Pickle (গরুর মাংসের আচার) 200g",
-    "category": "Food & Pickles",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-beef-pickle.webp",
@@ -2432,7 +2432,7 @@
   {
     "id": "toktalk-amra-pickle",
     "name": "Toktalk Hog Plum Pickle (আমড়ার আচার) 200g",
-    "category": "Food & Pickles",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-amra-pickle.webp",
@@ -2490,7 +2490,7 @@
   {
     "id": "toktalk-garlic-pickle",
     "name": "Toktalk Garlic Pickle (এক কোয়া রসুনের আচার) 200g",
-    "category": "Food & Pickles",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-garlic-pickle.webp",
@@ -2548,7 +2548,7 @@
   {
     "id": "toktalk-naga-mayo",
     "name": "Toktalk Naga Mayo (নাগা মেয়ো) 300g",
-    "category": "Food & Condiments",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-naga-mayo.webp",
@@ -2606,7 +2606,7 @@
   {
     "id": "toktalk-tamarind-pickle",
     "name": "Toktalk Tamarind Pickle (তেঁতুলের আচার) 200g",
-    "category": "Food & Pickles",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-tamarind-pickle.webp",
@@ -2664,7 +2664,7 @@
   {
     "id": "toktalk-garlic-mayo",
     "name": "Toktalk Garlic Mayo (গার্লিক মেয়ো) 200g",
-    "category": "Food & Condiments",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-garlic-mayo.webp",
@@ -2722,7 +2722,7 @@
   {
     "id": "wooden-tissue-box",
     "name": "Laser-Engraved Wooden Tissue Box",
-    "category": "Home & Décor",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/wooden-tissue-box.webp",
@@ -2778,7 +2778,7 @@
   {
     "id": "toktalk-tamarind-pickle-100g",
     "name": "Toktalk Tamarind Pickle 100g (Small)",
-    "category": "Food & Pickles",
+    "category": "Food & Beverages",
     "format": "webp",
     "image": {
       "url": "/images/products/toktalk-tamarind-pickle-100g.webp",
@@ -2836,7 +2836,7 @@
   {
     "id": "dental-clock-pen-holder",
     "name": "Dental Tooth Clock & Pen Holder (Wooden)",
-    "category": "Corporate Gifts",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/dental-clock-pen-holder.webp",
@@ -2892,7 +2892,7 @@
   {
     "id": "stainless-napkin-holder",
     "name": "Stainless Steel Spoon & Fork Napkin Holder",
-    "category": "Kitchen & Dining",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/stainless-napkin-holder.webp",
@@ -2949,7 +2949,7 @@
   {
     "id": "mini-damaru-drum",
     "name": "Traditional Mini Damaru Drum (Handcrafted)",
-    "category": "Gifts & Cultural",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/mini-damaru-drum.webp",
@@ -3005,7 +3005,7 @@
   {
     "id": "sokany-electric-heater",
     "name": "Sokany Electric Room Heater SK-1655 2000W",
-    "category": "Appliances",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/sokany-electric-heater.webp",
@@ -3062,7 +3062,7 @@
   {
     "id": "samurai-mosquito-swatter",
     "name": "Samurai Electric Mosquito Swatter (USB-C)",
-    "category": "Home & Tools",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/samurai-mosquito-swatter.webp",
@@ -3119,7 +3119,7 @@
   {
     "id": "procare-hot-cold-pack",
     "name": "Procare Med-Therm Hot & Cold Therapy Pack",
-    "category": "Medical & Health",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/procare-hot-cold-pack.webp",
@@ -3177,7 +3177,7 @@
   {
     "id": "clock-shape-mobile-holder",
     "name": "Clock Shape Mobile Holder (Wall Mount) AP-2026",
-    "category": "Tech Accessories",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/clock-shape-mobile-holder.webp",
@@ -3234,7 +3234,7 @@
   {
     "id": "smart-warm-palace-belt",
     "name": "Smart Warm Palace Belt (Menstrual Heating Pad)",
-    "category": "Lifestyle & Wellness",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/smart-warm-palace-belt.webp",
@@ -3291,7 +3291,7 @@
   {
     "id": "sensa-light-hair-remover",
     "name": "Sensa-Light Rechargeable Hair Remover",
-    "category": "Personal Care",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/sensa-light-hair-remover.webp",
@@ -3348,7 +3348,7 @@
   {
     "id": "mesh-nebulizer",
     "name": "Portable Mesh Nebulizer JSL-W302",
-    "category": "Medical & Health",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/mesh-nebulizer.webp",
@@ -3406,7 +3406,7 @@
   {
     "id": "doctor-care-bp-kit",
     "name": "Doctor Care Aneroid Blood Pressure Kit MC-50B",
-    "category": "Medical & Health",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/doctor-care-bp-kit.webp",
@@ -3464,7 +3464,7 @@
   {
     "id": "ornate-clock-pen-holder",
     "name": "Ornate Black & Gold Clock with Pen Holder",
-    "category": "Corporate Gifts",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/ornate-clock-pen-holder.webp",
@@ -3520,7 +3520,7 @@
   {
     "id": "sti-oxygen-flow-meter",
     "name": "STI Medical Oxygen Flow Meter",
-    "category": "Medical & Health",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/sti-oxygen-flow-meter.webp",
@@ -3578,7 +3578,7 @@
   {
     "id": "aswei-ice-cube-maker",
     "name": "Aswei Compact Ice Cube Maker",
-    "category": "Kitchen Gadgets",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/aswei-ice-cube-maker.webp",
@@ -3635,7 +3635,7 @@
   {
     "id": "baby-nail-trimmer",
     "name": "Baby Electric Nail Trimmer (6 Heads, LED)",
-    "category": "Baby & Kids",
+    "category": "Health & Personal Care",
     "format": "webp",
     "image": {
       "url": "/images/products/baby-nail-trimmer.webp",
@@ -3749,7 +3749,7 @@
   {
     "id": "decoupage-donut-vase",
     "name": "Sunflower Decoupage Donut Vase (Handpainted)",
-    "category": "Home & Décor",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/decoupage-donut-vase.webp",
@@ -3805,7 +3805,7 @@
   {
     "id": "3-stage-knife-sharpener",
     "name": "3-Stage Knife Sharpener",
-    "category": "Kitchen Gadgets",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/3-stage-knife-sharpener.webp",
@@ -3919,7 +3919,7 @@
   {
     "id": "potato-chipper",
     "name": "Stainless Steel Potato Chipper / French Fry Cutter",
-    "category": "Kitchen Gadgets",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/potato-chipper.webp",
@@ -3976,7 +3976,7 @@
   {
     "id": "protect-fresh-box-5pcs",
     "name": "Protect Fresh Box Stainless Steel (5 pcs Set)",
-    "category": "Kitchen & Dining",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/protect-fresh-box-5pcs.webp",
@@ -4033,7 +4033,7 @@
   {
     "id": "veggie-slicer-16pcs",
     "name": "16-in-1 Veggie Slicer / Dicer Set",
-    "category": "Kitchen Gadgets",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/veggie-slicer-16pcs.webp",
@@ -4090,7 +4090,7 @@
   {
     "id": "arctic-air-ultra-cooler",
     "name": "Arctic Air Ultra Portable Air Cooler",
-    "category": "Appliances",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/arctic-air-ultra-cooler.webp",
@@ -4147,7 +4147,7 @@
   {
     "id": "zepter-knife-set-6pcs",
     "name": "Zepter International 6-Pcs Kitchen Knife Set",
-    "category": "Kitchen & Dining",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/zepter-knife-set-6pcs.webp",
@@ -4204,7 +4204,7 @@
   {
     "id": "stainless-steel-lunch-box",
     "name": "Stainless Steel Lunch Box (11cm, 2-Tier)",
-    "category": "Kitchen & Dining",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/stainless-steel-lunch-box.webp",
@@ -4261,7 +4261,7 @@
   {
     "id": "electric-panci-cooker",
     "name": "Electric Panci Multi-Cooker 20cm",
-    "category": "Appliances",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/electric-panci-cooker.webp",
@@ -4370,7 +4370,7 @@
   {
     "id": "portable-vacuum-flask-450",
     "name": "Portable Stainless Vacuum Flask with Loop Lid",
-    "category": "Drinkware & Flasks",
+    "category": "Kitchen & Appliances",
     "format": "webp",
     "image": {
       "url": "/images/products/portable-vacuum-flask-450.webp",
