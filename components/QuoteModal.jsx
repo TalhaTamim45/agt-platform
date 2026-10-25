@@ -37,7 +37,7 @@ export default function QuoteModal({ isOpen, onClose, product, allProducts }) {
 ----------------------------------------
 *Product:* [${currentProduct?.serial || currentProduct?.id || 'N/A'}] ${currentProduct?.name || 'General Inquiry'}
 *Category:* ${currentProduct?.category || 'General'}
-*Indicative Base Price:* ৳${currentProduct?.price || 'N/A'} / unit (3–4% discount applicable on higher quantities)
+*Pricing Type:* Wholesale / Bulk Rate (Custom Volume Quote)
 *Target Quantity:* ${quantity} units
 *Custom Branding/Logo:* ${customBranding ? 'Yes (Required)' : 'No (Blank stock)'}
 ----------------------------------------
@@ -107,10 +107,10 @@ Please provide official discounted bulk pricing and delivery lead time.`;
               <div className="flex items-center gap-2 mt-0.5">
                 <span className="text-xs text-gold-700 font-semibold">{currentProduct.category}</span>
                 <span className="text-navy-300">•</span>
-                <span className="text-xs font-extrabold text-navy-950">৳{currentProduct.price?.toLocaleString()} / unit</span>
+                <span className="text-xs font-extrabold text-gold-800 bg-gold-100/70 px-2 py-0.5 rounded border border-gold-400/40">Wholesale on Request</span>
               </div>
               <p className="text-[11px] font-medium text-emerald-700 mt-0.5">
-                3–4% discount applied on higher volume orders
+                Volume tier discounts applied for bulk quantities
               </p>
             </div>
           </div>

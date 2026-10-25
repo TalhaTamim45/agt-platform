@@ -98,7 +98,7 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
   };
 
   const waInquiryUrl = `https://wa.me/8801787239863?text=${encodeURIComponent(
-    `Hello Abdullah Global Trade, I would like to request a bulk corporate quotation for: [${product.serial || product.id}] ${product.name} (Base Price: ৳${product.price}). Please provide discounted pricing for higher quantities.`
+    `Hello Abdullah Global Trade, I would like to request a bulk corporate quotation for: [${product.serial || product.id}] ${product.name}. Please share wholesale pricing and availability.`
   )}`;
 
   return (
@@ -171,16 +171,14 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
             {product.name}
           </h3>
 
-          {/* Price & Bulk Discount Badge */}
-          <div className="mt-2.5 flex items-baseline justify-between gap-1.5 flex-wrap">
-            <div className="flex items-baseline gap-1">
-              <span className="text-sm sm:text-lg font-extrabold text-navy-950">
-                ৳{product.price?.toLocaleString()}
-              </span>
-              <span className="text-[10px] sm:text-xs text-navy-600/70 font-medium">/ unit</span>
+          {/* Direct B2B Wholesale Pricing Badge */}
+          <div className="mt-2.5 flex items-center justify-between gap-1.5 flex-wrap">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-gold-50/90 border border-gold-500/30 text-gold-900 font-extrabold text-[11px] sm:text-xs shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-gold-600 animate-pulse"></span>
+              <span>Price on Request</span>
             </div>
             <span className="text-[9px] sm:text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-600/25 whitespace-nowrap">
-              3–4% off on bulk
+              Bulk Wholesale MOQ
             </span>
           </div>
         </div>

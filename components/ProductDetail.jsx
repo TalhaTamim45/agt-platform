@@ -51,7 +51,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
   if (!isOpen || !product) return null;
 
   const waInquiryUrl = `https://wa.me/8801787239863?text=${encodeURIComponent(
-    `Hello Abdullah Global Trade, I'm interested in bulk ordering: [${product.serial || product.id}] ${product.name} (Base: ৳${product.price}). Please share discounted pricing for higher quantities.`
+    `Hello Abdullah Global Trade, I'm interested in bulk ordering: [${product.serial || product.id}] ${product.name}. Please share wholesale pricing and MOQ.`
   )}`;
 
   // Generate professional features based on category
@@ -150,25 +150,27 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
             </h2>
           </div>
 
-          {/* Indicative Base Price & Bulk Discount Box */}
-          <div className="my-3.5 p-3.5 rounded-xl bg-cream-50/90 border border-gold-500/20 flex items-center justify-between gap-3 shadow-xs">
+          {/* Direct B2B Wholesale Pricing Box */}
+          <div className="my-3.5 p-3.5 rounded-xl bg-gradient-to-r from-cream-50 via-gold-50/50 to-cream-50 border border-gold-500/25 flex items-center justify-between gap-3 shadow-xs">
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-wider text-navy-600/70">
-                Indicative Wholesale Price
+              <p className="text-[10px] font-bold uppercase tracking-wider text-gold-800">
+                Commercial Pricing
               </p>
-              <div className="flex items-baseline gap-1 mt-0.5">
-                <span className="text-xl sm:text-2xl font-extrabold text-navy-950">
-                  ৳{product.price?.toLocaleString()}
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <span className="text-lg sm:text-xl font-extrabold text-navy-950">
+                  Wholesale Price on Request
                 </span>
-                <span className="text-xs text-navy-600/80 font-medium">/ unit</span>
               </div>
+              <p className="text-[10px] text-navy-600/80 font-medium mt-0.5">
+                Tailored corporate quotes based on quantity &amp; branding
+              </p>
             </div>
-            <div className="text-right">
+            <div className="text-right shrink-0">
               <span className="inline-block text-[11px] font-bold text-emerald-800 bg-emerald-100/80 px-2.5 py-1 rounded-full border border-emerald-600/30">
-                3–4% Discount on Bulk
+                Bulk Volume Tier
               </span>
-              <p className="text-[10px] text-navy-600/70 font-medium mt-1">
-                For higher quantity corporate orders
+              <p className="text-[10px] text-gold-700 font-bold mt-1">
+                Direct WhatsApp Deal
               </p>
             </div>
           </div>
