@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { MessageSquare, ArrowUpRight, Eye } from 'lucide-react';
@@ -9,6 +9,7 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
   const cardRef = useRef(null);
   const imageRef = useRef(null);
   const shadowRef = useRef(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     if (!imageRef.current || !shadowRef.current || !product?.animation) return;
@@ -60,9 +61,28 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
       delay: delay,
     });
 
+    // Viewport Visibility Observer: Pause heavy 60fps physics & blur computation when offscreen
+    let observer;
+    if (typeof window !== 'undefined' && 'IntersectionObserver' in window && cardRef.current) {
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            floatTween.play();
+            shadowTween.play();
+          } else {
+            floatTween.pause();
+            shadowTween.pause();
+          }
+        },
+        { rootMargin: '200px' }
+      );
+      observer.observe(cardRef.current);
+    }
+
     return () => {
       floatTween.kill();
       shadowTween.kill();
+      if (observer) observer.disconnect();
     };
   }, [product]);
 
@@ -141,6 +161,13 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
           </span>
         </div>
 
+        {/* Luxury Shimmer Skeleton Placeholder while image loads */}
+        {!isLoaded && (
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+            <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-gradient-to-tr from-gold-500/10 via-cream-200/60 to-gold-500/15 animate-pulse" />
+          </div>
+        )}
+
         {/* Floating WebP Product Asset */}
         <div
           ref={imageRef}
@@ -151,7 +178,10 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
             alt={product.name}
             width={product.image.width}
             height={product.image.height}
-            className="max-h-full max-w-full object-contain filter drop-shadow-[0_8px_16px_rgba(12,31,59,0.25)] sm:drop-shadow-[0_10px_20px_rgba(12,31,59,0.3)] select-none"
+            onLoad={() => setIsLoaded(true)}
+            className={`max-h-full max-w-full object-contain filter drop-shadow-[0_8px_16px_rgba(12,31,59,0.25)] sm:drop-shadow-[0_10px_20px_rgba(12,31,59,0.3)] select-none transition-opacity duration-300 ${
+              isLoaded ? 'opacity-100' : 'opacity-0'
+            }`}
             priority={priority}
             loading={priority ? undefined : 'lazy'}
           />

@@ -153,7 +153,7 @@ export default function CatalogGrid({ products, onSelectQuote, onSelectDetail })
               <ProductCard
                 key={product.id}
                 product={product}
-                priority={idx < 4}
+                priority={idx < 8}
                 onSelectQuote={onSelectQuote}
                 onSelectDetail={onSelectDetail}
                 compact={mobileCols === 2}
