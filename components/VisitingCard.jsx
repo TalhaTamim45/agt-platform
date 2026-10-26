@@ -152,27 +152,22 @@ END:VCARD`;
                 <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-gold-500/40 rounded-br-2xl"></div>
 
                 {/* Center QR Code */}
-                <div className="text-center space-y-3">
-                  <div className="bg-white rounded-xl p-3 inline-block shadow-lg">
-                    <QRCodeSVG
-                      value={qrUrl}
-                      size={120}
-                      level="H"
-                      fgColor="#0c1f3b"
-                      bgColor="#ffffff"
-                      imageSettings={{
-                        src: '/images/logo-clean.png',
-                        width: 24,
-                        height: 24,
-                        excavate: true,
-                      }}
+                <div className="text-center space-y-2.5">
+                  <div className="bg-white rounded-xl p-2.5 inline-block shadow-lg">
+                    <Image
+                      src="/images/qr-code.png"
+                      alt="AGT Official Permanent QR Code"
+                      width={120}
+                      height={120}
+                      className="w-[120px] h-[120px] object-contain rounded-lg"
+                      priority
                     />
                   </div>
                   <p className="text-gold-400 text-[10px] font-bold tracking-widest uppercase">
                     Scan to View Catalog
                   </p>
-                  <p className="text-cream-300/60 text-[8px] font-medium">
-                    abdullahglobaltrade.vercel.app
+                  <p className="text-cream-300/60 text-[8px] font-medium font-mono">
+                    abdullahglobaltrade.netlify.app
                   </p>
                 </div>
               </div>
@@ -186,27 +181,37 @@ END:VCARD`;
         </p>
 
         {/* Action Buttons */}
-        <div className="flex gap-3 mt-4">
+        <div className="flex gap-2.5 mt-4">
           <button
             onClick={(e) => {
               e.stopPropagation();
               handleDownloadVCard();
             }}
-            className="flex-1 gold-btn rounded-xl py-3 px-4 flex items-center justify-center gap-2 text-sm font-bold"
+            className="flex-1 gold-btn rounded-xl py-2.5 px-3 flex items-center justify-center gap-1.5 text-xs font-bold"
           >
-            <Download className="w-4 h-4" />
-            Save Contact
+            <Download className="w-3.5 h-3.5" />
+            <span>Save Contact</span>
           </button>
+
+          <a
+            href="/images/qr-code.png"
+            download="AGT-Official-QR.png"
+            onClick={(e) => e.stopPropagation()}
+            className="flex-1 border border-gold-500/35 bg-cream-50/10 text-gold-400 hover:bg-gold-500/20 rounded-xl py-2.5 px-3 flex items-center justify-center gap-1.5 text-xs font-bold transition-colors text-center"
+          >
+            <Download className="w-3.5 h-3.5 text-gold-400" />
+            <span>Save QR</span>
+          </a>
 
           <button
             onClick={(e) => {
               e.stopPropagation();
               handleShare();
             }}
-            className="flex-1 navy-btn rounded-xl py-3 px-4 flex items-center justify-center gap-2 text-sm font-bold"
+            className="flex-1 navy-btn rounded-xl py-2.5 px-3 flex items-center justify-center gap-1.5 text-xs font-bold"
           >
-            <Share2 className="w-4 h-4" />
-            Share
+            <Share2 className="w-3.5 h-3.5" />
+            <span>Share</span>
           </button>
         </div>
 
