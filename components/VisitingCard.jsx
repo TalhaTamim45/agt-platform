@@ -2,7 +2,6 @@
 
 import { useRef, useState } from 'react';
 import Image from 'next/image';
-import { QRCodeSVG } from 'qrcode.react';
 import { Download, Share2, Phone, Mail, MapPin, Globe, MessageSquare } from 'lucide-react';
 
 const DEFAULT_SITE_URL = 'https://abdullahglobaltrade.netlify.app';

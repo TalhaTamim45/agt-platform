@@ -53,21 +53,6 @@ async function processProduct(product, backupDir, productsDir) {
   product.image.aspectRatio = Number((newMeta.width / newMeta.height).toFixed(3));
   product.image.sizeKb = newSizeKb;
 
-  // Update manifest if exists
-  const manifestPath = path.join(productsDir, `${product.id}.json`);
-  if (fs.existsSync(manifestPath)) {
-    try {
-      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-      if (manifest.image) {
-        manifest.image.width = newMeta.width;
-        manifest.image.height = newMeta.height;
-        manifest.image.aspectRatio = product.image.aspectRatio;
-        manifest.image.sizeKb = newSizeKb;
-        fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf8');
-      }
-    } catch (e) {}
-  }
-
   return {
     origBytes: origStats.size,
     newBytes: optimizedBuffer.length,

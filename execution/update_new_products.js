@@ -44,13 +44,6 @@ const updates = {
 for (const p of catalog) {
   if (updates[p.id]) {
     Object.assign(p, updates[p.id]);
-    const manifestPath = path.resolve(__dirname, '../public/images/products', `${p.id}.json`);
-    if (fs.existsSync(manifestPath)) {
-      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-      Object.assign(manifest, updates[p.id]);
-      fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf8');
-      console.log('Updated manifest:', manifestPath);
-    }
   }
 }
 

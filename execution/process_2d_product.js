@@ -132,7 +132,6 @@ async function run() {
   fs.mkdirSync(dataDir, { recursive: true });
 
   const outputWebp = path.join(outDir, `${productId}.webp`);
-  const outputManifest = path.join(outDir, `${productId}.json`);
   const masterCatalogPath = path.join(dataDir, 'products.json');
 
   if (!fs.existsSync(inputPath)) {
@@ -240,8 +239,6 @@ async function run() {
     },
   };
 
-  fs.writeFileSync(outputManifest, JSON.stringify(manifest, null, 2), 'utf-8');
-
   // Update master catalog products.json
   let masterCatalog = [];
   if (fs.existsSync(masterCatalogPath)) {
@@ -265,7 +262,6 @@ async function run() {
   console.log('====================================================');
   console.log(`SUCCESS: Processed in ${totalTime}s!`);
   console.log(`WebP Asset:   ${outputWebp} (${webpSizeKb} KB)`);
-  console.log(`GSAP Contract:${outputManifest}`);
   console.log(`Catalog Entry:Added to ${masterCatalogPath}`);
   console.log('====================================================');
 }
