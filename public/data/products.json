@@ -53,8 +53,8 @@
   },
   {
     "id": "smiley-night-light",
-    "name": "Smiley Night Light",
-    "category": "Electronics & Gadgets",
+    "name": "Smiley Pen Holder",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/smiley-night-light.webp",
@@ -729,8 +729,8 @@
   },
   {
     "id": "solar-wall-lamp",
-    "name": "Solar Interaction Wall Lamp",
-    "category": "Electronics & Gadgets",
+    "name": "Warm Handbag",
+    "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
       "url": "/images/products/solar-wall-lamp.webp",
@@ -1145,8 +1145,8 @@
   },
   {
     "id": "warm-handbag",
-    "name": "AGT Warm Handbag (Graphene Heated)",
-    "category": "Home & Lifestyle",
+    "name": "Solar Lamp",
+    "category": "Electronics & Gadgets",
     "format": "webp",
     "image": {
       "url": "/images/products/warm-handbag.webp",
