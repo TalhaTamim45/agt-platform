@@ -4626,5 +4626,161 @@
     },
     "serial": "AGT-84",
     "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "posture-corrector-back-support",
+    "name": "Adjustable Posture Corrector & Back Support Belt",
+    "category": "Health & Personal Care",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/posture-corrector-back-support.webp",
+      "width": 430,
+      "height": 850,
+      "aspectRatio": 0.506,
+      "sizeKb": "73.3 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-28T06:53:48.119Z"
+    },
+    "serial": "AGT-85",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "chest-maintenance-posture-belt",
+    "name": "Chest Maintenance Beautiful Posture Support Belt",
+    "category": "Health & Personal Care",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/chest-maintenance-posture-belt.webp",
+      "width": 587,
+      "height": 850,
+      "aspectRatio": 0.691,
+      "sizeKb": "77.4 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-28T06:54:26.287Z"
+    },
+    "serial": "AGT-86",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "3in1-travel-comfort-set",
+    "name": "3-in-1 Travel Comfort Set (Neck Pillow, Eyeshade & Earplugs)",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/3in1-travel-comfort-set.webp",
+      "width": 614,
+      "height": 840,
+      "aspectRatio": 0.731,
+      "sizeKb": "59.9 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-28T06:55:08.882Z"
+    },
+    "serial": "AGT-87",
+    "bulkDiscount": "3-5% discount on higher quantity"
   }
 ]

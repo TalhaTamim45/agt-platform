@@ -123,7 +123,9 @@ async function run() {
   const productId = getArg('--id', 'stainless-bottle-300ml');
   const productName = getArg('--name', 'Stainless Bottle 300ml');
   const category = getArg('--category', 'Drinkware');
-  const maxDimension = parseInt(getArg('--max-dim', '1600'), 10);
+  const serial = getArg('--serial', null);
+  const bulkDiscount = getArg('--bulk-discount', '3-5% discount on higher quantity');
+  const maxDimension = parseInt(getArg('--max-dim', '850'), 10);
   const quality = parseInt(getArg('--quality', '90'), 10);
 
   const outDir = path.resolve(__dirname, '../public/images/products');
@@ -237,6 +239,8 @@ async function run() {
       optimizedWith: 'sharp libvips',
       createdAt: new Date().toISOString(),
     },
+    ...(serial ? { serial } : {}),
+    ...(bulkDiscount ? { bulkDiscount } : {}),
   };
 
   // Update master catalog products.json
