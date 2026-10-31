@@ -4782,5 +4782,837 @@
     },
     "serial": "AGT-87",
     "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "ayatul-kursi-golden-frame",
+    "name": "Ayatul Kursi Islamic Calligraphy Golden Wall Frame",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/ayatul-kursi-golden-frame.webp",
+      "width": 598,
+      "height": 850,
+      "aspectRatio": 0.704,
+      "sizeKb": "98.1 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:03:04.499Z"
+    },
+    "serial": "AGT-88",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "wooden-desk-organizer-calendar",
+    "name": "Wooden Desk Organizer with 2027 Calendar & Pen Stand",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/wooden-desk-organizer-calendar.webp",
+      "width": 850,
+      "height": 532,
+      "aspectRatio": 1.598,
+      "sizeKb": "78.3 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:05:09.358Z"
+    },
+    "serial": "AGT-89",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "4-qul-islamic-golden-frame",
+    "name": "4 Qul Surah Islamic Calligraphy Golden Wall Art Frame",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/4-qul-islamic-golden-frame.webp",
+      "width": 396,
+      "height": 850,
+      "aspectRatio": 0.466,
+      "sizeKb": "86.8 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:05:21.054Z"
+    },
+    "serial": "AGT-90",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "kokola-majorico-white-chocolate",
+    "name": "Kokola Majorico White Chocolate Wafer Roll (Tub)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/kokola-majorico-white-chocolate.webp",
+      "width": 538,
+      "height": 850,
+      "aspectRatio": 0.633,
+      "sizeKb": "60.2 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:05:30.439Z"
+    },
+    "serial": "AGT-91",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "avena-oat-milk-snack-bar",
+    "name": "Avena Oat Milk High-Fibre Snack Bar (120g)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/avena-oat-milk-snack-bar.webp",
+      "width": 632,
+      "height": 850,
+      "aspectRatio": 0.744,
+      "sizeKb": "91.2 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:05:44.233Z"
+    },
+    "serial": "AGT-92",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "erko-mallow-world-marshmallows",
+    "name": "Erko Mallow World Pink & White Marshmallows (150g)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/erko-mallow-world-marshmallows.webp",
+      "width": 677,
+      "height": 850,
+      "aspectRatio": 0.796,
+      "sizeKb": "132.0 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:05:58.278Z"
+    },
+    "serial": "AGT-93",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "kokola-majorico-chocolate-wafer",
+    "name": "Kokola Majorico Chocolate Cream Wafer Roll (120g Tub)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/kokola-majorico-chocolate-wafer.webp",
+      "width": 532,
+      "height": 850,
+      "aspectRatio": 0.626,
+      "sizeKb": "73.2 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:06:12.635Z"
+    },
+    "serial": "AGT-94",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "mazzex-oat-snack-party-mix",
+    "name": "Mazzex Oat Snack Party Mix - Original & Chocolate (400g)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/mazzex-oat-snack-party-mix.webp",
+      "width": 850,
+      "height": 802,
+      "aspectRatio": 1.06,
+      "sizeKb": "180.9 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:06:33.164Z"
+    },
+    "serial": "AGT-95",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "mazzex-oat-snack-no-sugar",
+    "name": "Mazzex Oat Snack - No Added Sugar (120g)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/mazzex-oat-snack-no-sugar.webp",
+      "width": 575,
+      "height": 850,
+      "aspectRatio": 0.676,
+      "sizeKb": "137.0 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:06:53.415Z"
+    },
+    "serial": "AGT-96",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "mazzex-oat-snack-original-400g",
+    "name": "Mazzex Oat Snack Favorite Original Value Pack (400g)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/mazzex-oat-snack-original-400g.webp",
+      "width": 850,
+      "height": 792,
+      "aspectRatio": 1.073,
+      "sizeKb": "133.9 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:07:13.292Z"
+    },
+    "serial": "AGT-97",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "mazzex-oat-snack-strawberry",
+    "name": "Mazzex Oat Snack Strawberry - No Added Sugar (120g)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/mazzex-oat-snack-strawberry.webp",
+      "width": 583,
+      "height": 850,
+      "aspectRatio": 0.686,
+      "sizeKb": "110.4 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:07:30.560Z"
+    },
+    "serial": "AGT-98",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "sweet-sour-candy-grape-tin",
+    "name": "Sweet & Sour Soft & Fruity Candy - Grape (128g Tin)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/sweet-sour-candy-grape-tin.webp",
+      "width": 850,
+      "height": 782,
+      "aspectRatio": 1.087,
+      "sizeKb": "83.7 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:07:46.846Z"
+    },
+    "serial": "AGT-99",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "sweet-sour-candy-peach-tin",
+    "name": "Sweet & Sour Soft & Fruity Candy - Peach (128g Tin)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/sweet-sour-candy-peach-tin.webp",
+      "width": 850,
+      "height": 789,
+      "aspectRatio": 1.077,
+      "sizeKb": "79.8 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:08:04.534Z"
+    },
+    "serial": "AGT-100",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "4in1-travel-pump-bottle",
+    "name": "4-in-1 TSA Travel Dispenser Pump Bottle Set",
+    "category": "Health & Personal Care",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/4in1-travel-pump-bottle.webp",
+      "width": 850,
+      "height": 347,
+      "aspectRatio": 2.45,
+      "sizeKb": "33.7 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:08:17.476Z"
+    },
+    "serial": "AGT-101",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "cococraft-date-chocolate-box",
+    "name": "Cococraft Luxury Date Chocolate Box (16 Pcs / 240g)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/cococraft-date-chocolate-box.webp",
+      "width": 510,
+      "height": 850,
+      "aspectRatio": 0.6,
+      "sizeKb": "55.6 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-packaged",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.2,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -4,
+        "minOpacity": 0.2,
+        "maxOpacity": 0.45,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -16,
+        "scale": 1.05,
+        "tiltSensitivity": 10,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:08:29.747Z"
+    },
+    "serial": "AGT-102",
+    "bulkDiscount": "3-5% discount on higher quantity"
+  },
+  {
+    "id": "smart-electric-scalp-massager",
+    "name": "Smart Electric Cordless Scalp & Head Massager",
+    "category": "Health & Personal Care",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/smart-electric-scalp-massager.webp",
+      "width": 506,
+      "height": 495,
+      "aspectRatio": 1.022,
+      "sizeKb": "29.9 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.5,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 20,
+        "spread": -3,
+        "minOpacity": 0.25,
+        "maxOpacity": 0.48,
+        "scaleRange": [
+          0.85,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-10-31T11:08:42.312Z"
+    },
+    "serial": "AGT-103",
+    "bulkDiscount": "3-5% discount on higher quantity"
   }
 ]

@@ -36,7 +36,7 @@ The AGT digital platform bridges the gap between high-volume international sourc
 ```mermaid
 graph TD
     Client[PMD / Corporate Buyer] -->|Visits / Scans QR| WebPlatform[AGT Digital Platform]
-    WebPlatform -->|Search / Category Filter| Catalog[87+ Interactive Products]
+    WebPlatform -->|Search / Category Filter| Catalog[103+ Interactive Products]
     Catalog -->|Inspects 3D/Specs| DetailModal[Product Detail Modal]
     Catalog -->|One-Tap Action| WhatsApp[Direct WhatsApp B2B Quotation]
     Catalog -->|RFQ Modal| QuoteRequest[Institutional Request Form]
@@ -83,7 +83,7 @@ This roadmap outlines the complete transformation of AGT from an interactive dig
 ```mermaid
 timeline
     title AGT ERP Evolution Roadmap
-    Phase 1 (Completed) : Interactive Showcase : 87+ Products with Zero-Gravity : Dual-column Mobile UX : QR Tracking & WhatsApp RFQ
+    Phase 1 (Completed) : Interactive Showcase : 103+ Products with Zero-Gravity : Dual-column Mobile UX : QR Tracking & WhatsApp RFQ
     Phase 2 (Current) : Quotation Engine : Multi-item RFQ Cart : Auto-generated Branded PDF Specs : Email & CRM Leads
     Phase 3 : Order & Inventory (OMS/WMS) : Order Lifecycle Tracking : Tiered MOQ Pricing : Warehouse Stock Ledger
     Phase 4 : Sourcing & Logistics (SRM) : Factory Vendor Directory : LC & Shipment Tracker : Sample Review Portal
@@ -93,9 +93,9 @@ timeline
 ---
 
 ### 🔹 Phase 1: Interactive Showcase & Digital Catalog (COMPLETE ✅)
-- **Catalog Manifest:** 87 curated corporate merchandise products across 6 consolidated enterprise categories.
+- **Catalog Manifest:** 103 curated corporate merchandise products across 6 consolidated enterprise categories.
 - **Zero-Gravity GSAP Physics:** Seamless 2D DOM-based floating animations with reactive shadow dynamics.
-- **Direct B2B Inquiry Routing:** Every product includes serialized codes (`AGT-01` to `AGT-87`) pre-filled into WhatsApp quotation requests.
+- **Direct B2B Inquiry Routing:** Every product includes serialized codes (`AGT-01` to `AGT-103`) pre-filled into WhatsApp quotation requests.
 - **Digital Visiting Card & Analytics:** Integrated corporate business card with high-error-tolerance QR code and scan velocity tracker (`/api/track-scan`).
 - **Netlify Edge Deployment:** Zero-budget, ultra-fast global distribution on Netlify.
 
@@ -283,10 +283,10 @@ When adding new products, AGT employs a specialized AI and sharp pipeline to ach
 │   └── update_new_products.js     # Serial & price manifest batch updater
 ├── public/
 │   ├── data/
-│   │   └── products.json          # Master B2B Catalog manifest (87 products)
+│   │   └── products.json          # Master B2B Catalog manifest (103 products)
 │   └── images/
 │       ├── logo.png               # Official brand identity
-│       └── products/              # Transparent WebP assets & individual JSON manifests
+│       └── products/              # Transparent WebP assets (103 products)
 ├── netlify.toml                   # Netlify build & deployment configuration
 ├── next.config.js                 # Production headers (HSTS, CSP, Cache-Control)
 ├── package.json                   # Dependencies (Next 16.4.3, React 19, GSAP 3, Sharp)
@@ -322,7 +322,7 @@ node execution/process_2d_product.js \
 ```
 
 ### 8.3 Running the Batch Image Optimizer
-To re-optimize all 87+ images to 3x Retina standards at any time:
+To re-optimize all 103+ images to 3x Retina standards at any time:
 ```bash
 node execution/optimize_all_images.js
 ```
