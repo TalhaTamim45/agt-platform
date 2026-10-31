@@ -6,10 +6,10 @@
     "format": "webp",
     "image": {
       "url": "/images/products/smart-electric-scalp-massager.webp",
-      "width": 646,
-      "height": 727,
-      "aspectRatio": 0.889,
-      "sizeKb": "50.0 KB",
+      "width": 850,
+      "height": 833,
+      "aspectRatio": 1.02,
+      "sizeKb": "81.9 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -47,7 +47,7 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-31T11:08:42.312Z",
-      "upgradedWithAI": "Imagen 3 Studio Studio Render + BRIA AI"
+      "qualityUpgraded": "Original Photo Restored + AI Super-Resolution + BRIA RMBG-1.4"
     },
     "serial": "AGT-103",
     "bulkDiscount": "3-5% discount on higher quantity"
@@ -59,10 +59,10 @@
     "format": "webp",
     "image": {
       "url": "/images/products/cococraft-date-chocolate-box.webp",
-      "width": 850,
-      "height": 552,
-      "aspectRatio": 1.54,
-      "sizeKb": "67.8 KB",
+      "width": 510,
+      "height": 850,
+      "aspectRatio": 0.6,
+      "sizeKb": "71.5 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -100,7 +100,7 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-31T11:08:29.747Z",
-      "upgradedWithAI": "Imagen 3 Studio Studio Render + BRIA AI"
+      "qualityUpgraded": "Original Photo Restored + AI Super-Resolution + BRIA RMBG-1.4"
     },
     "serial": "AGT-102",
     "bulkDiscount": "3-5% discount on higher quantity"
@@ -112,10 +112,10 @@
     "format": "webp",
     "image": {
       "url": "/images/products/4in1-travel-pump-bottle.webp",
-      "width": 250,
-      "height": 828,
-      "aspectRatio": 0.302,
-      "sizeKb": "20.8 KB",
+      "width": 850,
+      "height": 347,
+      "aspectRatio": 2.45,
+      "sizeKb": "43.4 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -153,7 +153,7 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-31T11:08:17.476Z",
-      "upgradedWithAI": "Imagen 3 Studio Studio Render + BRIA AI"
+      "qualityUpgraded": "Original Photo Restored + AI Super-Resolution + BRIA RMBG-1.4"
     },
     "serial": "AGT-101",
     "bulkDiscount": "3-5% discount on higher quantity"
@@ -168,7 +168,7 @@
       "width": 850,
       "height": 789,
       "aspectRatio": 1.077,
-      "sizeKb": "129.3 KB",
+      "sizeKb": "108.8 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -206,7 +206,7 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-31T11:08:04.534Z",
-      "qualityUpgraded": "Clean Studio Isolation + Lanczos3 Sharp 3x"
+      "qualityUpgraded": "Original Photo Restored + AI Super-Resolution + BRIA RMBG-1.4"
     },
     "serial": "AGT-100",
     "bulkDiscount": "3-5% discount on higher quantity"
@@ -221,7 +221,7 @@
       "width": 850,
       "height": 780,
       "aspectRatio": 1.09,
-      "sizeKb": "132.1 KB",
+      "sizeKb": "117.7 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -259,7 +259,7 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-31T11:07:46.846Z",
-      "qualityUpgraded": "Clean Studio Isolation + Lanczos3 Sharp 3x"
+      "qualityUpgraded": "Original Photo Restored + AI Super-Resolution + BRIA RMBG-1.4"
     },
     "serial": "AGT-99",
     "bulkDiscount": "3-5% discount on higher quantity"
