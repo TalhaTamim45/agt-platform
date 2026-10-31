@@ -2,12 +2,13 @@
 
 import { useState, useMemo } from 'react';
 import ProductCard from './ProductCard';
-import { Search, Grid2X2, Rows2 } from 'lucide-react';
+import { Search, Grid2X2, Rows2, ArrowUpDown } from 'lucide-react';
 
 export default function CatalogGrid({ products, onSelectQuote, onSelectDetail }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [mobileCols, setMobileCols] = useState(2); // Default to 2 columns on mobile
+  const [sortBy, setSortBy] = useState('newest'); // 'newest' (Z-A default), 'oldest' (A-Z), 'name-asc', 'name-desc'
 
   // Extract unique categories
   const categories = useMemo(() => {
@@ -15,9 +16,9 @@ export default function CatalogGrid({ products, onSelectQuote, onSelectDetail })
     return ['All', ...Array.from(set)];
   }, [products]);
 
-  // Filter products by category and search
+  // Filter products by category and search, then sort
   const filteredProducts = useMemo(() => {
-    return products.filter((p) => {
+    const list = products.filter((p) => {
       const matchCat =
         selectedCategory === 'All' ||
         p.category.toLowerCase() === selectedCategory.toLowerCase();
@@ -32,7 +33,26 @@ export default function CatalogGrid({ products, onSelectQuote, onSelectDetail })
 
       return matchCat && matchSearch;
     });
-  }, [products, selectedCategory, searchQuery]);
+
+    return [...list].sort((a, b) => {
+      const numA = parseInt((a.serial || '').replace(/\D/g, ''), 10) || 0;
+      const numB = parseInt((b.serial || '').replace(/\D/g, ''), 10) || 0;
+
+      if (sortBy === 'newest') {
+        return numB - numA; // Z-A (Newest First)
+      }
+      if (sortBy === 'oldest') {
+        return numA - numB; // A-Z (Oldest First)
+      }
+      if (sortBy === 'name-asc') {
+        return a.name.localeCompare(b.name);
+      }
+      if (sortBy === 'name-desc') {
+        return b.name.localeCompare(a.name);
+      }
+      return numB - numA; // default Z-A
+    });
+  }, [products, selectedCategory, searchQuery, sortBy]);
 
   return (
     <section id="catalog" className="pb-16 sm:pb-24 pt-2 relative">
@@ -65,8 +85,24 @@ export default function CatalogGrid({ products, onSelectQuote, onSelectDetail })
               )}
             </div>
 
-            {/* Quick Status Pill & Mobile Layout View Switcher */}
-            <div className="flex items-center justify-between sm:justify-end gap-2.5 shrink-0">
+            {/* Quick Status Pill, Sort Selector & Mobile Layout View Switcher */}
+            <div className="flex items-center justify-between sm:justify-end gap-2.5 shrink-0 flex-wrap sm:flex-nowrap">
+              {/* Sort Order Selector (Z-A Newest First by default) */}
+              <div className="relative inline-flex items-center">
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                  className="appearance-none bg-cream-100/90 hover:bg-cream-200/80 border border-gold-500/20 rounded-xl pl-3 pr-8 py-2 text-xs font-semibold text-navy-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-gold-500/20 transition-colors shadow-xs"
+                  aria-label="Sort products"
+                >
+                  <option value="newest">Z-A (Newest First)</option>
+                  <option value="oldest">A-Z (Oldest First)</option>
+                  <option value="name-asc">Name (A-Z)</option>
+                  <option value="name-desc">Name (Z-A)</option>
+                </select>
+                <ArrowUpDown className="w-3.5 h-3.5 text-gold-600 absolute right-2.5 pointer-events-none" />
+              </div>
+
               <div className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-cream-100/90 border border-gold-500/15 text-xs text-navy-800 font-semibold shadow-xs">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
                 <span>

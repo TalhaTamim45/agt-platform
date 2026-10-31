@@ -301,7 +301,7 @@ When adding new products, AGT employs a specialized AI and sharp pipeline to ach
 ### 8.1 Adding a New Product Manually
 1. Place a transparent `.webp` image in `public/images/products/[product-id].webp`.
 2. Open `public/data/products.json`.
-3. Add a new product object at the end with the next sequential code (e.g., `AGT-85`).
+3. Add the new product object at the **very beginning (first item, Z-A order)** with the next sequential code (e.g., `AGT-104`). New products must always be added first, never at the end.
 4. Select one of the 6 canonical categories.
 5. Save and run `npm run build` to verify syntax.
 
@@ -311,14 +311,12 @@ If you have a raw camera photo with a background:
 # 1. Place raw image in .tmp/
 cp /path/to/my-photo.jpg .tmp/leather-diary.jpg
 
-# 2. Run the Layer 3 execution pipeline
+# 2. Run the Layer 3 execution pipeline (automatically prepends to top of products.json)
 node execution/process_2d_product.js \
   --input ".tmp/leather-diary.jpg" \
   --id "executive-leather-diary" \
   --name "Executive PU Leather Diary & Pen Set" \
   --category "Home & Lifestyle"
-
-# 3. Open public/data/products.json and set the "serial": "AGT-85"
 ```
 
 ### 8.3 Running the Batch Image Optimizer

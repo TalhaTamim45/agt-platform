@@ -253,11 +253,25 @@ async function run() {
     }
   }
 
+  // Calculate serial if not provided: find max serial + 1
+  let finalSerial = serial;
+  if (!finalSerial) {
+    let maxNum = 0;
+    masterCatalog.forEach((p) => {
+      const num = parseInt((p.serial || '').replace(/\D/g, ''), 10);
+      if (num && num > maxNum) maxNum = num;
+    });
+    finalSerial = `AGT-${String(maxNum + 1).padStart(2, '0')}`;
+  }
+
+  manifest.serial = finalSerial;
+
   const existingIdx = masterCatalog.findIndex((p) => p.id === productId);
   if (existingIdx !== -1) {
     masterCatalog[existingIdx] = manifest;
   } else {
-    masterCatalog.push(manifest);
+    // New products are ALWAYS prepended at the beginning (Z-A order)
+    masterCatalog.unshift(manifest);
   }
 
   fs.writeFileSync(masterCatalogPath, JSON.stringify(masterCatalog, null, 2), 'utf-8');
