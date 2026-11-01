@@ -1880,10 +1880,10 @@
     "format": "webp",
     "image": {
       "url": "/images/products/dried-lemon-slices.webp",
-      "width": 599,
-      "height": 622,
+      "width": 600,
+      "height": 623,
       "aspectRatio": 0.963,
-      "sizeKb": "36.0 KB",
+      "sizeKb": "42.8 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -1918,7 +1918,7 @@
       "transformOrigin": "center center"
     },
     "meta": {
-      "strippedWith": "BRIA AI RMBG-1.4",
+      "strippedWith": "BiRefNet General-HR (Full Container Retained)",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-18T05:20:50.727Z"
     },
