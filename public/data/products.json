@@ -6,10 +6,10 @@
     "format": "webp",
     "image": {
       "url": "/images/products/smart-electric-scalp-massager.webp",
-      "width": 708,
-      "height": 850,
-      "aspectRatio": 0.833,
-      "sizeKb": "49.9 KB",
+      "width": 850,
+      "height": 833,
+      "aspectRatio": 1.02,
+      "sizeKb": "81.9 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -47,8 +47,7 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-31T11:08:42.312Z",
-      "qualityUpgraded": "Original Photo Restored + AI Super-Resolution + BRIA RMBG-1.4",
-      "precisionRender": "AI Precision High-Scale (Exact Shape & Text Preserved)"
+      "qualityUpgraded": "Original Photo Restored + AI Super-Resolution + BRIA RMBG-1.4"
     },
     "serial": "AGT-103",
     "bulkDiscount": "3-5% discount on higher quantity"
@@ -113,10 +112,10 @@
     "format": "webp",
     "image": {
       "url": "/images/products/4in1-travel-pump-bottle.webp",
-      "width": 309,
-      "height": 850,
-      "aspectRatio": 0.364,
-      "sizeKb": "34.0 KB",
+      "width": 850,
+      "height": 347,
+      "aspectRatio": 2.45,
+      "sizeKb": "43.4 KB",
       "hasAlpha": true
     },
     "animation": {
@@ -154,8 +153,7 @@
       "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
       "createdAt": "2026-10-31T11:08:17.476Z",
-      "qualityUpgraded": "Original Photo Restored + AI Super-Resolution + BRIA RMBG-1.4",
-      "precisionRender": "AI Precision High-Scale (Exact Shape & Text Preserved)"
+      "qualityUpgraded": "Original Photo Restored + AI Super-Resolution + BRIA RMBG-1.4"
     },
     "serial": "AGT-101",
     "bulkDiscount": "3-5% discount on higher quantity"
