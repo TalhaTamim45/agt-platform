@@ -197,12 +197,12 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
       {/* Product Information */}
       <div className="mt-2 sm:mt-3 pt-2 sm:pt-3 border-t border-cream-200 flex-1 flex flex-col justify-between">
         <div>
-          <h3 className="text-xs sm:text-base font-bold text-navy-950 group-hover:text-gold-700 transition-colors line-clamp-2 min-h-[2rem] sm:min-h-0 leading-snug">
+          <h3 className="text-xs sm:text-base font-bold text-navy-950 group-hover:text-gold-700 transition-colors line-clamp-2 min-h-[2rem] sm:min-h-0 leading-snug text-center">
             {product.name}
           </h3>
 
           {/* Direct B2B Wholesale Pricing Badge */}
-          <div className="mt-2.5 flex items-center justify-between gap-1.5 flex-wrap">
+          <div className="mt-2.5 flex items-center justify-center gap-1.5 flex-wrap">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-gold-50/90 border border-gold-500/30 text-gold-900 font-extrabold text-[11px] sm:text-xs shadow-xs">
               <span className="w-1.5 h-1.5 rounded-full bg-gold-600 animate-pulse"></span>
               <span>Price on Request</span>
