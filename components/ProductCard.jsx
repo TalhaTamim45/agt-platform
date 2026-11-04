@@ -197,14 +197,13 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
           </h3>
 
           {/* Unified Wholesale Pricing & MOQ Strip */}
-          <div className="mt-2.5 pt-2 border-t border-cream-200/80 flex items-center justify-between gap-1 text-[10px] sm:text-[11px] text-navy-800">
-            <span className="flex items-center gap-1 font-semibold truncate">
+          <div className="mt-2.5 pt-2 border-t border-cream-200/80 flex items-center justify-between gap-1.5 text-[10px] sm:text-[11px] text-navy-800">
+            <span className="flex items-center gap-1 font-semibold whitespace-nowrap">
               <span className="w-1.5 h-1.5 rounded-full bg-gold-600 animate-pulse shrink-0"></span>
-              <span className="text-navy-600 hidden sm:inline">Wholesale:</span>
               <span className="font-bold text-navy-950">Price on Request</span>
             </span>
-            <span className="text-[9px] sm:text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-600/25 shrink-0 whitespace-nowrap">
-              MOQ: Bulk Ready
+            <span className="text-[9px] sm:text-[10px] font-bold text-emerald-800 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-600/25 shrink-0 whitespace-nowrap">
+              Bulk Ready
             </span>
           </div>
         </div>
