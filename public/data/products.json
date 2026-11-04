@@ -1,5 +1,837 @@
 [
   {
+    "id": "4compartment-stationery-clips-box",
+    "name": "4-Compartment Office Stationery Box with Clips & Push Pins",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/4compartment-stationery-clips-box.webp",
+      "width": 740,
+      "height": 649,
+      "aspectRatio": 1.14,
+      "sizeKb": "54.4 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -3,
+        "minOpacity": 0.24,
+        "maxOpacity": 0.46,
+        "scaleRange": [
+          0.86,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:48:47.984Z"
+    },
+    "serial": "AGT-119",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "stationery-organizer-2027-calendar",
+    "name": "Office Desk Stationery Organizer with 2027 Flip Calendar",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/stationery-organizer-2027-calendar.webp",
+      "width": 850,
+      "height": 676,
+      "aspectRatio": 1.257,
+      "sizeKb": "66.2 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 20,
+        "duration": 4.2,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3,
+        "rotationDriftX": 4
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -24,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:48:31.375Z"
+    },
+    "serial": "AGT-118",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "modular-stackable-mini-drawers",
+    "name": "Modular Stackable Desktop Mini Drawer Storage Set",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/modular-stackable-mini-drawers.webp",
+      "width": 850,
+      "height": 599,
+      "aspectRatio": 1.419,
+      "sizeKb": "73.7 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -3,
+        "minOpacity": 0.24,
+        "maxOpacity": 0.46,
+        "scaleRange": [
+          0.86,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:48:12.593Z"
+    },
+    "serial": "AGT-117",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "automatic-popup-toothpick-dispenser",
+    "name": "Automatic Pop-Up Press Toothpick Dispenser",
+    "category": "Kitchen & Appliances",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/automatic-popup-toothpick-dispenser.webp",
+      "width": 850,
+      "height": 701,
+      "aspectRatio": 1.213,
+      "sizeKb": "75.3 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:47:55.157Z"
+    },
+    "serial": "AGT-116",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "dental-anatomy-tooth-pen-stand",
+    "name": "Dental Anatomy \"Structure of Tooth\" Rotating Desk Pen Stand",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/dental-anatomy-tooth-pen-stand.webp",
+      "width": 649,
+      "height": 850,
+      "aspectRatio": 0.764,
+      "sizeKb": "65.8 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 20,
+        "duration": 4.2,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3,
+        "rotationDriftX": 4
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -24,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:47:36.802Z"
+    },
+    "serial": "AGT-115",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "cochunsen-wall-soap-dish-pack",
+    "name": "COCHUNSEN Wall-Mounted Soap Dish (Retail Pack)",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/cochunsen-wall-soap-dish-pack.webp",
+      "width": 839,
+      "height": 850,
+      "aspectRatio": 0.987,
+      "sizeKb": "59.8 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 20,
+        "duration": 4.2,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3,
+        "rotationDriftX": 4
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -24,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:47:19.888Z"
+    },
+    "serial": "AGT-114",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "sticky-note-index-tabs-dispenser",
+    "name": "Multi-Color Sticky Note Index Tabs & Memo Dispenser",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/sticky-note-index-tabs-dispenser.webp",
+      "width": 687,
+      "height": 850,
+      "aspectRatio": 0.808,
+      "sizeKb": "55.2 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:47:04.654Z"
+    },
+    "serial": "AGT-113",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "cochunsen-wall-soap-dish",
+    "name": "COCHUNSEN Luxury Wall-Mounted Soap Dish Holder",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/cochunsen-wall-soap-dish.webp",
+      "width": 739,
+      "height": 850,
+      "aspectRatio": 0.869,
+      "sizeKb": "67.1 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 20,
+        "duration": 4.2,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3,
+        "rotationDriftX": 4
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -24,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:46:48.192Z"
+    },
+    "serial": "AGT-112",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "joyfeel-soap-pump-sponge-caddy",
+    "name": "Joyfeel 2-in-1 Soap Pump Dispenser & Sponge Caddy",
+    "category": "Kitchen & Appliances",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/joyfeel-soap-pump-sponge-caddy.webp",
+      "width": 850,
+      "height": 654,
+      "aspectRatio": 1.3,
+      "sizeKb": "77.1 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:46:29.251Z"
+    },
+    "serial": "AGT-111",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "2in1-wall-charging-eyewear-holder",
+    "name": "2-in-1 Wall-Mounted Phone Charger & Eyewear Organizer",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/2in1-wall-charging-eyewear-holder.webp",
+      "width": 850,
+      "height": 802,
+      "aspectRatio": 1.06,
+      "sizeKb": "64.1 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 20,
+        "duration": 4.2,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3,
+        "rotationDriftX": 4
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -24,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:46:11.362Z"
+    },
+    "serial": "AGT-110",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "standard-magnetic-chess-board",
+    "name": "Standard Magnetic Folding Chess Board & Mat",
+    "category": "Sports & Fitness",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/standard-magnetic-chess-board.webp",
+      "width": 850,
+      "height": 663,
+      "aspectRatio": 1.282,
+      "sizeKb": "60.7 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -3,
+        "minOpacity": 0.24,
+        "maxOpacity": 0.46,
+        "scaleRange": [
+          0.86,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:45:54.965Z"
+    },
+    "serial": "AGT-109",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "bangladesh-map-maze-puzzle",
+    "name": "Bangladesh Map Steel Ball Balance Maze Puzzle Game",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/bangladesh-map-maze-puzzle.webp",
+      "width": 813,
+      "height": 820,
+      "aspectRatio": 0.991,
+      "sizeKb": "83.4 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 20,
+        "duration": 4.2,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3,
+        "rotationDriftX": 4
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -24,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:45:37.392Z"
+    },
+    "serial": "AGT-108",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "wall-mounted-eyewear-holder",
+    "name": "Wall-Mounted Eyewear & Sunglasses Storage Holder",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/wall-mounted-eyewear-holder.webp",
+      "width": 850,
+      "height": 314,
+      "aspectRatio": 2.707,
+      "sizeKb": "25.2 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -3,
+        "minOpacity": 0.24,
+        "maxOpacity": 0.46,
+        "scaleRange": [
+          0.86,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:45:20.884Z"
+    },
+    "serial": "AGT-107",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "transparent-multigrid-storage-box",
+    "name": "Multi-Grid Transparent Hardware & Craft Storage Box",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/transparent-multigrid-storage-box.webp",
+      "width": 850,
+      "height": 568,
+      "aspectRatio": 1.496,
+      "sizeKb": "55.7 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 15,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 2.8
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -3,
+        "minOpacity": 0.24,
+        "maxOpacity": 0.46,
+        "scaleRange": [
+          0.86,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -18,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.4,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:45:07.955Z"
+    },
+    "serial": "AGT-106",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "desktop-organizer-dual-drawers",
+    "name": "Multi-Compartment Desktop Organizer with 2 Mini Drawers",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/desktop-organizer-dual-drawers.webp",
+      "width": 850,
+      "height": 568,
+      "aspectRatio": 1.496,
+      "sizeKb": "57.2 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 20,
+        "duration": 4.2,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3,
+        "rotationDriftX": 4
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -24,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:44:48.793Z"
+    },
+    "serial": "AGT-105",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "eye-anatomy-desk-organizer",
+    "name": "Eye Anatomy Medical Desk Organizer & Memo Stand",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/eye-anatomy-desk-organizer.webp",
+      "width": 638,
+      "height": 850,
+      "aspectRatio": 0.751,
+      "sizeKb": "110.1 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 20,
+        "duration": 4.2,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3,
+        "rotationDriftX": 4
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -24,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-04T04:44:31.560Z"
+    },
+    "serial": "AGT-104",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
     "id": "smart-electric-scalp-massager",
     "name": "Smart Electric Cordless Scalp & Head Massager",
     "category": "Health & Personal Care",
