@@ -129,46 +129,46 @@ export default function HeroSection({ onOpenQuote }) {
               {/* Staged Product Cluster (3 Featured Products) */}
               <div className="relative h-64 sm:h-72 w-full flex items-center justify-center my-2">
                 
-                {/* Secondary Left Asset: Executive Desk Organizer (AGT-118) */}
-                <div className="absolute left-0 bottom-2 w-32 sm:w-40 z-10 opacity-90 transition-transform duration-500 group-hover:scale-105 group-hover:-translate-x-1">
+                {/* Secondary Left Asset: Executive Medical Capsule Flip Calendar (AGT-122) */}
+                <div className="absolute left-0 bottom-4 w-36 sm:w-44 z-10 opacity-90 transition-transform duration-500 group-hover:scale-105 group-hover:-translate-x-1">
                   <Image
-                    src="/images/products/stationery-organizer-2027-calendar.webp"
-                    alt="Desk Organizer & Flip Calendar"
+                    src="/images/products/medical-capsule-resin-desk-calendar.webp"
+                    alt="Executive Flip Calendar"
                     width={850}
-                    height={676}
-                    className="w-full h-auto object-contain filter drop-shadow-[0_12px_24px_rgba(12,31,59,0.22)] select-none pointer-events-none"
+                    height={544}
+                    className="w-full h-auto object-contain filter drop-shadow-[0_12px_24px_rgba(12,31,59,0.25)] select-none pointer-events-none"
                     priority
                   />
-                  <div className="w-24 h-2 rounded-[100%] bg-navy-950/25 blur-xs mx-auto mt-1" />
+                  <div className="w-28 h-2 rounded-[100%] bg-navy-950/25 blur-xs mx-auto mt-1" />
                 </div>
 
-                {/* Main Foreground Asset: Luxury Stainless Vacuum Flask (AGT-80) with YOUR LOGO badge */}
+                {/* Main Foreground Asset: Matte Black Executive Stainless Bottle (AGT-01) with YOUR LOGO badge */}
                 <div className="relative z-20 flex flex-col items-center justify-center transition-transform duration-500 group-hover:scale-105">
-                  <div className="relative w-28 sm:w-36 h-48 sm:h-56">
+                  <div className="relative w-24 sm:w-32 h-52 sm:h-60">
                     <Image
-                      src="/images/products/portable-vacuum-flask-450.webp"
-                      alt="Stainless Corporate Tumbler"
-                      width={374}
-                      height={729}
-                      className="w-full h-full object-contain filter drop-shadow-[0_16px_32px_rgba(12,31,59,0.32)] select-none pointer-events-none"
+                      src="/images/products/stainless-bottle-300ml.webp"
+                      alt="Matte Black Corporate Drinkware Tumbler"
+                      width={370}
+                      height={850}
+                      className="w-full h-full object-contain filter drop-shadow-[0_20px_40px_rgba(12,31,59,0.4)] select-none pointer-events-none"
                       priority
                     />
                     
                     {/* "YOUR LOGO" Custom Imprint Indicator Pill */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-navy-950/90 backdrop-blur-xs text-gold-400 border border-gold-400/50 px-2.5 py-0.5 rounded-md text-[9px] sm:text-[10px] font-extrabold tracking-widest uppercase shadow-md pointer-events-none animate-pulse">
+                    <div className="absolute top-[48%] left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-navy-950/95 backdrop-blur-xs text-gold-400 border border-gold-400/60 px-2.5 py-0.5 rounded-md text-[9px] sm:text-[10px] font-extrabold tracking-widest uppercase shadow-md pointer-events-none animate-pulse">
                       YOUR LOGO HERE
                     </div>
                   </div>
 
                   {/* Reactive Ground Shadow */}
-                  <div className="w-24 sm:w-32 h-3 rounded-[100%] bg-navy-950/35 blur-sm mt-1" />
+                  <div className="w-20 sm:w-28 h-3 rounded-[100%] bg-navy-950/40 blur-sm mt-1" />
                 </div>
 
                 {/* Secondary Right Asset: Luxury Embossed Gold Chocolate (AGT-126) */}
-                <div className="absolute right-0 bottom-2 w-28 sm:w-36 z-10 opacity-90 transition-transform duration-500 group-hover:scale-105 group-hover:translate-x-1">
+                <div className="absolute right-0 bottom-3 w-28 sm:w-36 z-10 opacity-90 transition-transform duration-500 group-hover:scale-105 group-hover:translate-x-1">
                   <Image
                     src="/images/products/cocoa-lab-gold-birthday-chocolate.webp"
-                    alt="Luxury Gold Embossed Box"
+                    alt="Luxury Gold Embossed Presentation Box"
                     width={505}
                     height={736}
                     className="w-full h-auto object-contain filter drop-shadow-[0_12px_24px_rgba(12,31,59,0.25)] select-none pointer-events-none"
