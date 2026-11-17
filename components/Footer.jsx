@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { MapPin, Phone, Mail, MessageSquare, ArrowUpRight, CreditCard, BarChart3 } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageSquare, CreditCard, BarChart3 } from 'lucide-react';
 
 export default function Footer({ onOpenCard, onOpenAnalytics }) {
   return (

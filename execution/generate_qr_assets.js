@@ -11,7 +11,7 @@ const DISPLAY_URL = 'abdullahglobaltrade.netlify.app';
 async function generateQRCodes() {
   console.log('Generating luxury QR Code assets for:', TARGET_URL);
 
-  const logoPath = path.join(process.cwd(), 'public', 'images', 'logo-clean.png');
+  const logoPath = path.join(process.cwd(), 'public', 'images', 'logo.png');
   const logoBuffer = await fs.readFile(logoPath);
   const logoBase64 = `data:image/png;base64,${logoBuffer.toString('base64')}`;
 
@@ -91,7 +91,7 @@ async function generateQRCodes() {
     .png({ quality: 100 })
     .toBuffer();
 
-  const outSquarePath = path.join(process.cwd(), 'public', 'images', 'agt-qr-code.png');
+  const outSquarePath = path.join(process.cwd(), 'public', 'images', 'qr-code.png');
   await fs.writeFile(outSquarePath, squarePngBuffer);
   console.log('✓ Generated:', outSquarePath);
 

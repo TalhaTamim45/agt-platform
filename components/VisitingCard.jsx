@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import Image from 'next/image';
-import { Download, Share2, Phone, Mail, MapPin, Globe, MessageSquare } from 'lucide-react';
+import { Download, Share2, Phone, Mail, MapPin } from 'lucide-react';
 
 const DEFAULT_SITE_URL = 'https://abdullahglobaltrade.netlify.app';
 
@@ -97,7 +97,7 @@ END:VCARD`;
                 <div className="flex items-center gap-3 relative z-10">
                   <div className="w-12 h-12 relative shrink-0">
                     <Image
-                      src="/images/logo-clean.png"
+                      src="/images/logo.png"
                       alt="AGT Logo"
                       fill
                       className="object-contain"
