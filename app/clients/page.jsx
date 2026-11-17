@@ -372,60 +372,36 @@ export default function ClientsPage() {
             {filteredClients.map((client) => (
               <div
                 key={client.id}
-                className="group relative bg-white rounded-2xl border border-gold-500/25 p-6 shadow-cream-sm hover:shadow-xl hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between overflow-hidden hover:-translate-y-1.5"
+                className="group relative bg-white rounded-2xl border border-gold-500/25 p-6 sm:p-7 shadow-cream-sm hover:shadow-xl hover:border-gold-500/50 transition-all duration-300 flex flex-col items-center text-center overflow-hidden hover:-translate-y-1.5"
               >
-                <div className="flex flex-col items-center text-center">
-                  {/* Sector Pill */}
-                  <div className="w-full flex items-center justify-center mb-3">
-                    <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider border ${client.badgeColor}`}>
-                      {client.sectorLabel}
-                    </span>
-                  </div>
-
-                  {/* Big Prominent Authentic Logo Stage */}
-                  <div className="relative w-full h-32 sm:h-36 max-w-[220px] flex items-center justify-center my-2">
-                    <Image
-                      src={client.logo}
-                      alt={`${client.name} Official Logo`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 300px"
-                      className="object-contain transition-transform duration-300 group-hover:scale-105"
-                      priority
-                    />
-                  </div>
-
-                  {/* Beautiful Company Name */}
-                  <h3 className="text-lg sm:text-xl font-extrabold text-navy-950 font-serif tracking-tight mt-3 group-hover:text-gold-700 transition-colors">
-                    {client.name}
-                  </h3>
-
-                  {/* Short Tagline */}
-                  <p className="text-xs font-semibold text-gold-700/90 mt-1">
-                    {client.tagline}
-                  </p>
+                {/* Sector Pill */}
+                <div className="w-full flex items-center justify-center mb-3">
+                  <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider border ${client.badgeColor}`}>
+                    {client.sectorLabel}
+                  </span>
                 </div>
 
-                {/* Card Action Row */}
-                <div className="mt-5 pt-3.5 border-t border-cream-200 grid grid-cols-2 gap-2">
-                  <a
-                    href={`https://wa.me/8801787239863?text=${encodeURIComponent(client.waInquiry)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="py-2 px-2.5 rounded-xl border border-emerald-600/30 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-[11px] font-bold flex items-center justify-center gap-1 transition-all shadow-xs active:scale-95"
-                  >
-                    <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>WhatsApp</span>
-                  </a>
-
-                  <button
-                    onClick={() => setIsQuoteOpen(true)}
-                    className="py-2 px-2.5 rounded-xl bg-navy-950 hover:bg-navy-900 text-white text-[11px] font-bold flex items-center justify-center gap-1 transition-all shadow-xs active:scale-95"
-                    title="Request Quotation"
-                  >
-                    <span>RFQ</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-gold-400" />
-                  </button>
+                {/* Big Prominent Authentic Logo Stage */}
+                <div className="relative w-full h-32 sm:h-36 max-w-[220px] flex items-center justify-center my-3">
+                  <Image
+                    src={client.logo}
+                    alt={`${client.name} Official Logo`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 300px"
+                    className="object-contain transition-transform duration-300 group-hover:scale-105"
+                    priority
+                  />
                 </div>
+
+                {/* Beautiful Company Name */}
+                <h3 className="text-lg sm:text-xl font-extrabold text-navy-950 font-serif tracking-tight mt-2 group-hover:text-gold-700 transition-colors">
+                  {client.name}
+                </h3>
+
+                {/* Short Tagline */}
+                <p className="text-xs font-semibold text-gold-700/90 mt-1.5">
+                  {client.tagline}
+                </p>
               </div>
             ))}
           </div>
