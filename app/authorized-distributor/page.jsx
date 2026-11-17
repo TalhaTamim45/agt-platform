@@ -63,15 +63,15 @@ const partners = [
   },
   {
     id: 'sti',
-    name: 'STI (Source Trade International)',
-    tagline: 'Specialized Industrial & Institutional Sourcing',
+    name: 'STI (Smart Trade International)',
+    tagline: 'Healthcare Diagnostics & Medical Equipment',
     logo: '/images/partners/sti.png',
-    category: 'Trade & Industrial Supply',
-    established: 'DOHS, Dhaka',
-    description: 'Official corporate trading and distribution partner for Source Trade International. Specialized in industrial raw materials, institutional procurement fulfillment, and verified corporate supply chains with strict quality compliance and priority doorstep delivery.',
-    highlights: ['Institutional Procurement', 'Verified Chain of Custody', 'Custom Bulk Packaging', 'Direct Corporate Supply'],
-    badgeColor: 'border-amber-500/30 bg-amber-50/60 text-amber-800',
-    waInquiry: 'Hello AGT, I would like to inquire about corporate procurement for STI products.'
+    category: 'Healthcare & Diagnostic Devices',
+    established: 'Savar, Dhaka',
+    description: 'Official corporate and institutional distribution partner for Smart Trade International (STI). Supplying certified clinical diagnostics, digital upper-arm blood pressure monitors, pulse oximeters, and institutional health monitoring equipment for corporate wellness, employee benefits, and clinic supply.',
+    highlights: ['STI Digital BP Monitors', 'Clinical Diagnostic Equipment', 'Corporate Wellness Packages', 'Warranty & Batch Tested'],
+    badgeColor: 'border-blue-500/30 bg-blue-50/60 text-blue-800',
+    waInquiry: 'Hello AGT, I would like to inquire about bulk corporate supply for STI (Smart Trade International) medical & diagnostic equipment.'
   },
   {
     id: 'khaas-food',
