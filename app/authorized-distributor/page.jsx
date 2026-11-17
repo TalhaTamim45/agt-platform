@@ -172,15 +172,15 @@ const hotProducts = [
     id: 'sti-bp-machine',
     brandId: 'sti',
     brandName: 'STI (Smart Trade International)',
-    name: 'STI Aneroid Sphygmomanometer (BP Machine)',
-    bengaliName: 'এসটিআই ক্লিনিক্যাল প্রেসার মেশিন (বিপি মনিটর)',
+    name: 'STI Smart Digital Arm Blood Pressure Monitor',
+    bengaliName: 'এসটিআই স্মার্ট ডিজিটাল আর্ম প্রেসার মেশিন (বিপি মনিটর)',
     tag: 'Clinical Healthcare Deal',
     badgeColor: 'border-blue-500/30 bg-blue-50 text-blue-900',
     image: '/images/products/sti-sphygmomanometer.webp',
-    spec: 'Precision Gauge • Standard Adult Nylon Cuff',
-    highlights: ['Clinical Grade Pressure Accuracy', 'Heavy-Duty Latex-Free Bladder', 'Doctor PMD Promotional Gifting Favorite'],
-    moq: 'MOQ: 25 Units',
-    waInquiry: 'Hello AGT, I would like to inquire about bulk procurement for STI Aneroid Sphygmomanometer (BP Machine).'
+    spec: 'One-Touch Automated Digital Display • Adult Arm Cuff',
+    highlights: ['One-Touch Fully Automated Measurement', 'WHO Blood Pressure Classification Scale', 'Doctor PMD Promotional & Clinic Pack'],
+    moq: 'MOQ: 20 Units',
+    waInquiry: 'Hello AGT, I would like to inquire about bulk procurement for STI Smart Digital Arm Blood Pressure Monitor.'
   },
   {
     id: 'sti-oxygen-flowmeter',
