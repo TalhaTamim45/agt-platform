@@ -268,6 +268,7 @@ When adding new products, AGT employs a specialized AI and sharp pipeline to ach
 │   ├── CatalogGrid.jsx            # Dynamic category filter, search & 1/2 col toggle
 │   ├── FloatingWhatsApp.jsx       # Floating corporate WhatsApp communication trigger
 │   ├── Footer.jsx                 # Enterprise footer with trade credentials
+│   ├── HeroSection.jsx            # B2B 2-column split-hero with 3D product showcase & trust bar
 │   ├── Navbar.jsx                 # Sticky luxury header with brand logo & quote button
 │   ├── ProductCard.jsx            # GSAP zero-gravity card with IntersectionObserver & Shimmer
 │   ├── ProductDetail.jsx          # Spec modal, branding capabilities & instant quote

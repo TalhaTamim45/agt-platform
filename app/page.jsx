@@ -9,7 +9,7 @@ import QuoteModal from '../components/QuoteModal';
 import VisitingCard from '../components/VisitingCard';
 import ProductDetail from '../components/ProductDetail';
 import QRAnalytics from '../components/QRAnalytics';
-import { Sparkles } from 'lucide-react';
+import HeroSection from '../components/HeroSection';
 
 // Load the 29-product master catalog
 import productsData from '../public/data/products.json';
@@ -90,22 +90,8 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-1">
-        {/* Main Brand Headline */}
-        <section className="pt-10 pb-4 sm:pt-16 sm:pb-6 text-center px-4 max-w-5xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cream-50 border border-gold-500/35 text-gold-700 text-xs font-bold uppercase tracking-widest shadow-cream-sm mb-4">
-            <Sparkles className="w-3.5 h-3.5 text-gold-600" />
-            <span>FROM VISION TO VALUE</span>
-          </div>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-navy-950 leading-tight">
-            Your Trusted Partner in{' '}
-            <span className="gold-gradient-text block mt-1">
-              Global Corporate Sourcing
-            </span>
-          </h1>
-          <p className="mt-3.5 sm:mt-4 text-sm sm:text-lg text-navy-700/80 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed font-medium">
-            From vision to verified value – reliable end-to-end merchandise solutions for modern brands.
-          </p>
-        </section>
+        {/* Dynamic 2-Column Split-Hero Section */}
+        <HeroSection onOpenQuote={() => handleOpenQuote()} />
 
         {/* Floating Catalog Showcase Grid */}
         <CatalogGrid
