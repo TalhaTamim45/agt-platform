@@ -11,7 +11,7 @@ export default function Navbar({ onOpenQuote }) {
     <header className="sticky top-0 z-50 w-full bg-cream-50/95 backdrop-blur-md border-b border-gold-500/25 shadow-cream-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#" className="flex items-center gap-3 group py-1">
+        <a href="/" className="flex items-center gap-3 group py-1">
           <div className="relative h-14 sm:h-16 flex items-center">
             <Image
               src="/images/logo.png"
@@ -26,11 +26,15 @@ export default function Navbar({ onOpenQuote }) {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-navy-900">
-          <a href="#catalog" className="hover:text-gold-600 transition-colors">
+        <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-navy-900">
+          <a href="/#catalog" className="hover:text-gold-600 transition-colors">
             Product Catalog
           </a>
-          <a href="#contact" className="hover:text-gold-600 transition-colors">
+          <a href="/authorized-distributor" className="hover:text-gold-600 transition-colors flex items-center gap-1.5 font-bold text-navy-950">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span>Authorized Distribution</span>
+          </a>
+          <a href="/#contact" className="hover:text-gold-600 transition-colors">
             Contact
           </a>
         </nav>
@@ -71,14 +75,22 @@ export default function Navbar({ onOpenQuote }) {
         <div className="md:hidden bg-cream-50 border-b border-gold-500/30 px-6 py-6 space-y-4 shadow-xl">
           <nav className="flex flex-col gap-4 text-base font-semibold text-navy-900">
             <a
-              href="#catalog"
+              href="/#catalog"
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-gold-600 transition-colors"
             >
               Product Catalog
             </a>
             <a
-              href="#contact"
+              href="/authorized-distributor"
+              onClick={() => setMobileMenuOpen(false)}
+              className="hover:text-gold-600 transition-colors flex items-center gap-2 font-bold text-navy-950"
+            >
+              <span className="w-2 h-2 rounded-full bg-emerald-500" />
+              <span>Authorized Distribution</span>
+            </a>
+            <a
+              href="/#contact"
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-gold-600 transition-colors"
             >

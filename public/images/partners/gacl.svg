@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gaclGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+  </defs>
+  <!-- GACL Shield / Molecule Symbol -->
+  <g transform="translate(20, 20)">
+    <circle cx="60" cy="60" r="52" fill="url(#gaclGrad)" />
+    <!-- White Medical / Pharma Cross & Drop -->
+    <path d="M 52 35 L 68 35 L 68 52 L 85 52 L 85 68 L 68 68 L 68 85 L 52 85 L 52 68 L 35 68 L 35 52 L 52 52 Z" fill="#ffffff" />
+    <circle cx="60" cy="60" r="6" fill="#0284c7" />
+  </g>
+  <!-- GACL Brand Typography -->
+  <g transform="translate(155, 46)">
+    <text x="0" y="30" font-family="'Inter', 'Montserrat', Arial, sans-serif" font-size="36" font-weight="900" fill="#0f172a" letter-spacing="3">GACL</text>
+    <text x="0" y="58" font-family="'Inter', Arial, sans-serif" font-size="16" font-weight="700" fill="#0284c7" letter-spacing="0.5">G A Company Limited</text>
+    <text x="0" y="80" font-family="'Inter', Arial, sans-serif" font-size="11" font-weight="600" fill="#64748b" letter-spacing="2">GACO GROUP ENTERPRISE</text>
+  </g>
+</svg>

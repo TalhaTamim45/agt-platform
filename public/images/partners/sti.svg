@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stiGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="stiNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  <!-- STI Hexagonal Crest -->
+  <g transform="translate(20, 20)">
+    <polygon points="60,10 108,35 108,85 60,110 12,85 12,35" fill="url(#stiNavy)" stroke="url(#stiGold)" stroke-width="4" />
+    <!-- Bold 'S' Monogram -->
+    <path d="M 75 42 C 75 35 48 35 48 48 C 48 64 78 58 78 76 C 78 88 45 88 45 80" stroke="#f59e0b" stroke-width="7" stroke-linecap="round" fill="none" />
+  </g>
+  <!-- STI Brand Typography -->
+  <g transform="translate(155, 46)">
+    <text x="0" y="30" font-family="'Inter', 'Montserrat', Arial, sans-serif" font-size="36" font-weight="900" fill="#0f172a" letter-spacing="4">STI</text>
+    <text x="0" y="58" font-family="'Inter', Arial, sans-serif" font-size="16" font-weight="700" fill="#d97706" letter-spacing="0.5">Source Trade International</text>
+    <text x="0" y="80" font-family="'Inter', Arial, sans-serif" font-size="11" font-weight="600" fill="#64748b" letter-spacing="2">INDUSTRIAL &amp; TRADE SUPPLY</text>
+  </g>
+</svg>

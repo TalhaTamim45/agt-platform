@@ -43,12 +43,18 @@ export default function Footer({ onOpenCard, onOpenAnalytics }) {
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-navy-800 font-medium">
               <li>
-                <a href="#catalog" className="hover:text-gold-700 transition-colors">
+                <a href="/#catalog" className="hover:text-gold-700 transition-colors">
                   Product Catalog
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-gold-700 transition-colors">
+                <a href="/authorized-distributor" className="hover:text-gold-700 transition-colors font-bold text-navy-950 flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                  <span>Authorized Distribution</span>
+                </a>
+              </li>
+              <li>
+                <a href="/#contact" className="hover:text-gold-700 transition-colors">
                   Contact Procurement
                 </a>
               </li>

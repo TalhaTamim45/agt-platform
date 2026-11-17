@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="khaasGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+  </defs>
+  <!-- Khaas Food Organic Leaf Circle -->
+  <g transform="translate(20, 20)">
+    <circle cx="60" cy="60" r="52" fill="#f0fdf4" stroke="#16a34a" stroke-width="3" />
+    <!-- Leaf Motifs -->
+    <path d="M 60 25 C 80 40 90 70 60 95 C 45 75 40 50 60 25 Z" fill="url(#khaasGreen)" />
+    <path d="M 60 40 Q 60 85 75 75" stroke="#ffffff" stroke-width="2.5" fill="none" />
+    <path d="M 45 50 C 35 60 35 75 48 80 C 50 68 50 58 45 50 Z" fill="#22c55e" opacity="0.9" />
+  </g>
+  <!-- Khaas Food Typography -->
+  <g transform="translate(155, 46)">
+    <text x="0" y="30" font-family="'Inter', 'Montserrat', Arial, sans-serif" font-size="34" font-weight="900" fill="#15803d" letter-spacing="1">khaas food</text>
+    <text x="0" y="58" font-family="'Inter', Arial, sans-serif" font-size="15" font-weight="700" fill="#78350f" letter-spacing="0.5">Pure Food • Safe Life</text>
+    <text x="0" y="80" font-family="'Inter', Arial, sans-serif" font-size="11" font-weight="600" fill="#64748b" letter-spacing="2">ORGANIC &amp; HEALTHY NUTRITION</text>
+  </g>
+</svg>
