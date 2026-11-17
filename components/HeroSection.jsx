@@ -186,20 +186,6 @@ export default function HeroSection({ onOpenQuote }) {
             </div>
           </div>
         </div>
-
-        {/* Desktop Slide Counter Pill "01 / 03" (Matches Luxury Reference Style) */}
-        <div className="relative z-10 flex items-center justify-center pb-3">
-          <button
-            onClick={nextSlide}
-            title="Next slide"
-            aria-label={`Slide ${currentSlide + 1} of ${slides.length}. Click for next slide.`}
-            className="group inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-black/45 hover:bg-black/65 active:scale-95 border border-white/15 backdrop-blur-md shadow-lg transition-all cursor-pointer"
-          >
-            <span className="text-xs lg:text-[13px] font-bold tracking-wider text-white select-none">
-              {String(currentSlide + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
-            </span>
-          </button>
-        </div>
       </div>
 
       {/* =========================================================================
@@ -249,20 +235,6 @@ export default function HeroSection({ onOpenQuote }) {
           >
             <ChevronRight className="w-4 h-4" />
           </button>
-
-          {/* Mobile Slide Counter Pill Overlay "01 / 03" */}
-          <div className="absolute bottom-2.5 inset-x-0 z-10 flex items-center justify-center">
-            <button
-              onClick={nextSlide}
-              title="Next slide"
-              aria-label={`Slide ${currentSlide + 1} of ${slides.length}`}
-              className="inline-flex items-center justify-center px-3.5 py-1 rounded-full bg-black/55 active:scale-95 border border-white/15 backdrop-blur-md shadow-md transition-all cursor-pointer"
-            >
-              <span className="text-[11px] font-bold tracking-wider text-white select-none">
-                {String(currentSlide + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
-              </span>
-            </button>
-          </div>
         </div>
 
         {/* Lower Content Area: Crisp Copy & Easy Touch Buttons */}
