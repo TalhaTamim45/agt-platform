@@ -289,7 +289,7 @@ When adding new products, AGT employs a specialized AI and sharp pipeline to ach
 │       └── products/              # Transparent WebP assets (129 products)
 ├── netlify.toml                   # Netlify build & deployment configuration
 ├── next.config.js                 # Production headers (HSTS, CSP, Cache-Control)
-├── package.json                   # Dependencies (Next 16.4.3, React 19, GSAP 3, Sharp)
+├── package.json                   # Dependencies (Next 16.4.6, React 19, GSAP 3, Sharp)
 ├── PROJECT.md                     # This document (Master Architecture & ERP Roadmap)
 └── README.md                      # Quick repository guide
 ```
