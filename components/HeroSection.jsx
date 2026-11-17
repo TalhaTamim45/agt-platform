@@ -71,186 +71,300 @@ export default function HeroSection({ onOpenQuote }) {
       className="relative w-full bg-[#003e4a] border-b border-teal-400/20 shadow-2xl overflow-hidden mb-4 sm:mb-6"
     >
       
-      {/* 100% Full-Bleed Panoramic Studio Backgrounds (Zero Box / Zero Clipping) */}
-      <div className="absolute inset-0 pointer-events-none">
-        {slides.map((slide, index) => (
-          <div
-            key={slide.id}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === currentSlide ? 'opacity-100 z-1' : 'opacity-0 z-0 pointer-events-none'
-            }`}
-          >
-            <Image
-              src={slide.image}
-              alt={slide.label}
-              fill
-              priority={index === 0}
-              className="object-cover object-[82%_top] sm:object-[82%_center] lg:object-bottom select-none"
-            />
-            {/* Mobile Contrast Gradient: Keeps upper products visible while ensuring crystal-clear text readability below */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#003e4a] from-45% via-[#003e4a]/85 via-70% to-[#003e4a]/30 lg:hidden pointer-events-none" />
-            {/* Desktop Left-to-Right Ambient Petrol Gradient */}
-            <div className="absolute inset-y-0 left-0 hidden lg:block bg-gradient-to-r from-[#003e4a] via-[#003e4a]/85 to-transparent w-[50%] pointer-events-none" />
+      {/* =========================================================================
+          1. DESKTOP / TABLET HERO (lg:block) - 100% Unchanged Full-Bleed Panoramic
+          ========================================================================= */}
+      <div className="hidden lg:block relative w-full">
+        {/* Full-Bleed Studio Backgrounds */}
+        <div className="absolute inset-0 pointer-events-none">
+          {slides.map((slide, index) => (
+            <div
+              key={slide.id}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                index === currentSlide ? 'opacity-100 z-1' : 'opacity-0 z-0 pointer-events-none'
+              }`}
+            >
+              <Image
+                src={slide.image}
+                alt={slide.label}
+                fill
+                priority={index === 0}
+                className="object-cover object-bottom select-none"
+              />
+              {/* Desktop Left-to-Right Ambient Petrol Gradient */}
+              <div className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#003e4a] via-[#003e4a]/85 to-transparent w-[50%] pointer-events-none" />
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Navigation Arrows */}
+        <button
+          onClick={prevSlide}
+          aria-label="Previous Slide"
+          className="absolute left-4 top-[48%] -translate-y-1/2 z-20 p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-xl group"
+        >
+          <ChevronLeft className="w-6 h-6 transition-transform group-hover:-translate-x-0.5" />
+        </button>
+
+        <button
+          onClick={nextSlide}
+          aria-label="Next Slide"
+          className="absolute right-4 top-[48%] -translate-y-1/2 z-20 p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-xl group"
+        >
+          <ChevronRight className="w-6 h-6 transition-transform group-hover:translate-x-0.5" />
+        </button>
+
+        {/* Desktop Content Container */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-10 lg:pt-12 pb-8 min-h-[500px] lg:min-h-[530px] flex flex-col justify-center">
+          <div className="max-w-xl lg:max-w-2xl">
+            {/* Pre-header Badge */}
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 border border-white/25 text-teal-100 text-xs font-bold uppercase tracking-widest shadow-xs mb-3.5 w-fit backdrop-blur-md">
+              <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-pulse" />
+              <span>{active.badge}</span>
+            </div>
+
+            {/* Headline */}
+            <h1 className="text-4xl lg:text-[2.85rem] font-extrabold tracking-tight text-white leading-[1.12]">
+              Your Trusted Partner in{' '}
+              <span className="block mt-1.5 text-white">
+                Global Corporate Sourcing
+              </span>
+            </h1>
+
+            {/* Subtitle */}
+            <p className="mt-3.5 text-base lg:text-[15px] text-teal-50/95 leading-relaxed font-normal max-w-xl">
+              From vision to verified value – reliable end-to-end merchandise solutions, bespoke executive gift sets, and custom-branded collateral for modern enterprises and pharmaceutical brands.
+            </p>
+
+            {/* 4-Item Corporate Value Proposition Checklist */}
+            <div className="mt-5 grid grid-cols-2 gap-2.5 w-full max-w-lg">
+              <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
+                <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
+                <span className="text-[13px] font-semibold text-white">Custom Logo &amp; Laser Engraving</span>
+              </div>
+              <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
+                <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
+                <span className="text-[13px] font-semibold text-white">Direct Factory Sourcing (Zero Markup)</span>
+              </div>
+              <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
+                <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
+                <span className="text-[13px] font-semibold text-white">Pre-Production Physical Sampling</span>
+              </div>
+              <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
+                <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
+                <span className="text-[13px] font-semibold text-white">Expedited Doorstep Delivery</span>
+              </div>
+            </div>
+
+            {/* CTA Action Hub & Hotline */}
+            <div className="mt-6 flex flex-wrap items-center gap-3">
+              <button
+                onClick={onOpenQuote}
+                className="gold-btn py-3 px-6 rounded-xl text-sm font-bold uppercase tracking-wider flex items-center gap-2 shadow-lg hover:shadow-gold-500/30 transition-all hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <span>Request Corporate Quote</span>
+                <ArrowUpRight className="w-4 h-4 text-white" />
+              </button>
+
+              <a
+                href={waHeroUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-3 px-5 rounded-xl border border-emerald-400/50 bg-emerald-600/30 hover:bg-emerald-600/50 text-white text-sm font-bold uppercase tracking-wider flex items-center gap-2 shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] backdrop-blur-md"
+              >
+                <MessageSquare className="w-4 h-4 text-emerald-300" />
+                <span>WhatsApp Desk</span>
+              </a>
+
+              <a
+                href="tel:+8801787239863"
+                className="inline-flex items-center gap-1.5 text-[13px] font-bold text-white hover:text-amber-200 transition-colors px-3.5 py-2.5 rounded-xl bg-white/15 border border-white/25 hover:bg-white/20 backdrop-blur-md"
+              >
+                <Phone className="w-3.5 h-3.5 text-amber-300" />
+                <span>+880 1787 239 863</span>
+              </a>
+            </div>
           </div>
-        ))}
+        </div>
+
+        {/* Desktop Indicator Dots */}
+        <div className="relative z-10 flex items-center justify-center gap-2 pb-3">
+          {slides.map((slide, index) => (
+            <button
+              key={slide.id}
+              onClick={() => setCurrentSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}
+              className={`transition-all duration-300 rounded-full h-1.5 ${
+                index === currentSlide 
+                  ? 'w-6 bg-white shadow-sm' 
+                  : 'w-2 bg-white/40 hover:bg-white/70'
+              }`}
+            />
+          ))}
+        </div>
       </div>
 
-      {/* Navigation Arrows: Sleek on desktop, tucked away or compact on mobile so they never block copy */}
-      <button
-        onClick={prevSlide}
-        aria-label="Previous Slide"
-        className="hidden sm:flex absolute left-2 sm:left-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-xl group items-center justify-center"
-      >
-        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-x-0.5" />
-      </button>
-
-      <button
-        onClick={nextSlide}
-        aria-label="Next Slide"
-        className="hidden sm:flex absolute right-2 sm:right-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-xl group items-center justify-center"
-      >
-        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-0.5" />
-      </button>
-
-      {/* Central Content Container: Balanced Luxury Scale (Fits First Screen Flawlessly on all devices) */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-10 lg:pt-12 pb-5 sm:pb-8 min-h-[460px] sm:min-h-[500px] lg:min-h-[530px] flex flex-col justify-end sm:justify-center">
+      {/* =========================================================================
+          2. MOBILE / TABLET HERO (lg:hidden) - Tailored Visual Showcase & High Contrast
+          ========================================================================= */}
+      <div className="block lg:hidden w-full flex flex-col">
         
-        <div className="max-w-xl lg:max-w-2xl">
-          {/* Pre-header Badge */}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white/15 border border-white/25 text-teal-100 text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-xs mb-2.5 sm:mb-3.5 w-fit backdrop-blur-md">
-            <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300 animate-pulse" />
-            <span>{active.badge}</span>
+        {/* Upper Visual Stage: Dedicated Product Slider Window (Uncropped, vibrant & focused on merchandise) */}
+        <div className="relative w-full h-[220px] sm:h-[260px] bg-[#002f38] overflow-hidden border-b border-teal-400/20">
+          {slides.map((slide, index) => (
+            <div
+              key={slide.id}
+              className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                index === currentSlide ? 'opacity-100 z-1' : 'opacity-0 z-0 pointer-events-none'
+              }`}
+            >
+              <Image
+                src={slide.image}
+                alt={slide.label}
+                fill
+                priority={index === 0}
+                className="object-cover object-[80%_center] select-none"
+              />
+              {/* Subtle Vignette on edges so products pop cleanly */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#003e4a] via-transparent to-black/20 pointer-events-none" />
+            </div>
+          ))}
+
+          {/* Floating Product Category Pill */}
+          <div className="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/45 border border-white/20 text-teal-100 text-[10px] font-bold uppercase tracking-wider backdrop-blur-md shadow-md">
+            <Sparkles className="w-3 h-3 text-amber-300 animate-pulse" />
+            <span>{active.label}</span>
           </div>
 
-          {/* Main Headline - Crisp Pure White */}
-          <h1 className="text-2xl sm:text-4xl lg:text-[2.85rem] font-extrabold tracking-tight text-white leading-[1.15] sm:leading-[1.12]">
-            Your Trusted Partner in{' '}
-            <span className="block mt-0.5 sm:mt-1.5 text-white">
-              Global Corporate Sourcing
-            </span>
+          {/* Compact Mobile Prev/Next Arrows */}
+          <button
+            onClick={prevSlide}
+            aria-label="Previous Slide"
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-20 p-1.5 rounded-full bg-black/40 text-white/90 border border-white/20 backdrop-blur-md shadow-md active:scale-90"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+          <button
+            onClick={nextSlide}
+            aria-label="Next Slide"
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-20 p-1.5 rounded-full bg-black/40 text-white/90 border border-white/20 backdrop-blur-md shadow-md active:scale-90"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+
+          {/* Slide Indicator Dots overlay on image */}
+          <div className="absolute bottom-2.5 inset-x-0 z-10 flex items-center justify-center gap-1.5">
+            {slides.map((slide, index) => (
+              <button
+                key={slide.id}
+                onClick={() => setCurrentSlide(index)}
+                aria-label={`Go to slide ${index + 1}`}
+                className={`transition-all duration-300 rounded-full h-1.5 ${
+                  index === currentSlide 
+                    ? 'w-5 bg-white shadow-sm' 
+                    : 'w-1.5 bg-white/40'
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Lower Content Area: Crisp Copy & Easy Touch Buttons */}
+        <div className="p-4 sm:p-6 bg-[#003e4a] text-white flex flex-col">
+          {/* Trust Tag */}
+          <div className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-bold text-amber-300 uppercase tracking-widest mb-1.5">
+            <Sparkles className="w-3 h-3" />
+            <span>B2B CORPORATE SOURCING &amp; MERCHANDISE</span>
+          </div>
+
+          {/* Mobile Headline */}
+          <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white leading-tight">
+            Your Trusted Partner in Global Corporate Sourcing
           </h1>
 
-          {/* Subtitle - Crisp High Contrast */}
-          <p className="mt-2.5 sm:mt-3.5 text-xs sm:text-base lg:text-[15px] text-teal-50/95 leading-relaxed font-normal max-w-xl">
-            From vision to verified value – reliable end-to-end merchandise solutions, bespoke executive gift sets, and custom-branded collateral for modern enterprises and pharmaceutical brands.
+          {/* Mobile Subtitle */}
+          <p className="mt-1.5 text-xs sm:text-sm text-teal-100/90 leading-relaxed font-normal">
+            From vision to verified value – reliable end-to-end merchandise, bespoke executive gift hampers, and custom-branded collateral.
           </p>
 
-          {/* 4-Item Corporate Value Proposition Checklist (Visible on tablet & desktop; on mobile the bottom trust strip provides these cleanly) */}
-          <div className="hidden sm:grid mt-4 sm:mt-5 grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5 w-full max-w-lg">
-            <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
-              <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
-              <span className="text-xs sm:text-[13px] font-semibold text-white">Custom Logo &amp; Laser Engraving</span>
-            </div>
-            <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
-              <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
-              <span className="text-xs sm:text-[13px] font-semibold text-white">Direct Factory Sourcing (Zero Markup)</span>
-            </div>
-            <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
-              <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
-              <span className="text-xs sm:text-[13px] font-semibold text-white">Pre-Production Physical Sampling</span>
-            </div>
-            <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
-              <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
-              <span className="text-xs sm:text-[13px] font-semibold text-white">Expedited Doorstep Delivery</span>
-            </div>
-          </div>
-
-          {/* CTA Action Hub & Hotline */}
-          <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-2.5 sm:gap-3">
-            {/* Primary Quote Trigger */}
+          {/* Mobile CTA Stack */}
+          <div className="mt-4 flex flex-col gap-2.5">
+            {/* Primary Gold RFQ Button */}
             <button
               onClick={onOpenQuote}
-              className="gold-btn py-2.5 sm:py-3 px-6 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg hover:shadow-gold-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto"
+              className="gold-btn py-2.5 px-4 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg active:scale-[0.98] w-full"
             >
               <span>Request Corporate Quote</span>
               <ArrowUpRight className="w-4 h-4 text-white" />
             </button>
 
-            {/* Mobile Action Sub-Row: WhatsApp & Phone side by side on mobile */}
-            <div className="flex items-center gap-2.5 w-full sm:w-auto">
-              {/* Secondary Direct WhatsApp B2B */}
+            {/* Secondary Action Row: WhatsApp & Hotline */}
+            <div className="grid grid-cols-2 gap-2">
               <a
                 href={waHeroUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 sm:flex-initial py-2.5 sm:py-3 px-4 sm:px-5 rounded-xl border border-emerald-400/50 bg-emerald-600/30 hover:bg-emerald-600/50 text-white text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] backdrop-blur-md"
+                className="py-2 px-3 rounded-xl border border-emerald-400/50 bg-emerald-600/30 active:bg-emerald-600/50 text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-xs backdrop-blur-md"
               >
-                <MessageSquare className="w-4 h-4 text-emerald-300" />
+                <MessageSquare className="w-3.5 h-3.5 text-emerald-300" />
                 <span>WhatsApp</span>
               </a>
 
-              {/* Direct Hotline Badge */}
               <a
                 href="tel:+8801787239863"
-                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 text-xs sm:text-[13px] font-bold text-white hover:text-amber-200 transition-colors px-3 sm:px-3.5 py-2.5 sm:py-2 rounded-xl bg-white/15 border border-white/25 hover:bg-white/20 backdrop-blur-md"
+                className="py-2 px-3 rounded-xl border border-white/20 bg-white/10 active:bg-white/20 text-white text-xs font-bold tracking-wider flex items-center justify-center gap-1.5 shadow-xs backdrop-blur-md"
               >
                 <Phone className="w-3.5 h-3.5 text-amber-300" />
-                <span className="hidden xs:inline">+880 1787 239 863</span>
-                <span className="xs:hidden">Call Now</span>
+                <span>Call Hotline</span>
               </a>
             </div>
           </div>
-
         </div>
 
       </div>
 
-      {/* Clean Minimal Slider Indicator Dots */}
-      <div className="relative z-10 flex items-center justify-center gap-2 pb-2.5">
-        {slides.map((slide, index) => (
-          <button
-            key={slide.id}
-            onClick={() => setCurrentSlide(index)}
-            aria-label={`Go to slide ${index + 1}`}
-            className={`transition-all duration-300 rounded-full h-1.5 ${
-              index === currentSlide 
-                ? 'w-6 bg-white shadow-sm' 
-                : 'w-2 bg-white/40 hover:bg-white/70'
-            }`}
-          />
-        ))}
-      </div>
-
-      {/* Bottom Integrated Trust Strip: Full Width Compact Bar */}
+      {/* =========================================================================
+          3. BOTTOM INTEGRATED TRUST STRIP (Common across PC & Mobile)
+          ========================================================================= */}
       <div className="relative z-10 w-full border-t border-teal-400/20 bg-[#002b33]/95 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-lg bg-white/10 border border-white/20 text-white shrink-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
+          <div className="flex items-center gap-2 sm:gap-2.5">
+            <div className="p-1.5 sm:p-2 rounded-lg bg-white/10 border border-white/20 text-white shrink-0">
               <Factory className="w-3.5 h-3.5 text-amber-300" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-white leading-tight">Direct Factory Sourcing</h4>
-              <p className="text-[10px] text-teal-100/75 leading-tight">Wholesale factory pricing.</p>
+              <h4 className="text-[11px] sm:text-xs font-bold text-white leading-tight">Direct Factory Sourcing</h4>
+              <p className="text-[9px] sm:text-[10px] text-teal-100/75 leading-tight">Wholesale factory pricing.</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-lg bg-white/10 border border-white/20 text-white shrink-0">
+          <div className="flex items-center gap-2 sm:gap-2.5">
+            <div className="p-1.5 sm:p-2 rounded-lg bg-white/10 border border-white/20 text-white shrink-0">
               <PackageCheck className="w-3.5 h-3.5 text-emerald-300" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-white leading-tight">Pre-Production Sampling</h4>
-              <p className="text-[10px] text-teal-100/75 leading-tight">100% physical proof approval.</p>
+              <h4 className="text-[11px] sm:text-xs font-bold text-white leading-tight">Pre-Production Sampling</h4>
+              <p className="text-[9px] sm:text-[10px] text-teal-100/75 leading-tight">100% physical proof approval.</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-lg bg-white/10 border border-white/20 text-white shrink-0">
+          <div className="flex items-center gap-2 sm:gap-2.5">
+            <div className="p-1.5 sm:p-2 rounded-lg bg-white/10 border border-white/20 text-white shrink-0">
               <Palette className="w-3.5 h-3.5 text-amber-300" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-white leading-tight">Custom Brand Imprint</h4>
-              <p className="text-[10px] text-teal-100/75 leading-tight">Laser engraving &amp; UV printing.</p>
+              <h4 className="text-[11px] sm:text-xs font-bold text-white leading-tight">Custom Brand Imprint</h4>
+              <p className="text-[9px] sm:text-[10px] text-teal-100/75 leading-tight">Laser engraving &amp; UV printing.</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-lg bg-white/10 border border-white/20 text-white shrink-0">
+          <div className="flex items-center gap-2 sm:gap-2.5">
+            <div className="p-1.5 sm:p-2 rounded-lg bg-white/10 border border-white/20 text-white shrink-0">
               <Truck className="w-3.5 h-3.5 text-emerald-300" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-white leading-tight">Nationwide Delivery</h4>
-              <p className="text-[10px] text-teal-100/75 leading-tight">Insured doorstep logistics.</p>
+              <h4 className="text-[11px] sm:text-xs font-bold text-white leading-tight">Nationwide Delivery</h4>
+              <p className="text-[9px] sm:text-[10px] text-teal-100/75 leading-tight">Insured doorstep logistics.</p>
             </div>
           </div>
         </div>
