@@ -1,5 +1,525 @@
 [
   {
+    "id": "portable-folding-bbq-grill-stove",
+    "name": "Portable Folding Charcoal BBQ Grill & Skewer Barbecue Stove",
+    "category": "Kitchen & Appliances",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/portable-folding-bbq-grill-stove.webp",
+      "width": 424,
+      "height": 429,
+      "aspectRatio": 1.273,
+      "sizeKb": "43.7 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BiRefNet General",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-17T05:49:25.655Z"
+    },
+    "serial": "AGT-129",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "cocoa-lab-coffee-dark-chocolate",
+    "name": "Cocoa Lab Artisan Dark Chocolate & Coffee Cream (Bar)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/cocoa-lab-coffee-dark-chocolate.webp",
+      "width": 460,
+      "height": 850,
+      "aspectRatio": 0.541,
+      "sizeKb": "42.7 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 22,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3.2,
+        "rotationDriftX": 4.2
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -26,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-17T05:49:02.232Z"
+    },
+    "serial": "AGT-128",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "cocoa-lab-spicy-dark-chocolate",
+    "name": "Cocoa Lab Artisan Spicy Dark Chocolate (Bar)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/cocoa-lab-spicy-dark-chocolate.webp",
+      "width": 460,
+      "height": 850,
+      "aspectRatio": 0.541,
+      "sizeKb": "38.8 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 22,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3.2,
+        "rotationDriftX": 4.2
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -26,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-17T05:48:49.718Z"
+    },
+    "serial": "AGT-127",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "cocoa-lab-gold-birthday-chocolate",
+    "name": "Cocoa Lab \"Happy Birthday\" Luxury Embossed Gold Chocolate Bar",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/cocoa-lab-gold-birthday-chocolate.webp",
+      "width": 505,
+      "height": 736,
+      "aspectRatio": 0.689,
+      "sizeKb": "40.1 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 22,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3.2,
+        "rotationDriftX": 4.2
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -26,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BiRefNet General",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-17T05:48:36.138Z"
+    },
+    "serial": "AGT-126",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "cocoa-lab-almond-milk-chocolate",
+    "name": "Cocoa Lab Artisan Milk Chocolate & Roasted Almond (Bar)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/cocoa-lab-almond-milk-chocolate.webp",
+      "width": 460,
+      "height": 850,
+      "aspectRatio": 0.541,
+      "sizeKb": "71.7 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 22,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3.2,
+        "rotationDriftX": 4.2
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -26,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-17T05:48:19.016Z"
+    },
+    "serial": "AGT-125",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "cococraft-hazelnut-dark-chocolate",
+    "name": "Cococraft Artisan Dark Chocolate & Hazelnut Cream (Bar)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/cococraft-hazelnut-dark-chocolate.webp",
+      "width": 450,
+      "height": 850,
+      "aspectRatio": 0.529,
+      "sizeKb": "41.1 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 22,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3.2,
+        "rotationDriftX": 4.2
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -26,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-17T05:48:03.899Z"
+    },
+    "serial": "AGT-124",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "cocoa-lab-orange-dark-chocolate",
+    "name": "Cocoa Lab Artisan Dark Chocolate with Orange Delight (Bar)",
+    "category": "Food & Beverages",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/cocoa-lab-orange-dark-chocolate.webp",
+      "width": 451,
+      "height": 850,
+      "aspectRatio": 0.531,
+      "sizeKb": "40.0 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 22,
+        "duration": 4.4,
+        "ease": "power1.inOut",
+        "rotationDriftZ": 3.2,
+        "rotationDriftX": 4.2
+      },
+      "shadow": {
+        "baseBlur": 28,
+        "spread": -5,
+        "minOpacity": 0.18,
+        "maxOpacity": 0.42,
+        "scaleRange": [
+          0.78,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -26,
+        "scale": 1.07,
+        "tiltSensitivity": 16,
+        "duration": 0.48,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-17T05:47:50.064Z"
+    },
+    "serial": "AGT-123",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "medical-capsule-resin-desk-calendar",
+    "name": "Medical Capsule Resin Desk Flip Calendar 2027",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/medical-capsule-resin-desk-calendar.webp",
+      "width": 850,
+      "height": 544,
+      "aspectRatio": 1.563,
+      "sizeKb": "118.4 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "balanced",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 22,
+        "spread": -3,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.46,
+        "scaleRange": [
+          0.84,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -20,
+        "scale": 1.05,
+        "tiltSensitivity": 12,
+        "duration": 0.42,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BiRefNet General",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-17T05:47:36.760Z"
+    },
+    "serial": "AGT-122",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "brodu-bts2409-bluetooth-speaker",
+    "name": "Brodu BTS-2409 Portable Wireless Bluetooth Speaker with RGB Light",
+    "category": "Electronics & Gadgets",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/brodu-bts2409-bluetooth-speaker.webp",
+      "width": 650,
+      "height": 850,
+      "aspectRatio": 0.765,
+      "sizeKb": "156.5 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-17T05:47:25.557Z"
+    },
+    "serial": "AGT-121",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
+    "id": "anjani-2in1-vegetable-cutter",
+    "name": "Anjani 2-in-1 Manual String Vegetable Cutter & Chopper",
+    "category": "Kitchen & Appliances",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/anjani-2in1-vegetable-cutter.webp",
+      "width": 850,
+      "height": 815,
+      "aspectRatio": 1.043,
+      "sizeKb": "89.0 KB",
+      "hasAlpha": true
+    },
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "BRIA AI RMBG-1.4",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-17T05:47:10.461Z"
+    },
+    "serial": "AGT-120",
+    "bulkDiscount": "3-5% discount on bulk orders"
+  },
+  {
     "id": "4compartment-stationery-clips-box",
     "name": "4-Compartment Office Stationery Box with Clips & Push Pins",
     "category": "Home & Lifestyle",
