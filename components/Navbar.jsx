@@ -26,13 +26,17 @@ export default function Navbar({ onOpenQuote }) {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-navy-900">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-7 text-sm font-semibold text-navy-900">
           <a href="/#catalog" className="hover:text-gold-600 transition-colors">
             Product Catalog
           </a>
           <a href="/authorized-distributor" className="hover:text-gold-600 transition-colors flex items-center gap-1.5 font-bold text-navy-950">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             <span>Authorized Distribution</span>
+          </a>
+          <a href="/clients" className="hover:text-gold-600 transition-colors flex items-center gap-1.5 font-bold text-navy-950">
+            <span className="w-2 h-2 rounded-full bg-amber-500" />
+            <span>Our Clients</span>
           </a>
           <a href="/#contact" className="hover:text-gold-600 transition-colors">
             Contact
@@ -88,6 +92,14 @@ export default function Navbar({ onOpenQuote }) {
             >
               <span className="w-2 h-2 rounded-full bg-emerald-500" />
               <span>Authorized Distribution</span>
+            </a>
+            <a
+              href="/clients"
+              onClick={() => setMobileMenuOpen(false)}
+              className="hover:text-gold-600 transition-colors flex items-center gap-2 font-bold text-navy-950"
+            >
+              <span className="w-2 h-2 rounded-full bg-amber-500" />
+              <span>Our Clients</span>
             </a>
             <a
               href="/#contact"

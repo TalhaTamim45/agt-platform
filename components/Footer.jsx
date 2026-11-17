@@ -54,6 +54,12 @@ export default function Footer({ onOpenCard, onOpenAnalytics }) {
                 </a>
               </li>
               <li>
+                <a href="/clients" className="hover:text-gold-700 transition-colors font-bold text-navy-950 flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                  <span>Our Clients</span>
+                </a>
+              </li>
+              <li>
                 <a href="/#contact" className="hover:text-gold-700 transition-colors">
                   Contact Procurement
                 </a>
