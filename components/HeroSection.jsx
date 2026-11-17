@@ -20,19 +20,19 @@ const slides = [
   {
     id: 'tech-drinkware',
     label: 'Custom Executive Bags & Smart Drinkware',
-    image: '/images/hero-corporate-teal.webp',
+    image: '/images/hero-pano-slide1.webp',
     badge: 'FROM VISION TO VALUE | B2B CORPORATE SOURCING',
   },
   {
     id: 'apparel-desk',
     label: 'Corporate Apparel & Executive Desk Tech',
-    image: '/images/hero-slide-apparel.webp',
+    image: '/images/hero-pano-slide2.webp',
     badge: 'BESPOKE BRAND MERCHANDISE | FACTORY DIRECT',
   },
   {
     id: 'vip-luxury',
     label: 'Prestige VIP Corporate Gift Sets',
-    image: '/images/hero-slide-vip.webp',
+    image: '/images/hero-pano-slide3.webp',
     badge: 'LUXURY EXECUTIVE GIFTING | VERIFIED QUALITY',
   },
 ];
@@ -68,11 +68,11 @@ export default function HeroSection({ onOpenQuote }) {
     <section 
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="relative w-full bg-[#00505f] border-b border-teal-400/25 shadow-xl overflow-hidden mb-4 sm:mb-6"
+      className="relative w-full bg-[#003e4a] border-b border-teal-400/20 shadow-2xl overflow-hidden mb-4 sm:mb-6"
     >
       
-      {/* 100% Edge-to-Edge Panoramic Studio Merchandise Backgrounds (Smooth Crossfade) */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {/* 100% Full-Bleed Panoramic Studio Backgrounds (Zero Box / Zero Clipping) */}
+      <div className="absolute inset-0 pointer-events-none">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -80,20 +80,16 @@ export default function HeroSection({ onOpenQuote }) {
               index === currentSlide ? 'opacity-100 z-1' : 'opacity-0 z-0 pointer-events-none'
             }`}
           >
-            {/* Dedicated Right-Aligned Visual Area: object-contain ensures ZERO product/bag clipping at the top */}
-            <div className="absolute inset-y-0 right-0 w-full sm:w-[75%] lg:w-[62%] xl:w-[56%] h-full">
-              <Image
-                src={slide.image}
-                alt={slide.label}
-                fill
-                priority={index === 0}
-                className="object-contain object-right-bottom sm:object-right select-none"
-              />
-            </div>
-
-            {/* Seamless Left Petrol Teal Gradient Overlay for Razor-Sharp Text Contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#00505f] via-[#00505f]/80 to-transparent lg:hidden" />
-            <div className="absolute inset-y-0 left-0 hidden lg:block bg-gradient-to-r from-[#00505f] via-[#00505f]/95 to-transparent w-[55%] pointer-events-none" />
+            <Image
+              src={slide.image}
+              alt={slide.label}
+              fill
+              priority={index === 0}
+              className="object-cover object-bottom select-none"
+            />
+            {/* Seamless Left Petrol Teal Gradient for Razor-Sharp Copy Contrast */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#003e4a] via-[#003e4a]/75 to-transparent lg:hidden" />
+            <div className="absolute inset-y-0 left-0 hidden lg:block bg-gradient-to-r from-[#003e4a] via-[#003e4a]/85 to-transparent w-[50%] pointer-events-none" />
           </div>
         ))}
       </div>
@@ -102,7 +98,7 @@ export default function HeroSection({ onOpenQuote }) {
       <button
         onClick={prevSlide}
         aria-label="Previous Slide"
-        className="absolute left-2 sm:left-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-lg group"
+        className="absolute left-2 sm:left-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-xl group"
       >
         <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-x-0.5" />
       </button>
@@ -110,17 +106,17 @@ export default function HeroSection({ onOpenQuote }) {
       <button
         onClick={nextSlide}
         aria-label="Next Slide"
-        className="absolute right-2 sm:right-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-lg group"
+        className="absolute right-2 sm:right-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-xl group"
       >
         <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-0.5" />
       </button>
 
-      {/* Central Content Container: Balanced Luxury Height (Fits 1st Screen Cleanly) */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-7 sm:pt-9 lg:pt-10 pb-5 sm:pb-7 min-h-[440px] sm:min-h-[480px] lg:min-h-[500px] flex flex-col justify-center">
+      {/* Central Content Container: Balanced Luxury Scale (Fits First Screen Flawlessly) */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 lg:pt-12 pb-6 sm:pb-8 min-h-[460px] sm:min-h-[500px] lg:min-h-[530px] flex flex-col justify-center">
         
         <div className="max-w-xl lg:max-w-2xl">
           {/* Pre-header Badge */}
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 border border-white/25 text-teal-100 text-[11px] sm:text-xs font-bold uppercase tracking-widest shadow-xs mb-3 w-fit backdrop-blur-md">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 border border-white/25 text-teal-100 text-[11px] sm:text-xs font-bold uppercase tracking-widest shadow-xs mb-3.5 w-fit backdrop-blur-md">
             <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-pulse" />
             <span>{active.badge}</span>
           </div>
@@ -211,7 +207,7 @@ export default function HeroSection({ onOpenQuote }) {
       </div>
 
       {/* Bottom Integrated Trust Strip: Full Width Compact Bar */}
-      <div className="relative z-10 w-full border-t border-teal-400/20 bg-[#003d49]/95 backdrop-blur-md">
+      <div className="relative z-10 w-full border-t border-teal-400/20 bg-[#002b33]/95 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           <div className="flex items-center gap-2.5">
             <div className="p-2 rounded-lg bg-white/10 border border-white/20 text-white shrink-0">
