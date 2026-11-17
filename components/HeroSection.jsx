@@ -187,20 +187,18 @@ export default function HeroSection({ onOpenQuote }) {
           </div>
         </div>
 
-        {/* Desktop Indicator Dots */}
-        <div className="relative z-10 flex items-center justify-center gap-2 pb-3">
-          {slides.map((slide, index) => (
-            <button
-              key={slide.id}
-              onClick={() => setCurrentSlide(index)}
-              aria-label={`Go to slide ${index + 1}`}
-              className={`transition-all duration-300 rounded-full h-1.5 ${
-                index === currentSlide 
-                  ? 'w-6 bg-white shadow-sm' 
-                  : 'w-2 bg-white/40 hover:bg-white/70'
-              }`}
-            />
-          ))}
+        {/* Desktop Slide Counter Pill "01 / 03" (Matches Luxury Reference Style) */}
+        <div className="relative z-10 flex items-center justify-center pb-3">
+          <button
+            onClick={nextSlide}
+            title="Next slide"
+            aria-label={`Slide ${currentSlide + 1} of ${slides.length}. Click for next slide.`}
+            className="group inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-black/45 hover:bg-black/65 active:scale-95 border border-white/15 backdrop-blur-md shadow-lg transition-all cursor-pointer"
+          >
+            <span className="text-xs lg:text-[13px] font-bold tracking-wider text-white select-none">
+              {String(currentSlide + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
+            </span>
+          </button>
         </div>
       </div>
 
@@ -223,7 +221,7 @@ export default function HeroSection({ onOpenQuote }) {
                 alt={slide.label}
                 fill
                 priority={index === 0}
-                className="object-cover object-[80%_center] select-none"
+                className="object-cover object-[92%_center] select-none"
               />
               {/* Subtle Vignette on edges so products pop cleanly */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#003e4a] via-transparent to-black/20 pointer-events-none" />
@@ -252,20 +250,18 @@ export default function HeroSection({ onOpenQuote }) {
             <ChevronRight className="w-4 h-4" />
           </button>
 
-          {/* Slide Indicator Dots overlay on image */}
-          <div className="absolute bottom-2.5 inset-x-0 z-10 flex items-center justify-center gap-1.5">
-            {slides.map((slide, index) => (
-              <button
-                key={slide.id}
-                onClick={() => setCurrentSlide(index)}
-                aria-label={`Go to slide ${index + 1}`}
-                className={`transition-all duration-300 rounded-full h-1.5 ${
-                  index === currentSlide 
-                    ? 'w-5 bg-white shadow-sm' 
-                    : 'w-1.5 bg-white/40'
-                }`}
-              />
-            ))}
+          {/* Mobile Slide Counter Pill Overlay "01 / 03" */}
+          <div className="absolute bottom-2.5 inset-x-0 z-10 flex items-center justify-center">
+            <button
+              onClick={nextSlide}
+              title="Next slide"
+              aria-label={`Slide ${currentSlide + 1} of ${slides.length}`}
+              className="inline-flex items-center justify-center px-3.5 py-1 rounded-full bg-black/55 active:scale-95 border border-white/15 backdrop-blur-md shadow-md transition-all cursor-pointer"
+            >
+              <span className="text-[11px] font-bold tracking-wider text-white select-none">
+                {String(currentSlide + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
+              </span>
+            </button>
           </div>
         </div>
 
@@ -278,7 +274,7 @@ export default function HeroSection({ onOpenQuote }) {
           </div>
 
           {/* Mobile Headline */}
-          <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white leading-tight">
+          <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white leading-snug break-words">
             Your Trusted Partner in Global Corporate Sourcing
           </h1>
 
