@@ -376,15 +376,15 @@ export default function ClientsPage() {
               >
                 <div>
                   {/* Top Row: Authentic Logo Stage */}
-                  <div className="relative w-full h-28 rounded-xl bg-gradient-to-b from-cream-50 to-white border border-cream-200/80 p-4 flex items-center justify-center overflow-hidden mb-5 group-hover:border-gold-500/30 transition-colors">
-                    <div className="relative w-full h-full max-w-[200px] flex items-center justify-center">
+                  <div className="relative w-full h-28 sm:h-32 rounded-xl bg-gradient-to-b from-cream-50 to-white border border-cream-200/90 p-4 sm:p-6 flex items-center justify-center overflow-hidden mb-5 group-hover:border-gold-500/40 transition-colors">
+                    <div className="relative w-full h-16 max-w-[220px] flex items-center justify-center">
                       <Image
                         src={client.logo}
-                        alt={`${client.name} Logo`}
-                        width={200}
-                        height={70}
-                        style={{ width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '64px' }}
+                        alt={`${client.name} Official Logo`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 300px"
                         className="object-contain transition-transform duration-300 group-hover:scale-105"
+                        priority
                       />
                     </div>
                   </div>
