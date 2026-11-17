@@ -221,7 +221,7 @@ export default function HeroSection({ onOpenQuote }) {
                 alt={slide.label}
                 fill
                 priority={index === 0}
-                className="object-cover object-[92%_center] select-none"
+                className="object-cover object-[85%_center] select-none"
               />
               {/* Subtle Vignette on edges so products pop cleanly */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#003e4a] via-transparent to-black/20 pointer-events-none" />

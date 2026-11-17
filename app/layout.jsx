@@ -15,6 +15,12 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
@@ -41,7 +47,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className="min-h-screen bg-cream-100 text-navy-950 antialiased selection:bg-gold-500 selection:text-white">
+      <body className="min-h-screen bg-cream-100 text-navy-950 antialiased selection:bg-gold-500 selection:text-white overflow-x-hidden">
         {/* Subtle Warm Luxury Ambient Light */}
         <div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-10%,rgba(197,155,76,0.12),rgba(250,247,240,0))]"></div>
         <div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_60%_60%_at_85%_50%,rgba(236,225,207,0.4),rgba(250,247,240,0))]"></div>
