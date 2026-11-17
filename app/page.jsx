@@ -97,11 +97,14 @@ export default function Home() {
             <span>FROM VISION TO VALUE</span>
           </div>
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-navy-950 leading-tight">
-            Premium Corporate Sourcing &amp;{' '}
+            Your Trusted Partner in{' '}
             <span className="gold-gradient-text block mt-1">
-              Merchandise Catalog
+              Global Corporate Sourcing
             </span>
           </h1>
+          <p className="mt-3.5 sm:mt-4 text-sm sm:text-lg text-navy-700/80 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed font-medium">
+            From vision to verified value – reliable end-to-end merchandise solutions for modern brands.
+          </p>
         </section>
 
         {/* Floating Catalog Showcase Grid */}
