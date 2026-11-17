@@ -85,20 +85,21 @@ export default function HeroSection({ onOpenQuote }) {
               alt={slide.label}
               fill
               priority={index === 0}
-              className="object-cover object-bottom select-none"
+              className="object-cover object-[82%_top] sm:object-[82%_center] lg:object-bottom select-none"
             />
-            {/* Seamless Left Petrol Teal Gradient for Razor-Sharp Copy Contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#003e4a] via-[#003e4a]/75 to-transparent lg:hidden" />
+            {/* Mobile Contrast Gradient: Keeps upper products visible while ensuring crystal-clear text readability below */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#003e4a] from-45% via-[#003e4a]/85 via-70% to-[#003e4a]/30 lg:hidden pointer-events-none" />
+            {/* Desktop Left-to-Right Ambient Petrol Gradient */}
             <div className="absolute inset-y-0 left-0 hidden lg:block bg-gradient-to-r from-[#003e4a] via-[#003e4a]/85 to-transparent w-[50%] pointer-events-none" />
           </div>
         ))}
       </div>
 
-      {/* Navigation Arrows (BS Factory Carousel Style) */}
+      {/* Navigation Arrows: Sleek on desktop, tucked away or compact on mobile so they never block copy */}
       <button
         onClick={prevSlide}
         aria-label="Previous Slide"
-        className="absolute left-2 sm:left-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-xl group"
+        className="hidden sm:flex absolute left-2 sm:left-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-xl group items-center justify-center"
       >
         <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-x-0.5" />
       </button>
@@ -106,36 +107,36 @@ export default function HeroSection({ onOpenQuote }) {
       <button
         onClick={nextSlide}
         aria-label="Next Slide"
-        className="absolute right-2 sm:right-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-xl group"
+        className="hidden sm:flex absolute right-2 sm:right-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-xl group items-center justify-center"
       >
         <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-0.5" />
       </button>
 
-      {/* Central Content Container: Balanced Luxury Scale (Fits First Screen Flawlessly) */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 lg:pt-12 pb-6 sm:pb-8 min-h-[460px] sm:min-h-[500px] lg:min-h-[530px] flex flex-col justify-center">
+      {/* Central Content Container: Balanced Luxury Scale (Fits First Screen Flawlessly on all devices) */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-10 lg:pt-12 pb-5 sm:pb-8 min-h-[460px] sm:min-h-[500px] lg:min-h-[530px] flex flex-col justify-end sm:justify-center">
         
         <div className="max-w-xl lg:max-w-2xl">
           {/* Pre-header Badge */}
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 border border-white/25 text-teal-100 text-[11px] sm:text-xs font-bold uppercase tracking-widest shadow-xs mb-3.5 w-fit backdrop-blur-md">
-            <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-pulse" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white/15 border border-white/25 text-teal-100 text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-xs mb-2.5 sm:mb-3.5 w-fit backdrop-blur-md">
+            <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300 animate-pulse" />
             <span>{active.badge}</span>
           </div>
 
           {/* Main Headline - Crisp Pure White */}
-          <h1 className="text-3xl sm:text-4xl lg:text-[2.85rem] font-extrabold tracking-tight text-white leading-[1.12]">
+          <h1 className="text-2xl sm:text-4xl lg:text-[2.85rem] font-extrabold tracking-tight text-white leading-[1.15] sm:leading-[1.12]">
             Your Trusted Partner in{' '}
-            <span className="block mt-1 sm:mt-1.5 text-white">
+            <span className="block mt-0.5 sm:mt-1.5 text-white">
               Global Corporate Sourcing
             </span>
           </h1>
 
           {/* Subtitle - Crisp High Contrast */}
-          <p className="mt-3 sm:mt-3.5 text-sm sm:text-base lg:text-[15px] text-teal-50/95 leading-relaxed font-normal max-w-xl">
+          <p className="mt-2.5 sm:mt-3.5 text-xs sm:text-base lg:text-[15px] text-teal-50/95 leading-relaxed font-normal max-w-xl">
             From vision to verified value – reliable end-to-end merchandise solutions, bespoke executive gift sets, and custom-branded collateral for modern enterprises and pharmaceutical brands.
           </p>
 
-          {/* 4-Item Corporate Value Proposition Checklist */}
-          <div className="mt-4 sm:mt-5 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5 w-full max-w-lg">
+          {/* 4-Item Corporate Value Proposition Checklist (Visible on tablet & desktop; on mobile the bottom trust strip provides these cleanly) */}
+          <div className="hidden sm:grid mt-4 sm:mt-5 grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5 w-full max-w-lg">
             <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
               <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
               <span className="text-xs sm:text-[13px] font-semibold text-white">Custom Logo &amp; Laser Engraving</span>
@@ -155,35 +156,39 @@ export default function HeroSection({ onOpenQuote }) {
           </div>
 
           {/* CTA Action Hub & Hotline */}
-          <div className="mt-5 sm:mt-6 flex flex-wrap items-center gap-3">
+          <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-2.5 sm:gap-3">
             {/* Primary Quote Trigger */}
             <button
               onClick={onOpenQuote}
-              className="gold-btn py-2.5 sm:py-3 px-6 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center gap-2 shadow-lg hover:shadow-gold-500/30 transition-all hover:scale-[1.02] active:scale-[0.98]"
+              className="gold-btn py-2.5 sm:py-3 px-6 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg hover:shadow-gold-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto"
             >
               <span>Request Corporate Quote</span>
               <ArrowUpRight className="w-4 h-4 text-white" />
             </button>
 
-            {/* Secondary Direct WhatsApp B2B */}
-            <a
-              href={waHeroUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="py-2.5 sm:py-3 px-5 rounded-xl border border-emerald-400/50 bg-emerald-600/30 hover:bg-emerald-600/50 text-white text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center gap-2 shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] backdrop-blur-md"
-            >
-              <MessageSquare className="w-4 h-4 text-emerald-300" />
-              <span>WhatsApp Desk</span>
-            </a>
+            {/* Mobile Action Sub-Row: WhatsApp & Phone side by side on mobile */}
+            <div className="flex items-center gap-2.5 w-full sm:w-auto">
+              {/* Secondary Direct WhatsApp B2B */}
+              <a
+                href={waHeroUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 sm:flex-initial py-2.5 sm:py-3 px-4 sm:px-5 rounded-xl border border-emerald-400/50 bg-emerald-600/30 hover:bg-emerald-600/50 text-white text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] backdrop-blur-md"
+              >
+                <MessageSquare className="w-4 h-4 text-emerald-300" />
+                <span>WhatsApp</span>
+              </a>
 
-            {/* Direct Hotline Badge */}
-            <a
-              href="tel:+8801787239863"
-              className="inline-flex items-center gap-1.5 text-xs sm:text-[13px] font-bold text-white hover:text-amber-200 transition-colors px-3.5 py-2 rounded-xl bg-white/15 border border-white/25 hover:bg-white/20 backdrop-blur-md"
-            >
-              <Phone className="w-3.5 h-3.5 text-amber-300" />
-              <span>+880 1787 239 863</span>
-            </a>
+              {/* Direct Hotline Badge */}
+              <a
+                href="tel:+8801787239863"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 text-xs sm:text-[13px] font-bold text-white hover:text-amber-200 transition-colors px-3 sm:px-3.5 py-2.5 sm:py-2 rounded-xl bg-white/15 border border-white/25 hover:bg-white/20 backdrop-blur-md"
+              >
+                <Phone className="w-3.5 h-3.5 text-amber-300" />
+                <span className="hidden xs:inline">+880 1787 239 863</span>
+                <span className="xs:hidden">Call Now</span>
+              </a>
+            </div>
           </div>
 
         </div>
