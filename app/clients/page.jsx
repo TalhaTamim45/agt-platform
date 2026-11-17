@@ -367,85 +367,59 @@ export default function ClientsPage() {
             </div>
           </div>
 
-          {/* Client Cards Grid */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {/* Client Cards Grid: Clean, High-Impact Big Logos & Elegant Typography */}
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-7">
             {filteredClients.map((client) => (
               <div
                 key={client.id}
-                className="group relative bg-white rounded-2xl border border-gold-500/25 p-6 shadow-cream-sm hover:shadow-cream-lg hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between"
+                className="group relative bg-white rounded-2xl border border-gold-500/25 p-6 shadow-cream-sm hover:shadow-xl hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between overflow-hidden hover:-translate-y-1.5"
               >
-                <div>
-                  {/* Top Row: Authentic Logo Stage */}
-                  <div className="relative w-full h-28 sm:h-32 rounded-xl bg-gradient-to-b from-cream-50 to-white border border-cream-200/90 p-4 sm:p-6 flex items-center justify-center overflow-hidden mb-5 group-hover:border-gold-500/40 transition-colors">
-                    <div className="relative w-full h-16 max-w-[220px] flex items-center justify-center">
-                      <Image
-                        src={client.logo}
-                        alt={`${client.name} Official Logo`}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 300px"
-                        className="object-contain transition-transform duration-300 group-hover:scale-105"
-                        priority
-                      />
-                    </div>
-                  </div>
-
-                  {/* Sector Pill & Tagline */}
-                  <div className="flex items-center justify-between gap-2 mb-2">
-                    <span className={`inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider border ${client.badgeColor}`}>
+                <div className="flex flex-col items-center text-center">
+                  {/* Sector Pill */}
+                  <div className="w-full flex items-center justify-center mb-3">
+                    <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider border ${client.badgeColor}`}>
                       {client.sectorLabel}
                     </span>
-                    <span className="text-[11px] font-semibold text-navy-500">
-                      {client.tagline}
-                    </span>
                   </div>
 
-                  {/* Company Name */}
-                  <h3 className="text-lg font-extrabold text-navy-950 group-hover:text-gold-700 transition-colors">
+                  {/* Big Prominent Authentic Logo Stage */}
+                  <div className="relative w-full h-32 sm:h-36 max-w-[220px] flex items-center justify-center my-2">
+                    <Image
+                      src={client.logo}
+                      alt={`${client.name} Official Logo`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 300px"
+                      className="object-contain transition-transform duration-300 group-hover:scale-105"
+                      priority
+                    />
+                  </div>
+
+                  {/* Beautiful Company Name */}
+                  <h3 className="text-lg sm:text-xl font-extrabold text-navy-950 font-serif tracking-tight mt-3 group-hover:text-gold-700 transition-colors">
                     {client.name}
                   </h3>
 
-                  {/* Supply Scope Tag */}
-                  <div className="mt-1 flex items-center gap-1.5 text-xs font-bold text-teal-800">
-                    <Gift className="w-3.5 h-3.5 text-gold-600" />
-                    <span>{client.scope}</span>
-                  </div>
-
-                  {/* Description */}
-                  <p className="mt-2.5 text-xs text-navy-700 leading-relaxed font-normal">
-                    {client.description}
+                  {/* Short Tagline */}
+                  <p className="text-xs font-semibold text-gold-700/90 mt-1">
+                    {client.tagline}
                   </p>
-
-                  {/* Deliverables Bullet List */}
-                  <div className="mt-4 pt-3.5 border-t border-cream-200 space-y-1.5">
-                    <p className="text-[10px] font-extrabold uppercase tracking-widest text-navy-400">
-                      Gifting &amp; Merchandise Scope:
-                    </p>
-                    <ul className="space-y-1">
-                      {client.deliverables.map((item, i) => (
-                        <li key={i} className="flex items-start gap-1.5 text-xs text-navy-800 font-medium">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
                 </div>
 
                 {/* Card Action Row */}
-                <div className="mt-6 pt-4 border-t border-cream-200 flex items-center justify-between gap-2">
+                <div className="mt-5 pt-3.5 border-t border-cream-200 grid grid-cols-2 gap-2">
                   <a
                     href={`https://wa.me/8801787239863?text=${encodeURIComponent(client.waInquiry)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 py-2 px-3 rounded-xl border border-emerald-600/30 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center gap-1.5 transition-all shadow-xs"
+                    className="py-2 px-2.5 rounded-xl border border-emerald-600/30 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-[11px] font-bold flex items-center justify-center gap-1 transition-all shadow-xs active:scale-95"
                   >
                     <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Inquire Similar Supply</span>
+                    <span>WhatsApp</span>
                   </a>
 
                   <button
                     onClick={() => setIsQuoteOpen(true)}
-                    className="py-2 px-3 rounded-xl bg-navy-950 hover:bg-navy-900 text-white text-xs font-bold flex items-center justify-center gap-1 transition-all shadow-xs"
+                    className="py-2 px-2.5 rounded-xl bg-navy-950 hover:bg-navy-900 text-white text-[11px] font-bold flex items-center justify-center gap-1 transition-all shadow-xs active:scale-95"
                     title="Request Quotation"
                   >
                     <span>RFQ</span>
