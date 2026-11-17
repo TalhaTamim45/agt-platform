@@ -72,7 +72,7 @@ export default function HeroSection({ onOpenQuote }) {
     >
       
       {/* 100% Edge-to-Edge Panoramic Studio Merchandise Backgrounds (Smooth Crossfade) */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -80,16 +80,20 @@ export default function HeroSection({ onOpenQuote }) {
               index === currentSlide ? 'opacity-100 z-1' : 'opacity-0 z-0 pointer-events-none'
             }`}
           >
-            <Image
-              src={slide.image}
-              alt={slide.label}
-              fill
-              priority={index === 0}
-              className="object-cover object-right select-none"
-            />
-            {/* Soft Left-Only Petrol Teal Gradient Overlay for Razor-Sharp Copy Contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#00505f] via-[#00505f]/85 to-transparent lg:hidden" />
-            <div className="absolute inset-y-0 left-0 hidden lg:block bg-gradient-to-r from-[#00505f] via-[#00505f]/90 to-transparent w-[55%] pointer-events-none" />
+            {/* Dedicated Right-Aligned Visual Area: object-contain ensures ZERO product/bag clipping at the top */}
+            <div className="absolute inset-y-0 right-0 w-full sm:w-[75%] lg:w-[62%] xl:w-[56%] h-full">
+              <Image
+                src={slide.image}
+                alt={slide.label}
+                fill
+                priority={index === 0}
+                className="object-contain object-right-bottom sm:object-right select-none"
+              />
+            </div>
+
+            {/* Seamless Left Petrol Teal Gradient Overlay for Razor-Sharp Text Contrast */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#00505f] via-[#00505f]/80 to-transparent lg:hidden" />
+            <div className="absolute inset-y-0 left-0 hidden lg:block bg-gradient-to-r from-[#00505f] via-[#00505f]/95 to-transparent w-[55%] pointer-events-none" />
           </div>
         ))}
       </div>
@@ -98,68 +102,68 @@ export default function HeroSection({ onOpenQuote }) {
       <button
         onClick={prevSlide}
         aria-label="Previous Slide"
-        className="absolute left-2 sm:left-4 top-[45%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/30 hover:bg-black/55 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-lg group"
+        className="absolute left-2 sm:left-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-lg group"
       >
-        <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:-translate-x-0.5" />
+        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-x-0.5" />
       </button>
 
       <button
         onClick={nextSlide}
         aria-label="Next Slide"
-        className="absolute right-2 sm:right-4 top-[45%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/30 hover:bg-black/55 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-lg group"
+        className="absolute right-2 sm:right-4 top-[48%] -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-black/35 hover:bg-black/60 text-white/80 hover:text-white border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 shadow-lg group"
       >
-        <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-0.5" />
+        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-0.5" />
       </button>
 
-      {/* Central Content Container: Compact Height to Fit 100% on 1st Screen */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 sm:pt-7 lg:pt-8 pb-4 sm:pb-6 min-h-[360px] sm:min-h-[390px] lg:min-h-[420px] flex flex-col justify-center">
+      {/* Central Content Container: Balanced Luxury Height (Fits 1st Screen Cleanly) */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-7 sm:pt-9 lg:pt-10 pb-5 sm:pb-7 min-h-[440px] sm:min-h-[480px] lg:min-h-[500px] flex flex-col justify-center">
         
         <div className="max-w-xl lg:max-w-2xl">
           {/* Pre-header Badge */}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 border border-white/25 text-teal-100 text-[10px] sm:text-[11px] font-bold uppercase tracking-widest shadow-xs mb-2.5 w-fit backdrop-blur-md">
-            <Sparkles className="w-3 h-3 text-amber-300 animate-pulse" />
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 border border-white/25 text-teal-100 text-[11px] sm:text-xs font-bold uppercase tracking-widest shadow-xs mb-3 w-fit backdrop-blur-md">
+            <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-pulse" />
             <span>{active.badge}</span>
           </div>
 
           {/* Main Headline - Crisp Pure White */}
-          <h1 className="text-2xl sm:text-4xl lg:text-[2.65rem] font-extrabold tracking-tight text-white leading-[1.12]">
+          <h1 className="text-3xl sm:text-4xl lg:text-[2.85rem] font-extrabold tracking-tight text-white leading-[1.12]">
             Your Trusted Partner in{' '}
-            <span className="block mt-1 text-white">
+            <span className="block mt-1 sm:mt-1.5 text-white">
               Global Corporate Sourcing
             </span>
           </h1>
 
           {/* Subtitle - Crisp High Contrast */}
-          <p className="mt-2.5 sm:mt-3 text-xs sm:text-[13px] lg:text-[14px] text-teal-50/95 leading-relaxed font-normal max-w-lg">
+          <p className="mt-3 sm:mt-3.5 text-sm sm:text-base lg:text-[15px] text-teal-50/95 leading-relaxed font-normal max-w-xl">
             From vision to verified value – reliable end-to-end merchandise solutions, bespoke executive gift sets, and custom-branded collateral for modern enterprises and pharmaceutical brands.
           </p>
 
-          {/* 4-Item Corporate Value Proposition Checklist (Compact 2x2 Grid) */}
-          <div className="mt-3.5 sm:mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 w-full max-w-md">
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 border border-white/20 backdrop-blur-md">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-300 shrink-0" />
-              <span className="text-[11px] sm:text-xs font-semibold text-white">Custom Logo &amp; Laser Engraving</span>
+          {/* 4-Item Corporate Value Proposition Checklist */}
+          <div className="mt-4 sm:mt-5 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5 w-full max-w-lg">
+            <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
+              <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
+              <span className="text-xs sm:text-[13px] font-semibold text-white">Custom Logo &amp; Laser Engraving</span>
             </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 border border-white/20 backdrop-blur-md">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-300 shrink-0" />
-              <span className="text-[11px] sm:text-xs font-semibold text-white">Direct Factory Sourcing (Zero Markup)</span>
+            <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
+              <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
+              <span className="text-xs sm:text-[13px] font-semibold text-white">Direct Factory Sourcing (Zero Markup)</span>
             </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 border border-white/20 backdrop-blur-md">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-300 shrink-0" />
-              <span className="text-[11px] sm:text-xs font-semibold text-white">Pre-Production Physical Sampling</span>
+            <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
+              <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
+              <span className="text-xs sm:text-[13px] font-semibold text-white">Pre-Production Physical Sampling</span>
             </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 border border-white/20 backdrop-blur-md">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-300 shrink-0" />
-              <span className="text-[11px] sm:text-xs font-semibold text-white">Expedited Doorstep Delivery</span>
+            <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-colors">
+              <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
+              <span className="text-xs sm:text-[13px] font-semibold text-white">Expedited Doorstep Delivery</span>
             </div>
           </div>
 
           {/* CTA Action Hub & Hotline */}
-          <div className="mt-4 sm:mt-5 flex flex-wrap items-center gap-2.5 sm:gap-3">
+          <div className="mt-5 sm:mt-6 flex flex-wrap items-center gap-3">
             {/* Primary Quote Trigger */}
             <button
               onClick={onOpenQuote}
-              className="gold-btn py-2.5 sm:py-3 px-5 sm:px-6 rounded-xl text-xs sm:text-[13px] font-bold uppercase tracking-wider flex items-center gap-2 shadow-lg hover:shadow-gold-500/30 transition-all hover:scale-[1.02] active:scale-[0.98]"
+              className="gold-btn py-2.5 sm:py-3 px-6 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center gap-2 shadow-lg hover:shadow-gold-500/30 transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
               <span>Request Corporate Quote</span>
               <ArrowUpRight className="w-4 h-4 text-white" />
@@ -170,7 +174,7 @@ export default function HeroSection({ onOpenQuote }) {
               href={waHeroUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="py-2.5 sm:py-3 px-4 sm:px-5 rounded-xl border border-emerald-400/50 bg-emerald-600/30 hover:bg-emerald-600/50 text-white text-xs sm:text-[13px] font-bold uppercase tracking-wider flex items-center gap-2 shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] backdrop-blur-md"
+              className="py-2.5 sm:py-3 px-5 rounded-xl border border-emerald-400/50 bg-emerald-600/30 hover:bg-emerald-600/50 text-white text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center gap-2 shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] backdrop-blur-md"
             >
               <MessageSquare className="w-4 h-4 text-emerald-300" />
               <span>WhatsApp Desk</span>
@@ -179,7 +183,7 @@ export default function HeroSection({ onOpenQuote }) {
             {/* Direct Hotline Badge */}
             <a
               href="tel:+8801787239863"
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-amber-200 transition-colors px-3 py-2 rounded-xl bg-white/15 border border-white/25 hover:bg-white/20 backdrop-blur-md"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-[13px] font-bold text-white hover:text-amber-200 transition-colors px-3.5 py-2 rounded-xl bg-white/15 border border-white/25 hover:bg-white/20 backdrop-blur-md"
             >
               <Phone className="w-3.5 h-3.5 text-amber-300" />
               <span>+880 1787 239 863</span>
@@ -190,7 +194,7 @@ export default function HeroSection({ onOpenQuote }) {
 
       </div>
 
-      {/* Clean, Minimal Slider Indicator Dots (Above Trust Bar) */}
+      {/* Clean Minimal Slider Indicator Dots */}
       <div className="relative z-10 flex items-center justify-center gap-2 pb-2.5">
         {slides.map((slide, index) => (
           <button
@@ -208,7 +212,7 @@ export default function HeroSection({ onOpenQuote }) {
 
       {/* Bottom Integrated Trust Strip: Full Width Compact Bar */}
       <div className="relative z-10 w-full border-t border-teal-400/20 bg-[#003d49]/95 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           <div className="flex items-center gap-2.5">
             <div className="p-2 rounded-lg bg-white/10 border border-white/20 text-white shrink-0">
               <Factory className="w-3.5 h-3.5 text-amber-300" />
