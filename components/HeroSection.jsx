@@ -11,8 +11,7 @@ import {
   ShieldCheck, 
   Truck, 
   Palette,
-  PackageCheck,
-  Clock
+  PackageCheck
 } from 'lucide-react';
 
 export default function HeroSection({ onOpenQuote }) {
@@ -21,30 +20,28 @@ export default function HeroSection({ onOpenQuote }) {
   )}`;
 
   return (
-    <section className="relative px-3 sm:px-6 lg:px-8 pt-2 pb-8 sm:pb-12 max-w-7xl mx-auto">
+    <section className="relative w-full bg-[#071224] border-b border-gold-500/30 shadow-2xl overflow-hidden mb-6 sm:mb-10">
       
-      {/* Grand Panoramic B2B Hero Showcase Banner (BS Factory Inspired - Luxury Elevated) */}
-      <div className="relative rounded-2xl sm:rounded-3xl bg-[#071224] border border-gold-500/35 shadow-2xl overflow-hidden min-h-[540px] sm:min-h-[580px] lg:min-h-[620px] flex flex-col justify-between">
-        
-        {/* Panoramic Studio Merchandise Background (Right Anchored) */}
-        <div className="absolute inset-0 pointer-events-none">
-          <Image
-            src="/images/hero-corporate-showcase.webp"
-            alt="Corporate Merchandise Showcase"
-            fill
-            priority
-            className="object-cover object-right lg:object-center opacity-40 sm:opacity-55 lg:opacity-85 select-none"
-          />
-          {/* Deep Navy Radial & Linear Gradient Overlays for Razor-Sharp Text Contrast */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#071224] via-[#071224]/80 to-transparent lg:hidden" />
-          <div className="absolute inset-0 hidden lg:block bg-gradient-to-r from-[#071224] via-[#071224]/85 to-transparent w-full" />
-          <div className="absolute inset-0 hidden xl:block bg-gradient-to-r from-[#071224] via-[#071224]/90 to-transparent w-3/5" />
-          <div className="absolute top-0 right-0 w-96 h-96 bg-gold-400/10 rounded-full blur-3xl pointer-events-none" />
-        </div>
+      {/* 100% Edge-to-Edge Panoramic Studio Merchandise Background */}
+      <div className="absolute inset-0 pointer-events-none">
+        <Image
+          src="/images/hero-corporate-showcase.webp"
+          alt="Corporate Merchandise Showcase"
+          fill
+          priority
+          className="object-cover object-right sm:object-right-center lg:object-right opacity-50 sm:opacity-65 lg:opacity-90 select-none"
+        />
+        {/* Deep Navy Linear Gradient Overlays for Impeccable Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#071224] via-[#071224]/85 to-transparent lg:hidden" />
+        <div className="absolute inset-0 hidden lg:block bg-gradient-to-r from-[#071224] via-[#071224]/90 to-transparent w-full" />
+        <div className="absolute inset-0 hidden xl:block bg-gradient-to-r from-[#071224] via-[#071224]/95 to-transparent w-7/12" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold-400/10 rounded-full blur-3xl pointer-events-none" />
+      </div>
 
-        {/* Hero Content Fold */}
-        <div className="relative z-10 p-6 sm:p-10 lg:p-14 flex-1 flex flex-col justify-center max-w-2xl lg:max-w-3xl">
-          
+      {/* Central Content Container: Aligned with Max-W-7xl */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16 min-h-[500px] sm:min-h-[550px] lg:min-h-[600px] flex flex-col justify-center">
+        
+        <div className="max-w-2xl lg:max-w-3xl">
           {/* Pre-header Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-900/90 border border-gold-400/40 text-gold-300 text-[11px] sm:text-xs font-bold uppercase tracking-widest shadow-xs mb-4 w-fit backdrop-blur-sm">
             <Sparkles className="w-3.5 h-3.5 text-gold-400 animate-pulse" />
@@ -118,8 +115,11 @@ export default function HeroSection({ onOpenQuote }) {
 
         </div>
 
-        {/* Bottom Integrated Trust Strip (Inside Grand Banner) */}
-        <div className="relative z-10 border-t border-gold-500/20 bg-navy-950/80 backdrop-blur-md px-6 py-4 grid grid-cols-2 lg:grid-cols-4 gap-4">
+      </div>
+
+      {/* Bottom Integrated Trust Strip: Full Width Bar with Centered Grid */}
+      <div className="relative z-10 w-full border-t border-gold-500/20 bg-navy-950/90 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-lg bg-gold-500/10 border border-gold-500/30 text-gold-400 shrink-0">
               <Factory className="w-4 h-4 text-gold-400" />
@@ -160,7 +160,6 @@ export default function HeroSection({ onOpenQuote }) {
             </div>
           </div>
         </div>
-
       </div>
 
     </section>
