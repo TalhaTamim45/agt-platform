@@ -29,13 +29,11 @@ export default function HeroSection({ onOpenQuote }) {
           alt="Corporate Merchandise Showcase"
           fill
           priority
-          className="object-cover object-right sm:object-right lg:object-right opacity-90 select-none"
+          className="object-cover object-right select-none"
         />
-        {/* Royal Blue Linear Gradient Overlays for Seamless Image Blend & Razor-Sharp Contrast */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#012ca6] via-[#012ca6]/85 to-transparent lg:hidden" />
-        <div className="absolute inset-0 hidden lg:block bg-gradient-to-r from-[#012ca6] via-[#012ca6]/90 to-transparent w-full" />
-        <div className="absolute inset-0 hidden xl:block bg-gradient-to-r from-[#012ca6] via-[#012ca6]/95 to-transparent w-7/12" />
-        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-3xl pointer-events-none" />
+        {/* Soft Left-Only Gradient Overlay for Flawless Text Legibility Without Washing Out Products */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#012ca6] via-[#012ca6]/80 to-transparent lg:hidden" />
+        <div className="absolute inset-y-0 left-0 hidden lg:block bg-gradient-to-r from-[#012ca6] via-[#012ca6]/85 to-transparent w-[55%] pointer-events-none" />
       </div>
 
       {/* Central Content Container: Aligned with Max-W-7xl */}
