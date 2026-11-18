@@ -95,6 +95,17 @@ const partners = [
     badgeColor: 'border-orange-500/30 bg-orange-50/60 text-orange-800',
     waInquiry: 'Hello AGT, I would like to inquire about corporate bulk orders for Toktalk Viral Pickles & Jams.'
   },
+  {
+    id: 'pulse-dhaka',
+    name: 'Pulse Enterprise (Pulse Dhaka)',
+    tagline: 'Versatility of Refreshment • Air Fresheners, Perfumes & Personal Care',
+    logo: '/images/partners/pulse-dhaka.png',
+    category: 'Air Care & Fragrances',
+    established: 'Dhaka, Bangladesh',
+    dealCount: 2,
+    badgeColor: 'border-amber-500/30 bg-amber-50/60 text-amber-800',
+    waInquiry: 'Hello AGT, I would like to inquire about bulk corporate supply for Pulse Dhaka / Pulse Enterprise products (Dew Air Fresheners, Pocket Perfumes, etc.).'
+  },
 ];
 
 const hotProducts = [
@@ -265,6 +276,34 @@ const hotProducts = [
     highlights: ['Natural Crushed Apricot Exfoliating Beads', 'Antibacterial & Deep Cleansing Formula', 'Corporate Hospitality & Guest Kit Supply'],
     moq: 'MOQ: 50 Sets',
     waInquiry: 'Hello AGT, I would like to inquire about Gacotouch / GACL personal care and institutional hygiene supplies.'
+  },
+  {
+    id: 'pulse-dew-air-freshener',
+    brandId: 'pulse-dhaka',
+    brandName: 'Pulse Dhaka',
+    name: 'Dew Fresh Premium Air Freshener (Orange & Citrus)',
+    bengaliName: 'ডিউ ফ্রেশ প্রিমিয়াম এয়ার ফ্রেশনার (৩০০ মিলি)',
+    tag: 'Office & Facility Essential',
+    badgeColor: 'border-amber-500/30 bg-amber-50 text-amber-900',
+    image: '/images/products/pulse-dew-air-freshener.webp',
+    spec: '300ml Aerosol Spray Can • Master Carton (24 Cans)',
+    highlights: ['Long-Lasting Odor Neutralization', 'Premium Citrus & Floral Fragrances', 'Corporate Boardroom & Washroom Supply'],
+    moq: 'MOQ: 2 Master Cartons (48 Cans)',
+    waInquiry: 'Hello AGT, I would like to inquire about wholesale corporate orders for Dew Air Freshener by Pulse Dhaka.'
+  },
+  {
+    id: 'pulse-dew-pocket-perfume',
+    brandId: 'pulse-dhaka',
+    brandName: 'Pulse Dhaka',
+    name: 'Dew Pocket Perfume – BOLD MAN (Travel & Executive)',
+    bengaliName: 'ডিউ পকেট পারফিউম – বোল্ড ম্যান (২০ মিলি)',
+    tag: 'Corporate Welcome Kit Pick',
+    badgeColor: 'border-purple-500/30 bg-purple-50 text-purple-900',
+    image: '/images/products/pulse-dew-pocket-perfume.webp',
+    spec: '20ml Slim Pocket Spray (250+ Sprays)',
+    highlights: ['Ultra-Compact Pocket & Bag Friendly', 'Long-Lasting Masculine Luxury Notes', 'Conference Kit & Employee Welcome Pack Pick'],
+    moq: 'MOQ: 50 Units',
+    waInquiry: 'Hello AGT, I would like to inquire about corporate gifting orders for Dew Pocket Perfume by Pulse Dhaka.'
   }
 ];
 
@@ -276,7 +315,8 @@ export default function AuthorizedDistributorPage() {
   const [isAnalyticsOpen, setIsAnalyticsOpen] = useState(false);
 
   const brandTabs = [
-    { id: 'all', label: 'All Hot Deals', count: hotProducts.length },
+    { id: 'all', label: 'All Hot Deals', count: 14 },
+    { id: 'pulse-dhaka', label: 'Pulse Dhaka', count: 2 },
     { id: 'fresh-mgi', label: 'Fresh (MGI)', count: 2 },
     { id: 'abul-khair', label: 'Abul Khair', count: 2 },
     { id: 'toktalk', label: 'Toktalk Gourmet', count: 3 },
@@ -398,7 +438,7 @@ export default function AuthorizedDistributorPage() {
             </div>
 
             <div className="text-xs font-bold text-navy-700 px-4 py-2 rounded-full bg-cream-200 border border-gold-500/20 w-fit">
-              Showing 6 Official Brands
+              Showing {partners.length} Official Brands
             </div>
           </div>
 
