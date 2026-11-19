@@ -75,7 +75,14 @@
       "createdAt": "2026-11-19T10:15:00.000Z"
     },
     "serial": "AGT-130",
-    "bulkDiscount": "Wholesale tier for 100+ pcs | Custom company logo printing available"
+    "bulkDiscount": "Wholesale tier for 100+ pcs | Custom company logo printing available",
+    "gallery": [
+      "/images/products/eva-raincoat-yellow.webp",
+      "/images/products/eva-raincoat-purple.webp",
+      "/images/products/eva-raincoat-pink.webp",
+      "/images/products/eva-raincoat-features.webp",
+      "/images/products/eva-raincoat-pack.webp"
+    ]
   },
   {
     "id": "heavy-duty-raincoat-suit-visor",
@@ -145,7 +152,14 @@
       "createdAt": "2026-11-19T10:15:00.000Z"
     },
     "serial": "AGT-131",
-    "bulkDiscount": "Special fleet/corporate rider discount on 50+ sets"
+    "bulkDiscount": "Special fleet/corporate rider discount on 50+ sets",
+    "gallery": [
+      "/images/products/raincoat-suit-black.webp",
+      "/images/products/raincoat-suit-green.webp",
+      "/images/products/raincoat-suit-flat.webp",
+      "/images/products/raincoat-suit-female.webp",
+      "/images/products/raincoat-suit-visor-zoom.webp"
+    ]
   },
   {
     "id": "waterproof-silicone-shoe-covers",
@@ -215,7 +229,13 @@
       "createdAt": "2026-11-19T10:15:00.000Z"
     },
     "serial": "AGT-132",
-    "bulkDiscount": "Wholesale cartons (100 pairs/box) with volume rebate"
+    "bulkDiscount": "Wholesale cartons (100 pairs/box) with volume rebate",
+    "gallery": [
+      "/images/products/rain-shoe-covers-multicolor.webp",
+      "/images/products/rain-shoe-covers-blue.webp",
+      "/images/products/rain-shoe-covers-white.webp",
+      "/images/products/rain-shoe-covers-pink.webp"
+    ]
   },
   {
     "id": "children-cartoon-waterproof-raincoat",
@@ -223,11 +243,11 @@
     "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
-      "url": "/images/products/kids-raincoat-blue.webp",
+      "url": "/images/products/kids-raincoat-blue-v2.webp",
       "width": 779,
-      "height": 922,
-      "aspectRatio": 0.845,
-      "sizeKb": "115.5 KB",
+      "height": 762,
+      "aspectRatio": 1.022,
+      "sizeKb": "95.2 KB",
       "hasAlpha": true
     },
     "variants": [
@@ -235,7 +255,7 @@
         "name": "Space Astronaut Blue",
         "colorName": "Astronaut Blue",
         "hex": "#0284C7",
-        "image": "/images/products/kids-raincoat-blue.webp",
+        "image": "/images/products/kids-raincoat-blue-v2.webp",
         "width": 779,
         "height": 922
       },
@@ -286,7 +306,13 @@
     },
     "serial": "AGT-133",
     "bulkDiscount": "Special institutional / school distribution pricing",
-    "zoom": 1.18
+    "zoom": 1.25,
+    "gallery": [
+      "/images/products/kids-raincoat-blue-v2.webp",
+      "/images/products/kids-raincoat-pink.webp",
+      "/images/products/kids-raincoat-dog.webp",
+      "/images/products/kids-raincoat-models.webp"
+    ]
   },
   {
     "id": "portable-folding-bbq-grill-stove",

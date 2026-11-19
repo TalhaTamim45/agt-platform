@@ -134,15 +134,23 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
       {/* Top Header: Serial & Quick View Specs (Concept B) */}
       <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-2 sm:mb-2.5">
         {product.serial ? (
-          <span className="text-[10px] sm:text-xs font-mono font-bold px-2.5 py-1 rounded-md bg-cream-100/90 text-navy-950 border border-gold-500/30 tracking-wider shadow-2xs">
+          <span className="text-[10px] sm:text-xs font-mono font-bold px-2.5 py-0.5 rounded-md bg-cream-100/90 text-navy-950 border border-gold-500/30 tracking-wider shadow-2xs">
             {product.serial}
           </span>
         ) : (
           <div></div>
         )}
-        <div className="flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold text-navy-700/80 bg-cream-50/90 hover:bg-cream-100 px-2 py-0.5 rounded-md border border-cream-200/70 transition-colors">
-          <Eye className="w-3.5 h-3.5 text-gold-600" />
-          <span className="hidden sm:inline">Specs</span>
+        <div className="flex items-center gap-1.5">
+          {(product.gallery?.length > 1 || product.variants?.length > 1) && (
+            <span className="text-[10px] font-bold text-amber-800 bg-amber-50/90 px-2 py-0.5 rounded-md border border-amber-500/25 flex items-center gap-1 shadow-2xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+              <span>{product.gallery?.length || product.variants?.length} Photos</span>
+            </span>
+          )}
+          <div className="flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold text-navy-700/80 bg-cream-50/90 hover:bg-cream-100 px-2 py-0.5 rounded-md border border-cream-200/70 transition-colors">
+            <Eye className="w-3.5 h-3.5 text-gold-600" />
+            <span className="hidden sm:inline">Specs</span>
+          </div>
         </div>
       </div>
 

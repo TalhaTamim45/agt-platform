@@ -3,21 +3,95 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
-import { X, MessageSquare, ArrowUpRight, CheckCircle2, Package, Paintbrush, Truck, Shield, Palette } from 'lucide-react';
+import { X, MessageSquare, ArrowUpRight, CheckCircle2, Package, Paintbrush, Truck, Shield, Palette, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function ProductDetail({ product, isOpen, onClose, onSelectQuote }) {
   const imageRef = useRef(null);
   const overlayRef = useRef(null);
   const panelRef = useRef(null);
+
+  // Gather all gallery images (from product.gallery or product.variants or main image)
+  const galleryImages =
+    product?.gallery && product.gallery.length > 0
+      ? product.gallery
+      : product?.variants && product.variants.length > 0
+      ? product.variants.map((v) => v.image)
+      : product?.image?.url
+      ? [product.image.url]
+      : [];
+
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState(null);
 
+  // Synchronize on open or product change
   useEffect(() => {
+    setActiveImageIndex(0);
+    setIsPaused(false);
     if (product?.variants && product.variants.length > 0) {
       setSelectedVariant(product.variants[0]);
     } else {
       setSelectedVariant(null);
     }
   }, [product, isOpen]);
+
+  // Automatic swipe every 1.4 seconds (1400ms) as requested
+  useEffect(() => {
+    if (!isOpen || isPaused || galleryImages.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setActiveImageIndex((prev) => {
+        const next = (prev + 1) % galleryImages.length;
+        if (product?.variants) {
+          const match = product.variants.find((v) => v.image === galleryImages[next]);
+          if (match) setSelectedVariant(match);
+        }
+        return next;
+      });
+    }, 1400);
+
+    return () => clearInterval(interval);
+  }, [isOpen, isPaused, galleryImages, product]);
+
+  const handlePrev = (e) => {
+    e?.stopPropagation();
+    setActiveImageIndex((prev) => {
+      const next = (prev - 1 + galleryImages.length) % galleryImages.length;
+      if (product?.variants) {
+        const match = product.variants.find((v) => v.image === galleryImages[next]);
+        if (match) setSelectedVariant(match);
+      }
+      return next;
+    });
+  };
+
+  const handleNext = (e) => {
+    e?.stopPropagation();
+    setActiveImageIndex((prev) => {
+      const next = (prev + 1) % galleryImages.length;
+      if (product?.variants) {
+        const match = product.variants.find((v) => v.image === galleryImages[next]);
+        if (match) setSelectedVariant(match);
+      }
+      return next;
+    });
+  };
+
+  const handleSelectThumbnail = (idx) => {
+    setActiveImageIndex(idx);
+    if (product?.variants) {
+      const match = product.variants.find((v) => v.image === galleryImages[idx]);
+      if (match) setSelectedVariant(match);
+    }
+  };
+
+  const handleSelectVariant = (variant) => {
+    setSelectedVariant(variant);
+    const idx = galleryImages.indexOf(variant.image);
+    if (idx !== -1) {
+      setActiveImageIndex(idx);
+    }
+  };
 
   useEffect(() => {
     if (!isOpen || !overlayRef.current || !panelRef.current) return;
@@ -55,13 +129,11 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
     });
 
     return () => tween.kill();
-  }, [isOpen, product]);
+  }, [isOpen, product, activeImageIndex]);
 
   if (!isOpen || !product) return null;
 
-  const activeImageUrl = selectedVariant?.image || product.image.url;
-  const activeImageWidth = selectedVariant?.width || product.image.width;
-  const activeImageHeight = selectedVariant?.height || product.image.height;
+  const currentDisplayImage = galleryImages[activeImageIndex] || selectedVariant?.image || product.image?.url || '/images/products/stainless-bottle-300ml.webp';
 
   const variantText = selectedVariant ? ` [Color: ${selectedVariant.name}]` : '';
   const waInquiryUrl = `https://wa.me/8801787239863?text=${encodeURIComponent(
@@ -114,36 +186,122 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
           <X className="w-4.5 h-4.5 text-navy-800" />
         </button>
 
-        {/* Product Image Area */}
-        <div className="relative w-full bg-gradient-to-b from-cream-50 via-cream-100/50 to-white px-6 pt-12 pb-6 flex flex-col items-center justify-center overflow-hidden">
+        {/* Product Image Area with Auto-Swipe Carousel matching user's reference */}
+        <div
+          className="relative w-full bg-gradient-to-b from-cream-50 via-cream-100/50 to-white px-4 sm:px-6 pt-10 pb-4 flex flex-col items-center justify-center overflow-hidden"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           {/* Ambient glow */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(244,223,170,0.3),rgba(255,255,255,0))] pointer-events-none"></div>
 
-          {/* Category Badge */}
-          <div className="absolute top-4 left-4 z-10">
+          {/* Category Badge & Live Auto-Swipe Progress */}
+          <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
             <span className="text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-gold-100 border border-gold-500/30 text-gold-800">
               {product.category}
             </span>
+            {galleryImages.length > 1 && (
+              <span className="text-[10px] font-mono font-bold px-2.5 py-0.5 rounded-full bg-navy-950/80 text-white/95 backdrop-blur-xs flex items-center gap-1.5 shadow-2xs">
+                <span className={`w-1.5 h-1.5 rounded-full ${isPaused ? 'bg-amber-400' : 'bg-emerald-400 animate-ping'}`} />
+                <span>{activeImageIndex + 1}/{galleryImages.length}</span>
+              </span>
+            )}
           </div>
 
-          {/* Floating Image */}
-          <div
-            ref={imageRef}
-            className="relative z-10 w-full h-56 sm:h-72 flex items-center justify-center product-image-wrap perspective-container"
-          >
-            <Image
-              key={activeImageUrl}
-              src={activeImageUrl}
-              alt={`${product.name} ${selectedVariant ? selectedVariant.name : ''}`}
-              width={activeImageWidth}
-              height={activeImageHeight}
-              className="max-h-full max-w-full object-contain filter drop-shadow-[0_16px_32px_rgba(12,31,59,0.3)] select-none transition-all duration-300"
-              priority
-            />
+          {/* Main Floating Image Stage with Side Arrows */}
+          <div className="relative w-full flex items-center justify-center my-1">
+            {galleryImages.length > 1 && (
+              <button
+                type="button"
+                onClick={handlePrev}
+                className="absolute left-1 sm:left-2 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/90 hover:bg-white text-navy-900 border border-cream-300 shadow-md flex items-center justify-center transition-all opacity-80 hover:opacity-100 hover:scale-110 cursor-pointer"
+                aria-label="Previous image"
+              >
+                <ChevronLeft className="w-5 h-5 text-navy-900" />
+              </button>
+            )}
+
+            <div
+              ref={imageRef}
+              className="relative z-10 w-full h-56 sm:h-72 flex items-center justify-center product-image-wrap perspective-container"
+            >
+              <Image
+                key={currentDisplayImage}
+                src={currentDisplayImage}
+                alt={`${product.name} - slide ${activeImageIndex + 1}`}
+                width={800}
+                height={800}
+                className="max-h-full max-w-full object-contain filter drop-shadow-[0_16px_32px_rgba(12,31,59,0.28)] select-none transition-all duration-300"
+                priority
+              />
+            </div>
+
+            {galleryImages.length > 1 && (
+              <button
+                type="button"
+                onClick={handleNext}
+                className="absolute right-1 sm:right-2 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/90 hover:bg-white text-navy-900 border border-cream-300 shadow-md flex items-center justify-center transition-all opacity-80 hover:opacity-100 hover:scale-110 cursor-pointer"
+                aria-label="Next image"
+              >
+                <ChevronRight className="w-5 h-5 text-navy-900" />
+              </button>
+            )}
           </div>
 
           {/* Ground Shadow */}
-          <div className="w-28 h-4 rounded-[100%] bg-navy-950/20 blur-lg pointer-events-none mt-2"></div>
+          <div className="w-28 h-3.5 rounded-[100%] bg-navy-950/20 blur-lg pointer-events-none mt-1"></div>
+
+          {/* Thumbnail Gallery Strip (EXACT MATCH TO REFERENCE PHOTO) */}
+          {galleryImages.length > 1 && (
+            <div className="w-full flex items-center justify-center gap-2 mt-3 pt-3 border-t border-cream-200/80">
+              {/* Left Arrow */}
+              <button
+                type="button"
+                onClick={handlePrev}
+                className="w-8 h-8 rounded-lg bg-white border border-cream-300 hover:border-amber-500 text-navy-700 hover:text-navy-950 shadow-2xs flex items-center justify-center transition-all cursor-pointer shrink-0"
+                aria-label="Previous thumbnail"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+
+              {/* Thumbnails Row */}
+              <div className="flex items-center gap-2 overflow-x-auto py-1 px-1 scrollbar-none max-w-full">
+                {galleryImages.map((imgUrl, idx) => {
+                  const isActive = idx === activeImageIndex;
+                  return (
+                    <button
+                      key={idx}
+                      type="button"
+                      onClick={() => handleSelectThumbnail(idx)}
+                      className={`relative w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-white p-1 flex items-center justify-center transition-all duration-200 cursor-pointer shrink-0 ${
+                        isActive
+                          ? 'border-2 border-amber-500 ring-2 ring-amber-400/40 shadow-sm scale-105'
+                          : 'border border-cream-300 hover:border-amber-400/80 opacity-70 hover:opacity-100'
+                      }`}
+                    >
+                      <Image
+                        src={imgUrl}
+                        alt={`Thumbnail ${idx + 1}`}
+                        width={56}
+                        height={56}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Right Arrow */}
+              <button
+                type="button"
+                onClick={handleNext}
+                className="w-8 h-8 rounded-lg bg-white border border-cream-300 hover:border-amber-500 text-navy-700 hover:text-navy-950 shadow-2xs flex items-center justify-center transition-all cursor-pointer shrink-0"
+                aria-label="Next thumbnail"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Product Details */}
@@ -188,7 +346,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
                     <button
                       key={i}
                       type="button"
-                      onClick={() => setSelectedVariant(v)}
+                      onClick={() => handleSelectVariant(v)}
                       className={`group relative flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-200 cursor-pointer ${
                         isSelected
                           ? 'bg-navy-950 text-white shadow-sm ring-2 ring-gold-500/80 scale-[1.02]'
