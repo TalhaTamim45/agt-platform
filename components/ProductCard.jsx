@@ -9,7 +9,23 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
   const cardRef = useRef(null);
   const imageRef = useRef(null);
   const shadowRef = useRef(null);
+  const hoverTimerRef = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [hoverImageIndex, setHoverImageIndex] = useState(0);
+
+  // Multiple photos / double product gallery
+  const cardGallery =
+    product?.gallery && product.gallery.length > 1
+      ? product.gallery
+      : product?.variants && product.variants.length > 1
+      ? product.variants.map((v) => v.image)
+      : null;
+
+  useEffect(() => {
+    return () => {
+      if (hoverTimerRef.current) clearInterval(hoverTimerRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     if (!imageRef.current || !shadowRef.current || !product?.animation) return;
@@ -105,7 +121,20 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
     });
   };
 
+  const handleMouseEnter = () => {
+    if (!cardGallery || cardGallery.length <= 1) return;
+    if (hoverTimerRef.current) clearInterval(hoverTimerRef.current);
+    hoverTimerRef.current = setInterval(() => {
+      setHoverImageIndex((prev) => (prev + 1) % cardGallery.length);
+    }, 1500);
+  };
+
   const handleMouseLeave = () => {
+    if (hoverTimerRef.current) {
+      clearInterval(hoverTimerRef.current);
+      hoverTimerRef.current = null;
+    }
+    setHoverImageIndex(0);
     if (!imageRef.current) return;
     const baseScale = product.zoom || 1.0;
     gsap.to(imageRef.current, {
@@ -121,10 +150,13 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
     `Hello Abdullah Global Trade, I would like to request a bulk corporate quotation for: [${product.serial || product.id}] ${product.name}. Please share wholesale pricing and availability.`
   )}`;
 
+  const displayImageUrl = cardGallery ? cardGallery[hoverImageIndex] : product.image.url;
+
   return (
     <div
       ref={cardRef}
       onClick={() => onSelectDetail && onSelectDetail(product)}
+      onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={`group relative flex flex-col justify-between rounded-2xl bg-white ${
@@ -172,7 +204,7 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
           className="relative z-10 w-full h-28 sm:h-44 flex items-center justify-center product-image-wrap p-1 sm:p-2"
         >
           <Image
-            src={product.image.url}
+            src={displayImageUrl}
             alt={product.name}
             width={product.image.width}
             height={product.image.height}

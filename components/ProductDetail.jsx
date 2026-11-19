@@ -35,7 +35,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
     }
   }, [product, isOpen]);
 
-  // Automatic swipe every 1.4 seconds (1400ms) as requested
+  // Automatic swipe every 1.5 seconds (1500ms) for all products with multiple images
   useEffect(() => {
     if (!isOpen || isPaused || galleryImages.length <= 1) return;
 
@@ -48,7 +48,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
         }
         return next;
       });
-    }, 1400);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, [isOpen, isPaused, galleryImages, product]);
@@ -120,7 +120,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
     });
 
     return () => tween.kill();
-  }, [isOpen, product, activeImageIndex]);
+  }, [isOpen, product]);
 
   if (!isOpen || !product) return null;
 
