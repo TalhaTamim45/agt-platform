@@ -224,11 +224,11 @@
     "format": "webp",
     "image": {
       "url": "/images/products/kids-raincoat-blue.webp",
-      "width": 1280,
-      "height": 960,
-      "aspectRatio": 1.333,
-      "sizeKb": "90.2 KB",
-      "hasAlpha": false
+      "width": 779,
+      "height": 922,
+      "aspectRatio": 0.845,
+      "sizeKb": "115.5 KB",
+      "hasAlpha": true
     },
     "variants": [
       {
@@ -236,16 +236,16 @@
         "colorName": "Astronaut Blue",
         "hex": "#0284C7",
         "image": "/images/products/kids-raincoat-blue.webp",
-        "width": 1280,
-        "height": 960
+        "width": 779,
+        "height": 922
       },
       {
         "name": "Little Animal Pink",
         "colorName": "Pastel Pink",
         "hex": "#F472B6",
         "image": "/images/products/kids-raincoat-pink.webp",
-        "width": 1280,
-        "height": 960
+        "width": 903,
+        "height": 810
       }
     ],
     "animation": {
@@ -280,12 +280,13 @@
       "transformOrigin": "center center"
     },
     "meta": {
-      "strippedWith": "sharp libvips",
+      "strippedWith": "BRIA AI RMBG-1.4",
       "optimizedWith": "sharp libvips",
-      "createdAt": "2026-11-19T10:15:00.000Z"
+      "createdAt": "2026-11-19T04:44:00.978Z"
     },
     "serial": "AGT-133",
-    "bulkDiscount": "Special institutional / school distribution pricing"
+    "bulkDiscount": "Special institutional / school distribution pricing",
+    "zoom": 1.18
   },
   {
     "id": "portable-folding-bbq-grill-stove",
