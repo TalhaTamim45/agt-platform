@@ -177,7 +177,7 @@ export default function ProductCard({ product, onSelectQuote, onSelectDetail, co
             width={product.image.width}
             height={product.image.height}
             onLoad={() => setIsLoaded(true)}
-            className={`max-h-full max-w-full object-contain filter drop-shadow-[0_8px_16px_rgba(12,31,59,0.22)] sm:drop-shadow-[0_10px_20px_rgba(12,31,59,0.28)] select-none transition-opacity duration-300 ${
+            className={`max-h-full max-w-full object-contain filter drop-shadow-[0_8px_14px_rgba(12,31,59,0.14)] sm:drop-shadow-[0_10px_18px_rgba(12,31,59,0.18)] select-none transition-opacity duration-300 ${
               isLoaded ? 'opacity-100' : 'opacity-0'
             }`}
             priority={priority}

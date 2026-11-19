@@ -108,22 +108,13 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
   }, [isOpen]);
 
   useEffect(() => {
-    if (!isOpen || !imageRef.current || !product?.animation) return;
+    if (!isOpen || !imageRef.current) return;
 
-    const floating = product.animation.floating || {
-      amplitudeY: 16, duration: 3.5, ease: 'sine.inOut',
-      rotationDriftZ: 2.0, rotationDriftX: 3.0,
-    };
-
-    const baseScale = product.zoom || 1.0;
-    gsap.set(imageRef.current, { scale: baseScale });
-
+    // Upright, professional floating without 3D tilt/rotation (matching e-commerce standard)
     const tween = gsap.to(imageRef.current, {
-      y: -floating.amplitudeY * 1.2,
-      rotationZ: floating.rotationDriftZ,
-      rotationX: floating.rotationDriftX,
-      duration: floating.duration,
-      ease: floating.ease || 'sine.inOut',
+      y: -8,
+      duration: 2.8,
+      ease: 'sine.inOut',
       repeat: -1,
       yoyo: true,
     });
@@ -188,16 +179,16 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
 
         {/* Product Image Area with Auto-Swipe Carousel matching user's reference */}
         <div
-          className="relative w-full bg-gradient-to-b from-cream-50 via-cream-100/50 to-white px-4 sm:px-6 pt-10 pb-4 flex flex-col items-center justify-center overflow-hidden"
+          className="relative w-full bg-gradient-to-b from-cream-50 via-cream-100/40 to-white px-4 sm:px-6 pt-12 pb-3 flex flex-col items-center justify-center overflow-hidden"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
           {/* Ambient glow */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(244,223,170,0.3),rgba(255,255,255,0))] pointer-events-none"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(244,223,170,0.25),rgba(255,255,255,0))] pointer-events-none"></div>
 
           {/* Category Badge & Live Auto-Swipe Progress */}
-          <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
-            <span className="text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-gold-100 border border-gold-500/30 text-gold-800">
+          <div className="absolute top-3.5 left-4 z-10 flex items-center gap-2">
+            <span className="text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-gold-100/90 border border-gold-500/30 text-gold-800 shadow-2xs">
               {product.category}
             </span>
             {galleryImages.length > 1 && (
@@ -208,22 +199,11 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
             )}
           </div>
 
-          {/* Main Floating Image Stage with Side Arrows */}
-          <div className="relative w-full flex items-center justify-center my-1">
-            {galleryImages.length > 1 && (
-              <button
-                type="button"
-                onClick={handlePrev}
-                className="absolute left-1 sm:left-2 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/90 hover:bg-white text-navy-900 border border-cream-300 shadow-md flex items-center justify-center transition-all opacity-80 hover:opacity-100 hover:scale-110 cursor-pointer"
-                aria-label="Previous image"
-              >
-                <ChevronLeft className="w-5 h-5 text-navy-900" />
-              </button>
-            )}
-
+          {/* Main Upright Product Packshot (Matching Reference Photo) */}
+          <div className="relative w-full flex items-center justify-center my-0.5">
             <div
               ref={imageRef}
-              className="relative z-10 w-full h-56 sm:h-72 flex items-center justify-center product-image-wrap perspective-container"
+              className="relative z-10 w-full h-48 sm:h-60 flex items-center justify-center product-image-wrap"
             >
               <Image
                 key={currentDisplayImage}
@@ -231,41 +211,30 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
                 alt={`${product.name} - slide ${activeImageIndex + 1}`}
                 width={800}
                 height={800}
-                className="max-h-full max-w-full object-contain filter drop-shadow-[0_16px_32px_rgba(12,31,59,0.28)] select-none transition-all duration-300"
+                className="max-h-full max-w-full object-contain filter drop-shadow-[0_12px_24px_rgba(12,31,59,0.18)] select-none transition-all duration-300"
                 priority
               />
             </div>
-
-            {galleryImages.length > 1 && (
-              <button
-                type="button"
-                onClick={handleNext}
-                className="absolute right-1 sm:right-2 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/90 hover:bg-white text-navy-900 border border-cream-300 shadow-md flex items-center justify-center transition-all opacity-80 hover:opacity-100 hover:scale-110 cursor-pointer"
-                aria-label="Next image"
-              >
-                <ChevronRight className="w-5 h-5 text-navy-900" />
-              </button>
-            )}
           </div>
 
           {/* Ground Shadow */}
-          <div className="w-28 h-3.5 rounded-[100%] bg-navy-950/20 blur-lg pointer-events-none mt-1"></div>
+          <div className="w-24 sm:w-28 h-2.5 rounded-[100%] bg-navy-950/15 blur-md pointer-events-none mt-0.5"></div>
 
-          {/* Thumbnail Gallery Strip (EXACT MATCH TO REFERENCE PHOTO) */}
+          {/* Thumbnail Gallery Strip with < and > Arrows (EXACT MATCH TO REFERENCE PHOTO) */}
           {galleryImages.length > 1 && (
-            <div className="w-full flex items-center justify-center gap-2 mt-3 pt-3 border-t border-cream-200/80">
-              {/* Left Arrow */}
+            <div className="w-full flex items-center justify-center gap-2 sm:gap-3 mt-2.5 pt-2.5 border-t border-cream-200/90">
+              {/* Left Arrow Button */}
               <button
                 type="button"
                 onClick={handlePrev}
-                className="w-8 h-8 rounded-lg bg-white border border-cream-300 hover:border-amber-500 text-navy-700 hover:text-navy-950 shadow-2xs flex items-center justify-center transition-all cursor-pointer shrink-0"
-                aria-label="Previous thumbnail"
+                className="w-8 h-8 rounded-lg bg-white border border-cream-300 hover:border-amber-500 hover:bg-amber-50/50 text-navy-700 hover:text-amber-700 shadow-2xs flex items-center justify-center transition-all cursor-pointer shrink-0 active:scale-95"
+                aria-label="Previous image"
               >
-                <ChevronLeft className="w-4 h-4" />
+                <ChevronLeft className="w-4.5 h-4.5" />
               </button>
 
               {/* Thumbnails Row */}
-              <div className="flex items-center gap-2 overflow-x-auto py-1 px-1 scrollbar-none max-w-full">
+              <div className="flex items-center gap-2 overflow-x-auto py-1 px-1 scrollbar-none max-w-[calc(100%-80px)] justify-center">
                 {galleryImages.map((imgUrl, idx) => {
                   const isActive = idx === activeImageIndex;
                   return (
@@ -275,7 +244,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
                       onClick={() => handleSelectThumbnail(idx)}
                       className={`relative w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-white p-1 flex items-center justify-center transition-all duration-200 cursor-pointer shrink-0 ${
                         isActive
-                          ? 'border-2 border-amber-500 ring-2 ring-amber-400/40 shadow-sm scale-105'
+                          ? 'border-2 border-amber-500 ring-2 ring-amber-400/35 shadow-sm scale-105'
                           : 'border border-cream-300 hover:border-amber-400/80 opacity-70 hover:opacity-100'
                       }`}
                     >
@@ -291,14 +260,14 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
                 })}
               </div>
 
-              {/* Right Arrow */}
+              {/* Right Arrow Button */}
               <button
                 type="button"
                 onClick={handleNext}
-                className="w-8 h-8 rounded-lg bg-white border border-cream-300 hover:border-amber-500 text-navy-700 hover:text-navy-950 shadow-2xs flex items-center justify-center transition-all cursor-pointer shrink-0"
-                aria-label="Next thumbnail"
+                className="w-8 h-8 rounded-lg bg-white border border-cream-300 hover:border-amber-500 hover:bg-amber-50/50 text-navy-700 hover:text-amber-700 shadow-2xs flex items-center justify-center transition-all cursor-pointer shrink-0 active:scale-95"
+                aria-label="Next image"
               >
-                <ChevronRight className="w-4 h-4" />
+                <ChevronRight className="w-4.5 h-4.5" />
               </button>
             </div>
           )}

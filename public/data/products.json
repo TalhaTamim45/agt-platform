@@ -79,9 +79,7 @@
     "gallery": [
       "/images/products/eva-raincoat-yellow.webp",
       "/images/products/eva-raincoat-purple.webp",
-      "/images/products/eva-raincoat-pink.webp",
-      "/images/products/eva-raincoat-features.webp",
-      "/images/products/eva-raincoat-pack.webp"
+      "/images/products/eva-raincoat-pink.webp"
     ]
   },
   {
@@ -113,6 +111,14 @@
         "image": "/images/products/raincoat-suit-green.webp",
         "width": 496,
         "height": 1403
+      },
+      {
+        "name": "Fitted Model View",
+        "colorName": "Model View",
+        "hex": "#334155",
+        "image": "/images/products/raincoat-suit-female-transparent.webp",
+        "width": 507,
+        "height": 1402
       }
     ],
     "animation": {
@@ -156,9 +162,7 @@
     "gallery": [
       "/images/products/raincoat-suit-black.webp",
       "/images/products/raincoat-suit-green.webp",
-      "/images/products/raincoat-suit-flat.webp",
-      "/images/products/raincoat-suit-female.webp",
-      "/images/products/raincoat-suit-visor-zoom.webp"
+      "/images/products/raincoat-suit-female-transparent.webp"
     ]
   },
   {
@@ -176,20 +180,36 @@
     },
     "variants": [
       {
-        "name": "Multi-Color Assorted (4 Colors)",
-        "colorName": "4-Color Assorted",
+        "name": "Assorted 4-Pack",
+        "colorName": "Assorted",
         "hex": "#94A3B8",
         "image": "/images/products/rain-shoe-covers-multicolor.webp",
         "width": 1417,
         "height": 874
       },
       {
-        "name": "Sky Blue (Active Fit)",
+        "name": "Sky Blue",
         "colorName": "Sky Blue",
         "hex": "#38BDF8",
         "image": "/images/products/rain-shoe-covers-blue.webp",
-        "width": 1440,
-        "height": 1397
+        "width": 1489,
+        "height": 1402
+      },
+      {
+        "name": "Pastel Pink",
+        "colorName": "Pastel Pink",
+        "hex": "#F472B6",
+        "image": "/images/products/rain-shoe-covers-pink.webp",
+        "width": 540,
+        "height": 928
+      },
+      {
+        "name": "Clean White",
+        "colorName": "Clean White",
+        "hex": "#F8FAFC",
+        "image": "/images/products/rain-shoe-covers-white.webp",
+        "width": 540,
+        "height": 899
       }
     ],
     "animation": {
@@ -233,8 +253,8 @@
     "gallery": [
       "/images/products/rain-shoe-covers-multicolor.webp",
       "/images/products/rain-shoe-covers-blue.webp",
-      "/images/products/rain-shoe-covers-white.webp",
-      "/images/products/rain-shoe-covers-pink.webp"
+      "/images/products/rain-shoe-covers-pink.webp",
+      "/images/products/rain-shoe-covers-white.webp"
     ]
   },
   {
@@ -266,6 +286,14 @@
         "image": "/images/products/kids-raincoat-pink.webp",
         "width": 903,
         "height": 810
+      },
+      {
+        "name": "Happy Puppy Yellow",
+        "colorName": "Puppy Yellow",
+        "hex": "#EAB308",
+        "image": "/images/products/kids-raincoat-dog.webp",
+        "width": 799,
+        "height": 930
       }
     ],
     "animation": {
@@ -309,8 +337,7 @@
     "gallery": [
       "/images/products/kids-raincoat-blue-v2.webp",
       "/images/products/kids-raincoat-pink.webp",
-      "/images/products/kids-raincoat-dog.webp",
-      "/images/products/kids-raincoat-models.webp"
+      "/images/products/kids-raincoat-dog.webp"
     ]
   },
   {
