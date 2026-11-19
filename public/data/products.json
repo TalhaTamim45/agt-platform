@@ -263,7 +263,7 @@
     "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
-      "url": "/images/products/kids-raincoat-blue-v2.webp",
+      "url": "/images/products/kids-raincoat-blue-v3.webp",
       "width": 837,
       "height": 871,
       "aspectRatio": 0.961,
@@ -275,7 +275,7 @@
         "name": "Space Astronaut Blue",
         "colorName": "Astronaut Blue",
         "hex": "#0284C7",
-        "image": "/images/products/kids-raincoat-blue-v2.webp",
+        "image": "/images/products/kids-raincoat-blue-v3.webp",
         "width": 837,
         "height": 871
       },
@@ -335,7 +335,7 @@
     "serial": "AGT-133",
     "bulkDiscount": "Special institutional / school distribution pricing",
     "gallery": [
-      "/images/products/kids-raincoat-blue-v2.webp",
+      "/images/products/kids-raincoat-blue-v3.webp",
       "/images/products/kids-raincoat-pink.webp",
       "/images/products/kids-raincoat-dog.webp"
     ]
