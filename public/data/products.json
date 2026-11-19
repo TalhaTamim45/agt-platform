@@ -1,5 +1,293 @@
 [
   {
+    "id": "unisex-eva-fashion-raincoat-hooded",
+    "name": "Unisex Reusable EVA Waterproof Fashion Raincoat (With Hood & Snaps)",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/eva-raincoat-yellow.webp",
+      "width": 662,
+      "height": 1342,
+      "aspectRatio": 0.493,
+      "sizeKb": "33.3 KB",
+      "hasAlpha": true
+    },
+    "variants": [
+      {
+        "name": "Vibrant Yellow",
+        "colorName": "Yellow",
+        "hex": "#FACC15",
+        "image": "/images/products/eva-raincoat-yellow.webp",
+        "width": 662,
+        "height": 1342
+      },
+      {
+        "name": "Lavender Purple",
+        "colorName": "Purple",
+        "hex": "#A855F7",
+        "image": "/images/products/eva-raincoat-purple.webp",
+        "width": 576,
+        "height": 1362
+      },
+      {
+        "name": "Pastel Pink",
+        "colorName": "Pink",
+        "hex": "#F472B6",
+        "image": "/images/products/eva-raincoat-pink.webp",
+        "width": 411,
+        "height": 1357
+      }
+    ],
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "sharp alpha flood",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-19T10:15:00.000Z"
+    },
+    "serial": "AGT-130",
+    "bulkDiscount": "Wholesale tier for 100+ pcs | Custom company logo printing available"
+  },
+  {
+    "id": "heavy-duty-raincoat-suit-visor",
+    "name": "Heavy-Duty Motorcycle & Corporate Raincoat Suit (Jacket + Trouser with Visor)",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/raincoat-suit-black.webp",
+      "width": 533,
+      "height": 1371,
+      "aspectRatio": 0.388,
+      "sizeKb": "48.4 KB",
+      "hasAlpha": true
+    },
+    "variants": [
+      {
+        "name": "Midnight Black",
+        "colorName": "Black",
+        "hex": "#18181B",
+        "image": "/images/products/raincoat-suit-black.webp",
+        "width": 533,
+        "height": 1371
+      },
+      {
+        "name": "Tactical Army Green",
+        "colorName": "Army Green",
+        "hex": "#3F4F3E",
+        "image": "/images/products/raincoat-suit-green.webp",
+        "width": 496,
+        "height": 1403
+      }
+    ],
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "medium-dense",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 4,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2,
+        "rotationDriftX": 3
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "sharp alpha flood",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-19T10:15:00.000Z"
+    },
+    "serial": "AGT-131",
+    "bulkDiscount": "Special fleet/corporate rider discount on 50+ sets"
+  },
+  {
+    "id": "waterproof-silicone-shoe-covers",
+    "name": "Waterproof Reusable Silicone Rain Shoe Covers (Anti-Slip Zipper Overshoes)",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/rain-shoe-covers-multicolor.webp",
+      "width": 1417,
+      "height": 874,
+      "aspectRatio": 1.621,
+      "sizeKb": "79.6 KB",
+      "hasAlpha": true
+    },
+    "variants": [
+      {
+        "name": "Multi-Color Assorted (4 Colors)",
+        "colorName": "4-Color Assorted",
+        "hex": "#94A3B8",
+        "image": "/images/products/rain-shoe-covers-multicolor.webp",
+        "width": 1417,
+        "height": 874
+      },
+      {
+        "name": "Sky Blue (Active Fit)",
+        "colorName": "Sky Blue",
+        "hex": "#38BDF8",
+        "image": "/images/products/rain-shoe-covers-blue.webp",
+        "width": 1440,
+        "height": 1397
+      }
+    ],
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 16,
+        "duration": 3.6,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.5,
+        "rotationDriftX": 2.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "sharp alpha flood",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-19T10:15:00.000Z"
+    },
+    "serial": "AGT-132",
+    "bulkDiscount": "Wholesale cartons (100 pairs/box) with volume rebate"
+  },
+  {
+    "id": "children-cartoon-waterproof-raincoat",
+    "name": "Children's Cartoon Waterproof Raincoat (With Schoolbag Cover & Storage Bag)",
+    "category": "Home & Lifestyle",
+    "format": "webp",
+    "image": {
+      "url": "/images/products/kids-raincoat-blue.webp",
+      "width": 1280,
+      "height": 960,
+      "aspectRatio": 1.333,
+      "sizeKb": "90.2 KB",
+      "hasAlpha": false
+    },
+    "variants": [
+      {
+        "name": "Space Astronaut Blue",
+        "colorName": "Astronaut Blue",
+        "hex": "#0284C7",
+        "image": "/images/products/kids-raincoat-blue.webp",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "name": "Little Animal Pink",
+        "colorName": "Pastel Pink",
+        "hex": "#F472B6",
+        "image": "/images/products/kids-raincoat-pink.webp",
+        "width": 1280,
+        "height": 960
+      }
+    ],
+    "animation": {
+      "engine": "GSAP",
+      "zeroGravity": true,
+      "profile": "light-buoyant",
+      "floating": {
+        "amplitudeY": 18,
+        "duration": 3.8,
+        "ease": "sine.inOut",
+        "rotationDriftZ": 2.2,
+        "rotationDriftX": 3.5
+      },
+      "shadow": {
+        "baseBlur": 24,
+        "spread": -4,
+        "minOpacity": 0.22,
+        "maxOpacity": 0.52,
+        "scaleRange": [
+          0.82,
+          1
+        ]
+      },
+      "interaction": {
+        "liftY": -22,
+        "scale": 1.06,
+        "tiltSensitivity": 14,
+        "duration": 0.45,
+        "ease": "power2.out"
+      },
+      "cssPerspective": "1000px",
+      "transformOrigin": "center center"
+    },
+    "meta": {
+      "strippedWith": "sharp libvips",
+      "optimizedWith": "sharp libvips",
+      "createdAt": "2026-11-19T10:15:00.000Z"
+    },
+    "serial": "AGT-133",
+    "bulkDiscount": "Special institutional / school distribution pricing"
+  },
+  {
     "id": "portable-folding-bbq-grill-stove",
     "name": "Portable Folding Charcoal BBQ Grill & Skewer Barbecue Stove",
     "category": "Kitchen & Appliances",

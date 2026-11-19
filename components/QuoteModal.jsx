@@ -33,10 +33,11 @@ export default function QuoteModal({ isOpen, onClose, product, allProducts }) {
 
   const handleWhatsAppSubmit = (e) => {
     e.preventDefault();
+    const variantLine = currentProduct?.selectedVariant ? `*Selected Color/Variant:* ${currentProduct.selectedVariant.name}\n` : '';
     const text = `*B2B Corporate Quotation Request - AGT*
 ----------------------------------------
 *Product:* [${currentProduct?.serial || currentProduct?.id || 'N/A'}] ${currentProduct?.name || 'General Inquiry'}
-*Category:* ${currentProduct?.category || 'General'}
+${variantLine}*Category:* ${currentProduct?.category || 'General'}
 *Pricing Type:* Wholesale / Bulk Rate (Custom Volume Quote)
 *Target Quantity:* ${quantity} units
 *Custom Branding/Logo:* ${customBranding ? 'Yes (Required)' : 'No (Blank stock)'}
@@ -52,8 +53,9 @@ Please provide official discounted bulk pricing and delivery lead time.`;
   };
 
   const handleEmailSubmit = () => {
-    const subject = encodeURIComponent(`Quotation Request: [${currentProduct?.serial || currentProduct?.id}] ${currentProduct?.name || 'Bulk Inquiry'} - ${companyName}`);
-    const body = encodeURIComponent(`Hello Abdullah Global Trade Procurement Team,\n\nWe would like to request an official corporate price quotation for the following:\n\nProduct: [${currentProduct?.serial || currentProduct?.id}] ${currentProduct?.name}\nEstimated Quantity: ${quantity} units\nCustom Branding: ${customBranding ? 'Yes' : 'No'}\nCompany: ${companyName}\nContact Person: ${contactName}\nPhone: ${contactPhone}\n\nPlease share availability and wholesale quotation.\n\nThank you.`);
+    const variantTag = currentProduct?.selectedVariant ? ` (${currentProduct.selectedVariant.name})` : '';
+    const subject = encodeURIComponent(`Quotation Request: [${currentProduct?.serial || currentProduct?.id}] ${currentProduct?.name || 'Bulk Inquiry'}${variantTag} - ${companyName}`);
+    const body = encodeURIComponent(`Hello Abdullah Global Trade Procurement Team,\n\nWe would like to request an official corporate price quotation for the following:\n\nProduct: [${currentProduct?.serial || currentProduct?.id}] ${currentProduct?.name}${variantTag}\nEstimated Quantity: ${quantity} units\nCustom Branding: ${customBranding ? 'Yes' : 'No'}\nCompany: ${companyName}\nContact Person: ${contactName}\nPhone: ${contactPhone}\n\nPlease share availability and wholesale quotation.\n\nThank you.`);
     window.location.href = `mailto:agtbd763@gmail.com?subject=${subject}&body=${body}`;
   };
 
@@ -93,7 +95,7 @@ Please provide official discounted bulk pricing and delivery lead time.`;
           <div className="flex items-center gap-4 p-3.5 rounded-2xl bg-cream-100 border border-gold-500/25 mb-6">
             <div className="w-16 h-16 rounded-xl bg-white flex items-center justify-center p-1 relative shrink-0 shadow-sm border border-cream-300">
               <Image
-                src={currentProduct.image?.url || '/images/products/stainless-bottle-300ml.webp'}
+                src={currentProduct.selectedVariant?.image || currentProduct.image?.url || '/images/products/stainless-bottle-300ml.webp'}
                 alt={currentProduct.name}
                 width={64}
                 height={64}
@@ -104,11 +106,20 @@ Please provide official discounted bulk pricing and delivery lead time.`;
               <h4 className="text-sm font-bold text-navy-950 truncate">
                 {currentProduct.name}
               </h4>
-              <div className="flex items-center gap-2 mt-0.5">
+              <div className="flex items-center gap-2 mt-0.5 flex-wrap">
                 <span className="text-xs text-gold-700 font-semibold">{currentProduct.category}</span>
                 <span className="text-navy-300">•</span>
                 <span className="text-xs font-extrabold text-gold-800 bg-gold-100/70 px-2 py-0.5 rounded border border-gold-400/40">Wholesale on Request</span>
               </div>
+              {currentProduct.selectedVariant && (
+                <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-white border border-cream-300 text-[11px] font-bold text-navy-900 mt-1 shadow-2xs">
+                  <span
+                    className="w-2.5 h-2.5 rounded-full border border-black/20 shrink-0"
+                    style={{ backgroundColor: currentProduct.selectedVariant.hex }}
+                  />
+                  <span>Selected Color: {currentProduct.selectedVariant.name}</span>
+                </div>
+              )}
               <p className="text-[11px] font-medium text-emerald-700 mt-0.5">
                 Volume tier discounts applied for bulk quantities
               </p>

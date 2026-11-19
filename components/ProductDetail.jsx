@@ -1,14 +1,23 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
-import { X, MessageSquare, ArrowUpRight, CheckCircle2, Package, Paintbrush, Truck, Shield } from 'lucide-react';
+import { X, MessageSquare, ArrowUpRight, CheckCircle2, Package, Paintbrush, Truck, Shield, Palette } from 'lucide-react';
 
 export default function ProductDetail({ product, isOpen, onClose, onSelectQuote }) {
   const imageRef = useRef(null);
   const overlayRef = useRef(null);
   const panelRef = useRef(null);
+  const [selectedVariant, setSelectedVariant] = useState(null);
+
+  useEffect(() => {
+    if (product?.variants && product.variants.length > 0) {
+      setSelectedVariant(product.variants[0]);
+    } else {
+      setSelectedVariant(null);
+    }
+  }, [product, isOpen]);
 
   useEffect(() => {
     if (!isOpen || !overlayRef.current || !panelRef.current) return;
@@ -50,8 +59,13 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
 
   if (!isOpen || !product) return null;
 
+  const activeImageUrl = selectedVariant?.image || product.image.url;
+  const activeImageWidth = selectedVariant?.width || product.image.width;
+  const activeImageHeight = selectedVariant?.height || product.image.height;
+
+  const variantText = selectedVariant ? ` [Color: ${selectedVariant.name}]` : '';
   const waInquiryUrl = `https://wa.me/8801787239863?text=${encodeURIComponent(
-    `Hello Abdullah Global Trade, I'm interested in bulk ordering: [${product.serial || product.id}] ${product.name}. Please share wholesale pricing and MOQ.`
+    `Hello Abdullah Global Trade, I'm interested in bulk ordering: [${product.serial || product.id}] ${product.name}${variantText}. Please share wholesale pricing and MOQ.`
   )}`;
 
   // Generate professional features based on category
@@ -118,11 +132,12 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
             className="relative z-10 w-full h-56 sm:h-72 flex items-center justify-center product-image-wrap perspective-container"
           >
             <Image
-              src={product.image.url}
-              alt={product.name}
-              width={product.image.width}
-              height={product.image.height}
-              className="max-h-full max-w-full object-contain filter drop-shadow-[0_16px_32px_rgba(12,31,59,0.3)] select-none"
+              key={activeImageUrl}
+              src={activeImageUrl}
+              alt={`${product.name} ${selectedVariant ? selectedVariant.name : ''}`}
+              width={activeImageWidth}
+              height={activeImageHeight}
+              className="max-h-full max-w-full object-contain filter drop-shadow-[0_16px_32px_rgba(12,31,59,0.3)] select-none transition-all duration-300"
               priority
             />
           </div>
@@ -149,6 +164,48 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
               {product.name}
             </h2>
           </div>
+
+          {/* E-commerce Style Interactive Color Variant Selector */}
+          {product.variants && product.variants.length > 0 && (
+            <div className="mt-3.5 p-3.5 rounded-xl bg-cream-50/90 border border-gold-500/25 shadow-2xs">
+              <div className="flex items-center justify-between gap-2 mb-2.5">
+                <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-navy-950">
+                  <Palette className="w-3.5 h-3.5 text-gold-600" />
+                  <span>Available Colors ({product.variants.length})</span>
+                </div>
+                {selectedVariant && (
+                  <span className="text-[11px] font-bold text-navy-900 bg-white px-2.5 py-0.5 rounded-full border border-cream-300 shadow-2xs">
+                    {selectedVariant.name}
+                  </span>
+                )}
+              </div>
+
+              {/* Color Swatch Options */}
+              <div className="flex items-center gap-2 flex-wrap">
+                {product.variants.map((v, i) => {
+                  const isSelected = selectedVariant?.name === v.name;
+                  return (
+                    <button
+                      key={i}
+                      type="button"
+                      onClick={() => setSelectedVariant(v)}
+                      className={`group relative flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-200 cursor-pointer ${
+                        isSelected
+                          ? 'bg-navy-950 text-white shadow-sm ring-2 ring-gold-500/80 scale-[1.02]'
+                          : 'bg-white text-navy-800 border border-cream-300 hover:border-gold-500/50 hover:bg-cream-100/60'
+                      }`}
+                    >
+                      <span
+                        className="w-3.5 h-3.5 rounded-full border border-black/20 shadow-2xs shrink-0"
+                        style={{ backgroundColor: v.hex }}
+                      />
+                      <span>{v.colorName || v.name}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
           {/* Direct B2B Wholesale Pricing Box */}
           <div className="my-3.5 p-3.5 rounded-xl bg-gradient-to-r from-cream-50 via-gold-50/50 to-cream-50 border border-gold-500/25 flex items-center justify-between gap-3 shadow-xs">
@@ -201,7 +258,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
           <div className="flex gap-3">
             <button
               onClick={() => {
-                onSelectQuote(product);
+                onSelectQuote({ ...product, selectedVariant });
                 onClose();
               }}
               className="flex-1 gold-btn py-3.5 px-4 rounded-xl text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2"
