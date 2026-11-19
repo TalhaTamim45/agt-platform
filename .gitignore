@@ -30,6 +30,7 @@ public/WhatsApp*/
 # Large 3D / Binary Cache
 *.glb
 *.gltf
+*.xlsx
 
 # OS Metadata
 .DS_Store
