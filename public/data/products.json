@@ -263,32 +263,56 @@
     "category": "Home & Lifestyle",
     "format": "webp",
     "image": {
-      "url": "/images/products/kids-raincoat-blue-v3.webp",
-      "width": 837,
-      "height": 871,
-      "aspectRatio": 0.961,
-      "sizeKb": "98.5 KB",
+      "url": "/images/products/kids-raincoat-model-blue.webp",
+      "width": 1022,
+      "height": 1130,
+      "aspectRatio": 0.904,
+      "sizeKb": "124.0 KB",
       "hasAlpha": true
     },
     "variants": [
       {
-        "name": "Space Astronaut Blue",
-        "colorName": "Astronaut Blue",
+        "name": "Cartoon Bear Blue (Wearable)",
+        "colorName": "Bear Blue",
+        "hex": "#38BDF8",
+        "image": "/images/products/kids-raincoat-model-blue.webp",
+        "width": 1022,
+        "height": 1130
+      },
+      {
+        "name": "School Cartoon Pink & Blue (Wearable)",
+        "colorName": "Pink & Blue Duo",
+        "hex": "#F472B6",
+        "image": "/images/products/kids-raincoat-girls-pink-blue.webp",
+        "width": 1122,
+        "height": 1049
+      },
+      {
+        "name": "Cartoon Dolphin Blue (Wearable)",
+        "colorName": "Dolphin Blue",
         "hex": "#0284C7",
+        "image": "/images/products/kids-raincoat-model-dolphin.webp",
+        "width": 1028,
+        "height": 1130
+      },
+      {
+        "name": "Space Astronaut Blue (Pouch)",
+        "colorName": "Astronaut Blue",
+        "hex": "#0369A1",
         "image": "/images/products/kids-raincoat-blue-v3.webp",
         "width": 837,
         "height": 871
       },
       {
-        "name": "Little Animal Pink",
+        "name": "Little Animal Pink (Pouch)",
         "colorName": "Pastel Pink",
-        "hex": "#F472B6",
+        "hex": "#EC4899",
         "image": "/images/products/kids-raincoat-pink.webp",
         "width": 903,
         "height": 810
       },
       {
-        "name": "Happy Puppy Yellow",
+        "name": "Happy Puppy Yellow (Pouch)",
         "colorName": "Puppy Yellow",
         "hex": "#EAB308",
         "image": "/images/products/kids-raincoat-dog.webp",
@@ -335,6 +359,9 @@
     "serial": "AGT-133",
     "bulkDiscount": "Special institutional / school distribution pricing",
     "gallery": [
+      "/images/products/kids-raincoat-model-blue.webp",
+      "/images/products/kids-raincoat-girls-pink-blue.webp",
+      "/images/products/kids-raincoat-model-dolphin.webp",
       "/images/products/kids-raincoat-blue-v3.webp",
       "/images/products/kids-raincoat-pink.webp",
       "/images/products/kids-raincoat-dog.webp"
