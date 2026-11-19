@@ -264,9 +264,9 @@
     "format": "webp",
     "image": {
       "url": "/images/products/kids-raincoat-blue-v2.webp",
-      "width": 849,
-      "height": 992,
-      "aspectRatio": 0.856,
+      "width": 825,
+      "height": 977,
+      "aspectRatio": 0.844,
       "sizeKb": "98.5 KB",
       "hasAlpha": true
     },
@@ -276,8 +276,8 @@
         "colorName": "Astronaut Blue",
         "hex": "#0284C7",
         "image": "/images/products/kids-raincoat-blue-v2.webp",
-        "width": 849,
-        "height": 992
+        "width": 825,
+        "height": 977
       },
       {
         "name": "Little Animal Pink",
@@ -301,11 +301,11 @@
       "zeroGravity": true,
       "profile": "light-buoyant",
       "floating": {
-        "amplitudeY": 12,
+        "amplitudeY": 8,
         "duration": 3.8,
         "ease": "sine.inOut",
-        "rotationDriftZ": 1,
-        "rotationDriftX": 1.5
+        "rotationDriftZ": 0,
+        "rotationDriftX": 0
       },
       "shadow": {
         "baseBlur": 24,

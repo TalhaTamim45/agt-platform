@@ -112,7 +112,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
 
     // Upright, professional floating without 3D tilt/rotation (matching e-commerce standard)
     const tween = gsap.to(imageRef.current, {
-      y: -8,
+      y: -5,
       duration: 2.8,
       ease: 'sine.inOut',
       repeat: -1,
@@ -179,7 +179,7 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
 
         {/* Product Image Area with Auto-Swipe Carousel matching user's reference */}
         <div
-          className="relative w-full bg-gradient-to-b from-cream-50 via-cream-100/40 to-white px-4 sm:px-6 pt-12 pb-3 flex flex-col items-center justify-center overflow-hidden"
+          className="relative w-full bg-gradient-to-b from-cream-50 via-cream-100/40 to-white px-4 sm:px-6 pt-14 sm:pt-16 pb-3 flex flex-col items-center justify-center overflow-hidden"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -200,10 +200,10 @@ export default function ProductDetail({ product, isOpen, onClose, onSelectQuote 
           </div>
 
           {/* Main Upright Product Packshot (Matching Reference Photo) */}
-          <div className="relative w-full flex items-center justify-center my-0.5">
+          <div className="relative w-full flex items-center justify-center mt-1 mb-0.5">
             <div
               ref={imageRef}
-              className="relative z-10 w-full h-48 sm:h-60 flex items-center justify-center product-image-wrap"
+              className="relative z-10 w-full h-44 sm:h-56 flex items-center justify-center product-image-wrap px-2"
             >
               <Image
                 key={currentDisplayImage}
