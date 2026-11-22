@@ -72,14 +72,14 @@ async function generateCatalog() {
   sheet.pageSetup.fitToWidth = 1;
   sheet.pageSetup.fitToHeight = 0;
 
-  // 6 Essential Columns (Category Deleted, Picture enlarged, Widths Optimized for 1-Page A4 Fit)
+  // 6 Essential Columns (Category Deleted, Widths Optimized for 1-Page A4 Fit)
   sheet.columns = [
     { header: 'SL / Code', key: 'code', width: 10 },
-    { header: 'Picture', key: 'picture', width: 16 },
-    { header: 'Product Name', key: 'name', width: 27 },
-    { header: 'Buying Price', key: 'buyingPrice', width: 12 },
-    { header: 'Selling Price', key: 'sellingPrice', width: 12 },
-    { header: 'Sourcing From', key: 'sourcingFrom', width: 14 },
+    { header: 'Picture', key: 'picture', width: 13 },
+    { header: 'Product Name', key: 'name', width: 28 },
+    { header: 'Buying Price', key: 'buyingPrice', width: 13 },
+    { header: 'Selling Price', key: 'sellingPrice', width: 13 },
+    { header: 'Sourcing From', key: 'sourcingFrom', width: 15 },
   ];
 
   // Header Row - Clean, Uncolored, Standard Solid Borders
@@ -116,7 +116,7 @@ async function generateCatalog() {
       sourcingFrom: ''
     });
 
-    row.height = 78; // Room for enlarged 90px image with snug borders
+    row.height = 62; // Snug height for 72px image (no huge empty padding)
 
     // Cell formatting
     row.getCell('code').alignment = { vertical: 'middle', horizontal: 'center' };
@@ -149,14 +149,14 @@ async function generateCatalog() {
       };
     });
 
-    // Embed Image - Enlarged to 90x90px to show rich product details clearly
+    // Embed Image - Enlarged to 72x72px to fill cell snugly with minimal empty border
     const relImgUrl = product.image?.url;
     if (relImgUrl) {
       const localImgPath = path.resolve(__dirname, '../public', relImgUrl.replace(/^\//, ''));
       if (fs.existsSync(localImgPath)) {
         try {
           const pngBuffer = await sharp(localImgPath)
-            .resize(120, 120, {
+            .resize(80, 80, {
               fit: 'contain',
               background: { r: 255, g: 255, b: 255, alpha: 0 }
             })
@@ -170,8 +170,8 @@ async function generateCatalog() {
 
           // Anchor image centered and filling column B snugly
           sheet.addImage(imageId, {
-            tl: { col: 1.06, row: rowIndex - 1 + 0.04 },
-            ext: { width: 90, height: 90 },
+            tl: { col: 1.05, row: rowIndex - 1 + 0.05 },
+            ext: { width: 72, height: 72 },
             editAs: 'oneCell'
           });
         } catch (imgErr) {
@@ -187,19 +187,13 @@ async function generateCatalog() {
   const outputPath = path.resolve(__dirname, '../AGT_Product_Catalogue.xlsx');
   await workbook.xlsx.writeFile(outputPath);
 
-  // Copy to Downloads folder paths
-  const targets = [
-    'C:\\Users\\Hi\\Downloads\\AGT_Product_Catalogue_Print_Ready.xlsx',
-    'C:\\Users\\Hi\\Downloads\\AGT_Product_Catalogue.xlsx'
-  ];
-
-  for (const t of targets) {
-    try {
-      fs.copyFileSync(outputPath, t);
-      console.log(`Updated file at: ${t}`);
-    } catch (e) {
-      console.log(`Could not overwrite ${path.basename(t)} (likely open in Excel): ${e.message}`);
-    }
+  // Copy to Downloads folder for instant access
+  const downloadsPath = 'C:\\Users\\Hi\\Downloads\\AGT_Product_Catalogue.xlsx';
+  try {
+    fs.copyFileSync(outputPath, downloadsPath);
+    console.log(`Copied also to user Downloads: ${downloadsPath}`);
+  } catch (e) {
+    // optional
   }
 
   const duration = ((Date.now() - startTime) / 1000).toFixed(1);
