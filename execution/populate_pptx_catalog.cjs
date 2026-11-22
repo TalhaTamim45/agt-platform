@@ -2,8 +2,62 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
+function generateClosingSlide() {
+  let xml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n`;
+  xml += `<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:dgm="http://schemas.openxmlformats.org/drawingml/2006/diagram" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:pvml="urn:schemas-microsoft-com:office:powerpoint" xmlns:com="http://schemas.openxmlformats.org/drawingml/2006/compatibility" xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" xmlns:p15="http://schemas.microsoft.com/office/powerpoint/2012/main" xmlns:ahyp="http://schemas.microsoft.com/office/drawing/2018/hyperlinkcolor">\n`;
+  xml += `  <p:cSld>\n`;
+  xml += `    <p:bg><p:bgPr><a:solidFill><a:srgbClr val="F8FAFC"/></a:solidFill></p:bgPr></p:bg>\n`;
+  xml += `    <p:spTree>\n`;
+  xml += `      <p:nvGrpSpPr><p:cNvPr id="900" name="Closing Slide Frame"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr>\n`;
+  xml += `      <p:grpSpPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="0" cy="0"/><a:chOff x="0" y="0"/><a:chExt cx="0" cy="0"/></a:xfrm></p:grpSpPr>\n`;
+
+  // Top Section Tag: NEXT STEP COLLABORATION
+  xml += `      <p:sp><p:nvSpPr><p:cNvPr id="901" name="Section Tag"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="695325" y="450000"/><a:ext cx="6000000" cy="200000"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="1100"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t>NEXT STEP COLLABORATION</a:t></a:r></a:p></p:txBody></p:sp>\n`;
+
+  // Top Main Title: Let's Build A High-Value Partnership
+  xml += `      <p:sp><p:nvSpPr><p:cNvPr id="902" name="Main Title"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="695325" y="700000"/><a:ext cx="7500000" cy="400000"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="2400"><a:solidFill><a:srgbClr val="0F172A"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t>Let&apos;s Build A High-Value Partnership</a:t></a:r></a:p></p:txBody></p:sp>\n`;
+
+  // Subtitle: Connecting Business | Building Partnerships | Delivering Growth
+  xml += `      <p:sp><p:nvSpPr><p:cNvPr id="903" name="Subtitle"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="695325" y="1150000"/><a:ext cx="7500000" cy="250000"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:buNone/></a:pPr><a:r><a:rPr b="0" i="0" lang="en-US" sz="1150"><a:solidFill><a:srgbClr val="64748B"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t>Connecting Business  |  Building Partnerships  |  Delivering Growth</a:t></a:r></a:p></p:txBody></p:sp>\n`;
+
+  // Top-Right Target Badge: Prepared Exclusively for Eskayef Pharmaceuticals Ltd. (SK+F)
+  xml += `      <p:sp><p:nvSpPr><p:cNvPr id="904" name="Target Badge BG"/><p:cNvSpPr/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="7200000" y="600000"/><a:ext cx="4300000" cy="350000"/></a:xfrm><a:prstGeom prst="roundRect"><a:avLst><a:gd fmla="val 24242" name="adj"/></a:avLst></a:prstGeom><a:solidFill><a:srgbClr val="E0F2FE"/></a:solidFill><a:ln cap="flat" cmpd="sng" w="9525"><a:solidFill><a:srgbClr val="BAE6FD"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd len="sm" w="sm" type="none"/><a:tailEnd len="sm" w="sm" type="none"/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700"><a:noAutofit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr"><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="950"><a:solidFill><a:srgbClr val="0369A1"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t>Prepared Exclusively for Eskayef Pharmaceuticals Ltd. (SK+F)</a:t></a:r></a:p></p:txBody></p:sp>\n`;
+
+  // CARD 1: Fast-Track Vendor Onboarding
+  xml += `      <p:sp><p:nvSpPr><p:cNvPr id="905" name="Card 1 BG"/><p:cNvSpPr/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="695325" y="1650000"/><a:ext cx="5250000" cy="4000000"/></a:xfrm><a:prstGeom prst="roundRect"><a:avLst><a:gd fmla="val 6205" name="adj"/></a:avLst></a:prstGeom><a:solidFill><a:srgbClr val="FFFFFF"/></a:solidFill><a:ln cap="flat" cmpd="sng" w="9525"><a:solidFill><a:srgbClr val="E2E8F0"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd len="sm" w="sm" type="none"/><a:tailEnd len="sm" w="sm" type="none"/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="180000" lIns="250000" spcFirstLastPara="1" rIns="250000" wrap="square" tIns="250000"><a:noAutofit/></a:bodyPr><a:lstStyle/>`;
+  xml += `<a:p><a:pPr algn="l"><a:spcAft><a:spcPts val="600"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" lang="en-US" sz="1500"><a:solidFill><a:srgbClr val="0F172A"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>Fast-Track Vendor Onboarding</a:t></a:r></a:p>`;
+  xml += `<a:p><a:pPr algn="l"><a:spcBef><a:spcPts val="300"/></a:spcBef><a:spcAft><a:spcPts val="400"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" lang="en-US" sz="1300"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>1  </a:t></a:r><a:r><a:rPr b="0" lang="en-US" sz="1200"><a:solidFill><a:srgbClr val="334155"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>Physical sample dispatch to SK+F procurement.</a:t></a:r></a:p>`;
+  xml += `<a:p><a:pPr algn="l"><a:spcBef><a:spcPts val="300"/></a:spcBef><a:spcAft><a:spcPts val="400"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" lang="en-US" sz="1300"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>2  </a:t></a:r><a:r><a:rPr b="0" lang="en-US" sz="1200"><a:solidFill><a:srgbClr val="334155"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>Digital branding mockups with SK+F logos.</a:t></a:r></a:p>`;
+  xml += `<a:p><a:pPr algn="l"><a:spcBef><a:spcPts val="300"/></a:spcBef><a:spcAft><a:spcPts val="400"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" lang="en-US" sz="1300"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>3  </a:t></a:r><a:r><a:rPr b="0" lang="en-US" sz="1200"><a:solidFill><a:srgbClr val="334155"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>Final volume quotation &amp; rapid delivery.</a:t></a:r></a:p>`;
+  xml += `</p:txBody></p:sp>\n`;
+
+  // CARD 2: Head Office & Inquiries
+  xml += `      <p:sp><p:nvSpPr><p:cNvPr id="906" name="Card 2 BG"/><p:cNvSpPr/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="6250000" y="1650000"/><a:ext cx="5250000" cy="4000000"/></a:xfrm><a:prstGeom prst="roundRect"><a:avLst><a:gd fmla="val 6205" name="adj"/></a:avLst></a:prstGeom><a:solidFill><a:srgbClr val="FFFFFF"/></a:solidFill><a:ln cap="flat" cmpd="sng" w="9525"><a:solidFill><a:srgbClr val="E2E8F0"/></a:solidFill><a:prstDash val="solid"/><a:round/><a:headEnd len="sm" w="sm" type="none"/><a:tailEnd len="sm" w="sm" type="none"/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="180000" lIns="250000" spcFirstLastPara="1" rIns="250000" wrap="square" tIns="250000"><a:noAutofit/></a:bodyPr><a:lstStyle/>`;
+  xml += `<a:p><a:pPr algn="l"><a:spcAft><a:spcPts val="600"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" lang="en-US" sz="1500"><a:solidFill><a:srgbClr val="0F172A"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>Head Office &amp; Inquiries</a:t></a:r></a:p>`;
+  
+  xml += `<a:p><a:pPr algn="l"><a:spcBef><a:spcPts val="200"/></a:spcBef><a:spcAft><a:spcPts val="100"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" lang="en-US" sz="950"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>OFFICE ADDRESS</a:t></a:r></a:p>`;
+  xml += `<a:p><a:pPr algn="l"><a:spcAft><a:spcPts val="400"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="0" lang="en-US" sz="1150"><a:solidFill><a:srgbClr val="334155"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>TA 134, Boishakhi Soroni, Badda, Dhaka-1212, Bangladesh</a:t></a:r></a:p>`;
+
+  xml += `<a:p><a:pPr algn="l"><a:spcBef><a:spcPts val="200"/></a:spcBef><a:spcAft><a:spcPts val="100"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" lang="en-US" sz="950"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>DIRECT HOTLINE &amp; WHATSAPP</a:t></a:r></a:p>`;
+  xml += `<a:p><a:pPr algn="l"><a:spcAft><a:spcPts val="400"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" lang="en-US" sz="1200"><a:solidFill><a:srgbClr val="0F172A"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>+880 1787-239863</a:t></a:r></a:p>`;
+
+  xml += `<a:p><a:pPr algn="l"><a:spcBef><a:spcPts val="200"/></a:spcBef><a:spcAft><a:spcPts val="100"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" lang="en-US" sz="950"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>CORPORATE EMAIL</a:t></a:r></a:p>`;
+  xml += `<a:p><a:pPr algn="l"><a:spcAft><a:spcPts val="200"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" lang="en-US" sz="1150"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>agtbd763@gmail.com</a:t></a:r></a:p>`;
+  xml += `</p:txBody></p:sp>\n`;
+
+  // Bottom Footer: © 2026 Abdullah Global Trade. All rights reserved.
+  xml += `      <p:sp><p:nvSpPr><p:cNvPr id="907" name="Footer Text"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="695325" y="6050000"/><a:ext cx="10800000" cy="250000"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="none" tIns="0"><a:noAutofit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr"><a:buNone/></a:pPr><a:r><a:rPr b="0" i="0" lang="en-US" sz="950"><a:solidFill><a:srgbClr val="94A3B8"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/></a:rPr><a:t>© 2026 Abdullah Global Trade. All rights reserved.</a:t></a:r></a:p></p:txBody></p:sp>\n`;
+
+  xml += `    </p:spTree>\n`;
+  xml += `  </p:cSld>\n`;
+  xml += `  <p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr>\n`;
+  xml += `</p:sld>\n`;
+
+  return xml;
+}
+
 async function main() {
-  console.log('Starting PPTX catalog population...');
+  console.log('Starting PPTX catalog population with unified non-overlapping card layout...');
 
   const extractedDir = path.resolve('.tmp/pptx_extracted');
   const productsPath = path.resolve('public/data/products.json');
@@ -49,19 +103,16 @@ async function main() {
     slideChunks.push(toAdd.slice(i, i + 5));
   }
   console.log(`Prepared ${slideChunks.length} new slides (Slides 10 to ${9 + slideChunks.length})`);
-  const finalClosingSlideNum = 10 + slideChunks.length; // e.g. Slide 30
+  const finalClosingSlideNum = 10 + slideChunks.length; // Slide 30
 
-  // 2. Move existing Slide 10 (closing slide) to finalClosingSlideNum
-  console.log(`Moving closing slide 10 to slide ${finalClosingSlideNum}...`);
-  const oldSlide10 = path.join(extractedDir, 'ppt/slides/slide10.xml');
-  const oldSlide10Rels = path.join(extractedDir, 'ppt/slides/_rels/slide10.xml.rels');
-  const newClosingSlide = path.join(extractedDir, `ppt/slides/slide${finalClosingSlideNum}.xml`);
-  const newClosingSlideRels = path.join(extractedDir, `ppt/slides/_rels/slide${finalClosingSlideNum}.xml.rels`);
-
-  if (fs.existsSync(oldSlide10)) {
-    fs.copyFileSync(oldSlide10, newClosingSlide);
-    fs.copyFileSync(oldSlide10Rels, newClosingSlideRels);
-  }
+  // 2. Generate closing slide (Slide 30)
+  console.log(`Generating closing slide at slide ${finalClosingSlideNum}...`);
+  const closingSlideXml = generateClosingSlide();
+  const closingSlidePath = path.join(extractedDir, `ppt/slides/slide${finalClosingSlideNum}.xml`);
+  const closingSlideRelsPath = path.join(extractedDir, `ppt/slides/_rels/slide${finalClosingSlideNum}.xml.rels`);
+  fs.writeFileSync(closingSlidePath, closingSlideXml, 'utf8');
+  const slide30Rels = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout" Target="../slideLayouts/slideLayout1.xml"/></Relationships>`;
+  fs.writeFileSync(closingSlideRelsPath, slide30Rels, 'utf8');
 
   // 3. Clear all prices in existing slides 2 through 9
   console.log('Nulling all prices in existing slides 2 through 9...');
@@ -69,24 +120,21 @@ async function main() {
     const slidePath = path.join(extractedDir, `ppt/slides/slide${s}.xml`);
     if (fs.existsSync(slidePath)) {
       let content = fs.readFileSync(slidePath, 'utf8');
-      // Replace text inside shapes that contain "Tk"
       const spRegex = /<p:sp>[\s\S]*?<\/p:sp>/g;
       content = content.replace(spRegex, (sp) => {
         const textMatches = sp.match(/<a:t>([\s\S]*?)<\/a:t>/g) || [];
         const fullText = textMatches.map(t => t.replace(/<\/?a:t>/g, '')).join('');
         if (fullText.includes('Tk')) {
-          // Empty the price text run while preserving formatting
           return sp.replace(/<a:t>[\s\S]*?<\/a:t>/g, '<a:t></a:t>');
         }
         return sp;
       });
       fs.writeFileSync(slidePath, content, 'utf8');
-      console.log(`  Slide ${s}: prices cleared`);
     }
   }
 
-  // 4. Convert all product images to PNG and save to ppt/media/
-  console.log('Converting product images to PNG and measuring dimensions...');
+  // 4. Convert all product images to PNG and measure dimensions
+  console.log('Ensuring all product PNG images exist in ppt/media/...');
   const mediaDir = path.join(extractedDir, 'ppt/media');
   const imageMeta = {};
 
@@ -95,27 +143,21 @@ async function main() {
     const srcPath = path.resolve('public' + imgUrl);
     const destPath = path.join(mediaDir, `cat_img_${p.serial}.png`);
 
-    if (!fs.existsSync(srcPath)) {
-      console.error(`ERROR: Image missing for ${p.serial}: ${srcPath}`);
-      continue;
+    if (!fs.existsSync(destPath)) {
+      const imgBuffer = await sharp(srcPath)
+        .resize(600, 600, { fit: 'inside', withoutEnlargement: true })
+        .png({ quality: 90, compressionLevel: 6 })
+        .toBuffer();
+      fs.writeFileSync(destPath, imgBuffer);
     }
 
-    // Convert WebP to PNG with max dimension 600 for sharp crisp presentation rendering
-    const imgBuffer = await sharp(srcPath)
-      .resize(600, 600, { fit: 'inside', withoutEnlargement: true })
-      .png({ quality: 90, compressionLevel: 6 })
-      .toBuffer();
-
-    fs.writeFileSync(destPath, imgBuffer);
-
-    // Read converted metadata
-    const meta = await sharp(imgBuffer).metadata();
+    const meta = await sharp(destPath).metadata();
     imageMeta[p.serial] = {
       width: meta.width,
       height: meta.height
     };
   }
-  console.log(`Converted ${Object.keys(imageMeta).length} images successfully.`);
+  console.log(`Image metadata indexed for ${Object.keys(imageMeta).length} products.`);
 
   // 5. XML Helper functions
   function escapeXml(str) {
@@ -128,8 +170,20 @@ async function main() {
       .replace(/'/g, '&apos;');
   }
 
+  function getCleanCategoryTag(cat, serial) {
+    const c = (cat || '').toUpperCase();
+    let shortCat = 'CORPORATE GIFT';
+    if (c.includes('FOOD') || c.includes('BEVERAGE')) shortCat = 'FOOD & BEVERAGES';
+    else if (c.includes('KITCHEN') || c.includes('APPLIANCE')) shortCat = 'KITCHEN & HOME';
+    else if (c.includes('HEALTH') || c.includes('PERSONAL')) shortCat = 'HEALTH & CARE';
+    else if (c.includes('HOME') || c.includes('LIFESTYLE')) shortCat = 'HOME & LIVING';
+    else if (c.includes('ELECTRONIC') || c.includes('GADGET')) shortCat = 'SMART GADGETS';
+    else if (c.includes('SPORT') || c.includes('FITNESS')) shortCat = 'SPORTS & FITNESS';
+    return `${shortCat} • ${serial}`;
+  }
+
   // 6. Generate slides 10 through (9 + slideChunks.length)
-  let shapeIdCounter = 1000;
+  let shapeIdCounter = 2000;
 
   for (let cIdx = 0; cIdx < slideChunks.length; cIdx++) {
     const slideNum = 10 + cIdx;
@@ -158,11 +212,11 @@ async function main() {
     slideXml += `      <p:nvGrpSpPr><p:cNvPr id="${shapeIdCounter++}" name="Group Frame"/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr>\n`;
     slideXml += `      <p:grpSpPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="0" cy="0"/><a:chOff x="0" y="0"/><a:chExt cx="0" cy="0"/></a:xfrm></p:grpSpPr>\n`;
 
-    // Top-Right Badge Background
-    slideXml += `      <p:sp><p:nvSpPr><p:cNvPr id="${shapeIdCounter++}" name="Badge BG"/><p:cNvSpPr/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="9458325" y="609600"/><a:ext cx="2276475" cy="314325"/></a:xfrm><a:prstGeom prst="roundRect"><a:avLst><a:gd fmla="val 24242" name="adj"/></a:avLst></a:prstGeom><a:solidFill><a:srgbClr val="E2E8F0"/></a:solidFill><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700"><a:noAutofit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr"><a:buNone/></a:pPr><a:r><a:t></a:t></a:r></a:p></p:txBody></p:sp>\n`;
+    // Top-Right Badge Background (wider to ensure zero wrapping)
+    slideXml += `      <p:sp><p:nvSpPr><p:cNvPr id="${shapeIdCounter++}" name="Badge BG"/><p:cNvSpPr/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="9350000" y="609600"/><a:ext cx="2380000" cy="314325"/></a:xfrm><a:prstGeom prst="roundRect"><a:avLst><a:gd fmla="val 24242" name="adj"/></a:avLst></a:prstGeom><a:solidFill><a:srgbClr val="E2E8F0"/></a:solidFill><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700"><a:noAutofit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr"><a:buNone/></a:pPr><a:r><a:t></a:t></a:r></a:p></p:txBody></p:sp>\n`;
 
-    // Top-Right Badge Text
-    slideXml += `      <p:sp><p:nvSpPr><p:cNvPr id="${shapeIdCounter++}" name="Badge Text"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="9591675" y="666750"/><a:ext cx="2105025" cy="200025"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="1050"><a:solidFill><a:srgbClr val="334155"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t> All Prices in BDT (VAT Applicable) </a:t></a:r></a:p></p:txBody></p:sp>\n`;
+    // Top-Right Badge Text: 9pt font, perfectly fitted on 1 line
+    slideXml += `      <p:sp><p:nvSpPr><p:cNvPr id="${shapeIdCounter++}" name="Badge Text"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="9400000" y="666750"/><a:ext cx="2280000" cy="200025"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="none" tIns="0"><a:noAutofit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr"><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="900"><a:solidFill><a:srgbClr val="334155"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t>All Prices in BDT (VAT Applicable)</a:t></a:r></a:p></p:txBody></p:sp>\n`;
 
     // Category / Section Title
     slideXml += `      <p:sp><p:nvSpPr><p:cNvPr id="${shapeIdCounter++}" name="Section Tag"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="457200" y="381000"/><a:ext cx="8179593" cy="171450"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="1050"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t>PRODUCT SELECTION OVERVIEW</a:t></a:r></a:p></p:txBody></p:sp>\n`;
@@ -223,23 +277,41 @@ async function main() {
       slideXml += `      <p:pic><p:nvPicPr><p:cNvPr id="${shapeIdCounter++}" name="Pic ${p.serial}"/><p:cNvPicPr><a:picLocks noChangeAspect="1"/></p:cNvPicPr><p:nvPr/></p:nvPicPr><p:blipFill><a:blip r:embed="rId${c + 2}"/><a:stretch><a:fillRect/></a:stretch></p:blipFill><p:spPr><a:xfrm><a:off x="${imgX}" y="${imgY}"/><a:ext cx="${imgW}" cy="${imgH}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></p:spPr></p:pic>\n`;
     }
 
-    // 4. Render Text Elements (Category, Name, Desc, Price Label, Price Value)
+    // 4. Render Unified Card Info Text Body (Single <p:sp> to eliminate ANY text overlap)
     for (let c = 0; c < chunk.length; c++) {
       const p = chunk[c];
       const { innerX } = p._coords;
 
-      // Category Tag: Sky Blue bold
-      const catText = `${(p.category || 'CORPORATE GIFT').toUpperCase()} • ${p.serial}`;
-      slideXml += `      <p:sp><p:nvSpPr><p:cNvPr id="${shapeIdCounter++}" name="Category ${p.serial}"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="${innerX}" y="4097535"/><a:ext cx="2100000" cy="152400"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="975"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t>${escapeXml(catText)}</a:t></a:r></a:p></p:txBody></p:sp>\n`;
-
-      // Title: Dark Slate bold
+      const catText = getCleanCategoryTag(p.category, p.serial);
       const titleText = p.name;
-      const titleSz = titleText.length > 32 ? '1100' : '1275';
-      slideXml += `      <p:sp><p:nvSpPr><p:cNvPr id="${shapeIdCounter++}" name="Title ${p.serial}"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="${innerX}" y="4268985"/><a:ext cx="1950000" cy="240000"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:lnSpc><a:spcPct val="115000"/></a:lnSpc><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="${titleSz}"><a:solidFill><a:srgbClr val="0F172A"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t>${escapeXml(titleText)}</a:t></a:r></a:p></p:txBody></p:sp>\n`;
-
-      // Subtitle / Description: Slate-500 regular
       const descText = p.bulkDiscount || 'Custom corporate branding available.';
-      slideXml += `      <p:sp><p:nvSpPr><p:cNvPr id="${shapeIdCounter++}" name="Desc ${p.serial}"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="${innerX}" y="4540000"/><a:ext cx="1950000" cy="346471"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:lnSpc><a:spcPct val="120000"/></a:lnSpc><a:buNone/></a:pPr><a:r><a:rPr b="0" i="0" lang="en-US" sz="1000"><a:solidFill><a:srgbClr val="64748B"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t>${escapeXml(descText)}</a:t></a:r></a:p></p:txBody></p:sp>\n`;
+
+      // Dynamic sizing for title based on length
+      let titleSz = '1050'; // 10.5pt
+      if (titleText.length > 50) {
+        titleSz = '950';   // 9.5pt
+      } else if (titleText.length > 30) {
+        titleSz = '1000';  // 10pt
+      }
+
+      slideXml += `      <p:sp><p:nvSpPr><p:cNvPr id="${shapeIdCounter++}" name="Card Info ${p.serial}"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="${innerX}" y="4050000"/><a:ext cx="1863030" cy="870000"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/>`;
+
+      // Paragraph 1: Category Tag (Sky Blue, Bold 8pt)
+      slideXml += `<a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:spcBef><a:spcPts val="0"/></a:spcBef><a:spcAft><a:spcPts val="200"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="800" u="none" cap="none" strike="noStrike"><a:solidFill><a:srgbClr val="0284C7"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/><a:sym typeface="Plus Jakarta Sans"/></a:rPr><a:t>${escapeXml(catText)}</a:t></a:r><a:endParaRPr/></a:p>`;
+
+      // Paragraph 2: Title (Dark Slate, Bold)
+      slideXml += `<a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:lnSpc><a:spcPct val="115000"/></a:lnSpc><a:spcBef><a:spcPts val="0"/></a:spcBef><a:spcAft><a:spcPts val="200"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="${titleSz}" u="none" cap="none" strike="noStrike"><a:solidFill><a:srgbClr val="0F172A"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/><a:sym typeface="Plus Jakarta Sans"/></a:rPr><a:t>${escapeXml(titleText)}</a:t></a:r><a:endParaRPr/></a:p>`;
+
+      // Paragraph 3: Description / Subtitle (Slate-500, Regular 8pt)
+      slideXml += `<a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:lnSpc><a:spcPct val="115000"/></a:lnSpc><a:spcBef><a:spcPts val="0"/></a:spcBef><a:spcAft><a:spcPts val="0"/></a:spcAft><a:buNone/></a:pPr><a:r><a:rPr b="0" i="0" lang="en-US" sz="800" u="none" cap="none" strike="noStrike"><a:solidFill><a:srgbClr val="64748B"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/><a:sym typeface="Plus Jakarta Sans"/></a:rPr><a:t>${escapeXml(descText)}</a:t></a:r><a:endParaRPr/></a:p>`;
+
+      slideXml += `</p:txBody></p:sp>\n`;
+    }
+
+    // 5. Render Price Pill Contents (Unit Price Label & Blank Price)
+    for (let c = 0; c < chunk.length; c++) {
+      const p = chunk[c];
+      const { innerX } = p._coords;
 
       // Unit Price Label
       slideXml += `      <p:sp><p:nvSpPr><p:cNvPr id="${shapeIdCounter++}" name="PriceLabel ${p.serial}"/><p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr><p:spPr><a:xfrm><a:off x="${innerX + 104775}" y="5089326"/><a:ext cx="847725" cy="152400"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></p:spPr><p:txBody><a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0"><a:spAutoFit/></a:bodyPr><a:lstStyle/><a:p><a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l"><a:buNone/></a:pPr><a:r><a:rPr b="1" i="0" lang="en-US" sz="975"><a:solidFill><a:srgbClr val="166534"/></a:solidFill><a:latin typeface="Plus Jakarta Sans"/><a:ea typeface="Plus Jakarta Sans"/><a:cs typeface="Plus Jakarta Sans"/></a:rPr><a:t>Unit Price</a:t></a:r></a:p></p:txBody></p:sp>\n`;
@@ -262,12 +334,10 @@ async function main() {
   const contentTypesPath = path.join(extractedDir, '[Content_Types].xml');
   let ctXml = fs.readFileSync(contentTypesPath, 'utf8');
 
-  // Ensure default PNG is registered
   if (!ctXml.includes('Extension="png"')) {
     ctXml = ctXml.replace('<Types', '<Types><Default ContentType="image/png" Extension="png"/>');
   }
 
-  // Add slide overrides for all slides 1 to finalClosingSlideNum
   for (let s = 1; s <= finalClosingSlideNum; s++) {
     const part = `/ppt/slides/slide${s}.xml`;
     if (!ctXml.includes(`PartName="${part}"`)) {
@@ -281,12 +351,8 @@ async function main() {
   const presRelsPath = path.join(extractedDir, 'ppt/_rels/presentation.xml.rels');
   let presRels = fs.readFileSync(presRelsPath, 'utf8');
 
-  // Remove existing slide relationships for slide 10 to rebuild cleanly
   presRels = presRels.replace(/<Relationship[^>]*Target="slides\/slide10\.xml"[^>]*\/>/g, '');
 
-  // Add relationship for slide 10..finalClosingSlideNum
-  // Note: slide 1..9 have rId6..rId14. Slide 10 gets rId15.
-  // Next available IDs start at rId20 (since rId16..19 are embedded fonts!).
   let nextRId = 20;
   const slideRelMap = {};
   for (let s = 10; s <= finalClosingSlideNum; s++) {
@@ -303,15 +369,12 @@ async function main() {
   const presPath = path.join(extractedDir, 'ppt/presentation.xml');
   let presXml = fs.readFileSync(presPath, 'utf8');
 
-  // Rebuild <p:sldIdLst>
-  // Slide 1..9: id=256..264, r:id=rId6..rId14
   let sldIdLst = '<p:sldIdLst>';
   for (let s = 1; s <= 9; s++) {
     const id = 255 + s;
     const rId = `rId${s + 5}`;
     sldIdLst += `<p:sldId id="${id}" r:id="${rId}"/>`;
   }
-  // Slides 10 through finalClosingSlideNum
   for (let s = 10; s <= finalClosingSlideNum; s++) {
     const id = 255 + s;
     const rId = slideRelMap[s];
@@ -322,7 +385,7 @@ async function main() {
   presXml = presXml.replace(/<p:sldIdLst>[\s\S]*?<\/p:sldIdLst>/, sldIdLst);
   fs.writeFileSync(presPath, presXml, 'utf8');
 
-  console.log(`PPTX XML files generated successfully. Total slides: ${finalClosingSlideNum}`);
+  console.log(`PPTX XML files generated successfully with unified text flow. Total slides: ${finalClosingSlideNum}`);
 }
 
 main().catch(err => {
